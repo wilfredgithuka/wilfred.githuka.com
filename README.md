@@ -1,4 +1,4 @@
-# wilfred.githuka.com
+# [wilfred.githuka.com](https://wilfred.githuka.com)
 > My technical blog where I write about electronic projects am working on.
 
 [![NPM Version][npm-image]][npm-url]
@@ -17,11 +17,18 @@ Because this is a minimal static website powered by Go, you can have a copy of t
 
 Just do a simple git clone and you are done.
 
+I have moved the blog to a new git repo. So some posts images are still not available, but I will soon add them.
+
+Trying to keep the blog's size to below 15MB incl of images. [minimalism]
+
 
 ## Release/Update History
 
-* 0.1.2
-      SMALL UPDATE: Header Image for README.md file is set.
+* 0.1.3
+    * PRODUCTION: Sent To Server LIVE
+    * SMALL UPDATE: Header Image for README.md file is set.
+    * WEBSITE_SIZE: 4.9MB
+    * README.md Title header linked to live site    
 * 0.1.2
     * UPDATE TESTING: Updated 3 New Posts. 
     * However old posts still have no images.
@@ -31,7 +38,7 @@ Just do a simple git clone and you are done.
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/wilfredgithuka) – YourEmail@example.com
+Your Name – [@wilfredgithuka](https://twitter.com/wilfredgithuka) – wilfred.gachugi[-at-]gmail.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
@@ -39,7 +46,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 
 ## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
+1. Fork it (<https://github.com/wilfredgithuka/wilfred.githuka.com/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
