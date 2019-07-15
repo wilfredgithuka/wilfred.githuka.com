@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/categories/linux/</link>
+    <description>Recent content in Linux on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting Up A Local Deep Learnning Environment NVIDIA GPU&#43;Tensorflow&#43;Keras&#43;CuDNN&#43;CUDA in Archlinux</title>
+      <link>https://wilfred.githuka.com/post/local_gpu_setup/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/local_gpu_setup/</guid>
+      <description>Dont get me wrong, am not against cloud based GPU&amp;rsquo;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
+Machine Specs First let me list my hardware specs so that we can have a benchark as we go forth.</description>
+    </item>
+    
+    <item>
+      <title>Youtube-dl</title>
+      <link>https://wilfred.githuka.com/post/youtube-downloader/</link>
+      <pubDate>Mon, 18 Jul 2016 04:59:55 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/youtube-downloader/</guid>
+      <description>Introduction Youtube-dl is a command-line program to download videos from Youtube and a few more sites. It requires the Python interpreter (2.6, 2.7, or 3.2+), and it is not platform specific. youtube-dl should work in your Unix box, in Windows or in Mac OS X. It is released to the public domain, which means you can modify it, redistribute it or use it however you like.
+Installation To install it right away for all UNIX users (Linux, OS X, etc.</description>
+    </item>
+    
+    <item>
+      <title>Connect To Eduroam On Archlinux</title>
+      <link>https://wilfred.githuka.com/post/connect-to-eduroam-on-archlinux/</link>
+      <pubDate>Thu, 16 Jun 2016 06:40:51 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/connect-to-eduroam-on-archlinux/</guid>
+      <description>Eduroam is a worldwide internet service for research that is used in universities globally. Eduroam uses a secure protocol when connecting to the users. Windows and other OSs have different configurations. On Archlinux start by running the following commands.
+Note: The following steps are for Connman (A Daemon for managing internet connections within embedded devices running the Linux operating system. Comes with a command-line client, plus Enlightenment, ncurses, GTK and Dmenu clients are available).</description>
+    </item>
+    
+    <item>
+      <title>The I Love Candy Pacman Mod</title>
+      <link>https://wilfred.githuka.com/post/the-i-love-candy-pacman-mod/</link>
+      <pubDate>Tue, 14 Jun 2016 05:25:16 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/the-i-love-candy-pacman-mod/</guid>
+      <description>Pacman is the official package manager for Archlinux. Sometimes its boring watching the Hashes which are used to show progress when Pacman is downloading/working. This kind of user interface has a new mod that shows a capital C eating small things during the progress.
+Modify the Pacman config file using your favorite editor.
+sudo nano /etc/pacman.conf
+Go down to Misc Options and add the word ILoveCandy to the end of the list.</description>
+    </item>
+    
+    <item>
+      <title>Install Arch LinuxARM On RaspberryPi</title>
+      <link>https://wilfred.githuka.com/post/install-arch-linuxarm-on-raspberrypi/</link>
+      <pubDate>Mon, 21 Dec 2015 05:45:15 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/install-arch-linuxarm-on-raspberrypi/</guid>
+      <description>The Raspberry Pi is an ARM v6 architecture mini computer that gained alot of fame when it was released in 2012.
+Formating the SD Card Start fdisk to partition the SD Card. Then type the following:
+o - Delete any partitions on the SD Card. p - List all partitions, at this point there should be none left. n then p for primary, 1 for the first partition, press ENTER to accept the default first sector, then type +100M for the last sector.</description>
+    </item>
+    
+  </channel>
+</rss>

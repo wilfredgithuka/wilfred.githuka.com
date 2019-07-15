@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archlinux on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/archlinux/</link>
+    <description>Recent content in Archlinux on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 19 May 2018 21:25:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accessing Google Drive From Terminal</title>
+      <link>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</link>
+      <pubDate>Sat, 19 May 2018 21:25:31 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</guid>
+      <description>Google Drive is a good way to backup your data. In Windows this can be accomplished simply by having a Google account and drag-dropping stuff into it. From a CLI - Command Line Interface a different approach is used which I will explain in this article.
+My distro is [Archlinux]() so this tutorial is based on the same.
+Tools  rclone gdrive  rclone rclone is written in Google&amp;rsquo;s Go Language and it a powerful tool that can be used to access your Google Drive neatly from the terminal.</description>
+    </item>
+    
+    <item>
+      <title>Serving Your Wordpress Blog on Caddy on Linode Server</title>
+      <link>https://wilfred.githuka.com/post/serving-your-wordpress-blog-on-caddy/</link>
+      <pubDate>Mon, 16 Oct 2017 09:16:15 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/serving-your-wordpress-blog-on-caddy/</guid>
+      <description>After fiddling around and some long hours setting up my server, I managed to install Wordpress on Caddy.For those who have not used Caddy before, you can read more about it on Caddyserver.
+Its awesome since it gives you a https (security) for your domain. Caddy is praised by industry experts for security defaults and unpararelleld usability.
+Take Note To make this tutorial easier to follow, I will first point out my biggest issues which you need to take care as you go forth:</description>
+    </item>
+    
+  </channel>
+</rss>

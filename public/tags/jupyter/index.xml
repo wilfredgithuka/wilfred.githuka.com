@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jupyter on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/jupyter/</link>
+    <description>Recent content in jupyter on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 04 Jul 2017 07:51:33 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines</title>
+      <link>https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/</link>
+      <pubDate>Tue, 04 Jul 2017 07:51:33 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/</guid>
+      <description>The main objective of this project is to find lane lines in video using basic computer vision. The lines on the road show us where the lanes are and act as a constant reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.In this project I have created a pipeline to detect lane lines in images and videos using Python and OpenCV.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>SMPS Basic Principle Of Operation // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SMPS Basic Principle Of Operation"/>
+<meta name="twitter:description" content="A Switched Mode Power supply is one of the most efficient ways to step down AC to DC which can be used by domestic appliances like mobile chargers, laptops and pcs. Its an advancement from liner power supplies and this technology has seen wall chargers get smaller and more efficient.
+In the most simple definition, an smps is a type of power supply that uses semi-conductor devices&rsquo; switching techniques rather than the standard linear methods to provide a stable reliable and safe output voltage."/>
+
+    <meta property="og:title" content="SMPS Basic Principle Of Operation" />
+<meta property="og:description" content="A Switched Mode Power supply is one of the most efficient ways to step down AC to DC which can be used by domestic appliances like mobile chargers, laptops and pcs. Its an advancement from liner power supplies and this technology has seen wall chargers get smaller and more efficient.
+In the most simple definition, an smps is a type of power supply that uses semi-conductor devices&rsquo; switching techniques rather than the standard linear methods to provide a stable reliable and safe output voltage." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/smps_basic_principal_of_operation/" />
+<meta property="article:published_time" content="2019-05-28T08:58:44&#43;00:00"/>
+<meta property="article:modified_time" content="2019-05-28T08:58:44&#43;00:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">SMPS Basic Principle Of Operation</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 28, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://wilfred.githuka.com/tags/smps/">smps</a><a class="tag" href="https://wilfred.githuka.com/tags/electronics/">electronics</a><a class="tag" href="https://wilfred.githuka.com/tags/soldering/">soldering</a></div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p>A Switched Mode Power supply is one of the most efficient ways to step down AC to DC which can
+be used by domestic appliances like mobile chargers, laptops and pcs. Its an advancement from
+liner power supplies and this technology has seen wall chargers get smaller and more efficient.</p>
+
+<p>In the most simple definition, an smps is a type of power supply that uses semi-conductor devices&rsquo;
+switching techniques rather than the standard linear methods to provide a stable reliable and safe
+output voltage.</p>
+
+<p>In a Linear power supply, the transistor is used to control the voltage drop while in the SMPS,
+the transistor is used as a controlled switch.</p>
+
+<p>The cool thing is that unlike linear power suppliers which can only offer step-down voltage regulation,
+an smps can offer:</p>
+
+<ul>
+<li>Step-down (DC-DC Buck)</li>
+<li>Step-up (DC-DC Boost)</li>
+<li>Negation (DC-DC Buck Boost)</li>
+</ul>
+
+<p>An SMPS works in the following sequence:</p>
+
+<ul>
+<li>1. Input: 240V AC (Kenya Power Stuff)</li>
+<li>2. Recification &amp; Filtering</li>
+<li>3. High Frequency Converter</li>
+<li>4. Output Recitification &amp; Filtering</li>
+<li>5. Feedback Section (Control Circuit)</li>
+<li>6. DC Output</li>
+</ul>
+
+<p>To get an understanding how the SMPS works, lets look at the block diagram below.</p>
+
+<p><img src="/img/smps_block.jpg" alt="smps-block" /></p>
+
+<h2 id="stage1-input-filtering">Stage1: Input &amp; Filtering</h2>
+
+<h4 id="input-240vac">Input: 240VAC</h4>
+
+<p>First an AC (240V) enters the RF Filter Circuit. The function of this is to prevent the power supply from causing
+interference on the main wiring.</p>
+
+<h4 id="output-240vac">Output: 240VAC</h4>
+
+<h2 id="stage2-rectification">Stage2: Rectification</h2>
+
+<h4 id="input-240vac-1">Input: 240VAC</h4>
+
+<p>The following stage contains a full bridge recitifier. A rectifier is a set of components [diodes] which converts Alternating Current(AC)
+to Direct Current(DC). However due to the nature of the diodes, the DC component produced here is very uneven. There is a
+provision for a large DC electrolyctic filter capacitor [220 uF, 450V] which helps smoothen the DC to be clean. The output of this stage is a
+high voltage DC which is very lethal.</p>
+
+<h4 id="output-300vdc">Output: 300VDC</h4>
+
+<h2 id="stage3-transformation">Stage3: Transformation</h2>
+
+<h4 id="input-300vdc">Input: 300VDC</h4>
+
+<p>The &lsquo;cleaned&rsquo; DC will then be fed into the startup restistors and also to the input of the SMPT(Switched Mode Transformer). Note that
+the startup resistors have a high ohmic value which then causes a voltage drop which goes to the Vcc supply of the PWM IC. The Run-DC
+circuit consists of a Resistor and a Diode which maintain the power IC stable operation. Once the PWM IC is ON, it shall produce
+a signal to the Power FET transistor and produce a change in the magnetic field in the transformer&rsquo;s primary windings. This change in magnetic
+field produces a voltage in the secondary windings.</p>
+
+<h4 id="output-48vac">Output: ~48VAC</h4>
+
+<h2 id="stage4-ac-recitification-filtration-regulation">Stage4: AC Recitification, Filtration &amp; Regulation</h2>
+
+<h4 id="input-48vac">Input: ~48VAC</h4>
+
+<p>Each of the AC Voltages at the output of the secondary windings of the transformer is then recified, filtered and regulated to produce
+a &lsquo;clean&rsquo; DC Voltage which is available at the output.</p>
+
+<h4 id="output-12vdc">Output: ~12VDC</h4>
+
+<h2 id="stage5-error-sampling-detection-circuit">Stage5: Error Sampling &amp; Detection Circuit</h2>
+
+<h4 id="input-12vdc">Input: ~12VDC</h4>
+
+<p>SMPSs have a feature that sets them apart from the Linear type. A feedback loop system. This samples a part of the output and then checks to ensure
+that its constant. If the output starts to fall the PWM IC will act to correct this. This feature causes SMPS wall chargers to continue working
+even when the mains voltage drops or is unstable.</p>
+
+<h4 id="output-12vdc-1">Output: ~12VDC</h4>
+
+<p>That is a simlple explanation of how a SMPS works. In the next article, I will walk with <a href="https://www.youtube.com/watch?v=cX4q0e124C4">DiodeGoneWild</a>
+in one of his videos abou the SMPS which is going to be very deep and super interesting.</p>
+
+<p>Back to work :-)</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

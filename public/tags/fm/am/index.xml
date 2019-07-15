@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FM/AM on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/fm/am/</link>
+    <description>Recent content in FM/AM on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 08 Jul 2019 20:07:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/fm/am/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ExGNU Radio Project Update</title>
+      <link>https://wilfred.githuka.com/post/exgnu_radio/</link>
+      <pubDate>Mon, 08 Jul 2019 20:07:26 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/exgnu_radio/</guid>
+      <description>The ExGNU Radio project is a skilling-up practical project to improve my soldering skills. Its a simple to complex kind of project which starts out simple and ends up being more complex as I dive deeper.
+For sometime I have had these cheap Chinese-made FM &amp;amp; Tape deck receivers which also happens to have an Memory-Card reader section. The integration of these major sections is so poor that tt keeps breaking down.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Pytudes // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pytudes"/>
+<meta name="twitter:description" content="&ldquo;An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill.&rdquo; &mdash; Wikipedia
+This project contains pytudes&mdash;Python programs for perfecting programming skills.
+Some are in Jupyter (IPython) notebooks, some in .py files. You can view the files here, or clone the project, or run the notebooks online by clicking this button:"/>
+
+    <meta property="og:title" content="Pytudes" />
+<meta property="og:description" content="&ldquo;An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill.&rdquo; &mdash; Wikipedia
+This project contains pytudes&mdash;Python programs for perfecting programming skills.
+Some are in Jupyter (IPython) notebooks, some in .py files. You can view the files here, or clone the project, or run the notebooks online by clicking this button:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/pytudes/" />
+<meta property="article:published_time" content="2017-12-01T14:13:54&#43;03:00"/>
+<meta property="article:modified_time" content="2017-12-01T14:13:54&#43;03:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Pytudes</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 1, 2017
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://wilfred.githuka.com/tags/python/">python</a><a class="tag" href="https://wilfred.githuka.com/tags/programming/">programming</a></div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p><img src="/img/2017/landscape.JPG" alt="image" />
+&ldquo;An <em>étude</em> (a French word meaning <em>study</em>) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill.&rdquo; &mdash; <a href="https://en.wikipedia.org/wiki/%C3%89tude">Wikipedia</a></p>
+
+<p>This project contains <strong>pytudes</strong>&mdash;Python programs for perfecting programming skills.</p>
+
+<p>Some are in Jupyter (IPython) notebooks, some in <code>.py</code> files. You can view the files here, or clone the project, or run the notebooks online by clicking this button: <a href="https://mybinder.org/v2/gh/norvig/pytudes/master"><img src="https://mybinder.org/badge.svg" alt="Binder" /></a></p>
+
+<h1 id="pytudes-index-of-jupyter-ipython-notebooks">pytudes: Index of Jupyter (IPython) Notebooks</h1>
+
+<table>
+<thead>
+<tr>
+<th>Logic and Number Puzzles</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Advent%20of%20Code.ipynb">Advent of Code 2016</a><br><em>Puzzle site with a coding puzzle each day for Advent 2016</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/PropositionalLogic.ipynb">Translating English Sentences into Propositional Logic Statements</a><br><em>Automatically converting informal English sentences into formal Propositional Logic.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Mean%20Misanthrope%20Density.ipynb">The Puzzle of the Misanthropic Neighbors</a><br><em>How crowded will this neighborhood be, if nobody wants to live next door to anyone else?</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Countdown.ipynb">Countdown to 2016</a><br><em>Solving the equation 10 _ 9 _ 8 _ 7 _ 6 _ 5 _ 4 _ 3 _ 2 _ 1 = 2016. From an Alex Bellos puzzle.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Sicherman%20Dice.ipynb">Sicherman Dice</a><br><em>Find a pair of dice that is like a regular pair of dice, only different.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Beal.ipynb">Beal&rsquo;s Conjecture Revisited</a><br><em>A search for counterexamples to Beal&rsquo;s Conjecture</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Cheryl.ipynb">When is Cheryl&rsquo;s Birthday?</a><br><em>Solving the &ldquo;Cheryl&rsquo;s Birthday&rdquo; logic puzzle.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Cheryl-and-Eve.ipynb">When Cheryl Met Eve: A Birthday Story</a><br><em>Inventing new puzzles in the Style of Cheryl&rsquo;s Birthday.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Golomb-Puzzle.ipynb">Sol Golomb&rsquo;s Rectangle Puzzle</a><br><em>A Puzzle involving placing rectangles of different sizes inside a square. Bonus: cryptarithmetic.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/WWW.ipynb">WWW: Will Warriors Win?</a><br><em>Golden State Warriors probability of winning the 2016 NBA title.</em></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Word Games</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Ghost.ipynb">Ghost</a><br><em>The word game Ghost (add letters, try to avoid making a word).</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/pal3.ipynb">World&rsquo;s Longest Palindrome</a><br><em>Searching for a long Panama-style palindrome, this time letter-by-letter.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Scrabble.ipynb">Refactoring a Crossword Game Program</a><br><em>Refactoring the Scrabble / Word with Friends game from Udacity 212.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/xkcd1313.ipynb">xkcd 1313: Regex Golf</a><br><em>Find the smallest regular expression; inspired by Randall Monroe.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/xkcd1313-part2.ipynb">xkcd 1313: Regex Golf (Part 2: Infinite Problems)</a><br><em>Regex Golf: better, faster, funer. With Stefan Pochmann.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Fred%20Buns.ipynb">Let&rsquo;s Code About Bike Locks</a><br><em>A tale of a bicycle combination lock that uses letters instead of digits. Inspired by Bike Snob NYC.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Gesture%20Typing.ipynb">Gesture Typing</a><br><em>What word has the longest path on a gesture-typing smartphone keyboard? Inspired by Nicolas Schank and Shumin Zhai.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/How%20to%20Do%20Things%20with%20Words.ipynb">How to Do Things with Words, or Statistical Natural Language Processing in Python</a><br><em>Spelling Correction, Secret Codes, Word Segmentation, and more: grab your bag of words.</em></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Computer Science Algorithms, Concepts, and Problems</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Sierpinski.ipynb">A Chaos Game with Triangles</a><br><em>A surprising appearance of the Sierpinski triangle in a random walk between vertexes.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/BASIC.ipynb">BASIC Interpreter</a><br><em>How to write an interpreter for the BASIC programming language.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Snobol.ipynb">Bad Grade, Good Experience</a><br><em>As a student, did you ever get a bad grade on a programming assignment? (Snobol, Concordance)</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Life.ipynb">Conway&rsquo;s Game of Life</a><br><em>The cellular automata zero-player game.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Probability.ipynb">A Concrete Introduction to Probability</a><br><em>Code and examples of the basic principles of Probability Theory.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/ProbabilityParadox.ipynb">Probability, Paradox, and the Reasonable Person Principle</a><br><em>Some classic paradoxes in Probability Theory, and how too think about disagreements.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Convex%20Hull.ipynb">The Convex Hull Problem</a><br><em>A classic Computer Science Algorithm.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/TSP.ipynb">The Traveling Salesperson Problem</a><br><em>Another of the classics.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Economics.ipynb">Economics Simulation</a><br><em>A simulation of a simple economic game.</em></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/norvig/pytudes/blob/master/ipynb/Project%20Euler%20Utils.ipynb">Project Euler Utilities</a><br><em>My utility functions for the Project Euler problems, including <code>Primes</code> and <code>Factors</code>.</em></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="pytudes-index-of-python-files">pytudes: Index of Python Files</h1>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>File</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/SET.py">SET.py</a></td>
+<td align="left">Analyze the card game <a href="http://www.setgame.com/set">SET</a>.</td>
+<td><a href="http://norvig.com/SET.html">SET.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/beal.py">beal.py</a></td>
+<td align="left">Search for counterexamples to Beal&rsquo;s Conjecture</td>
+<td><a href="http://norvig.com/beal.html">beal.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/docex.py">docex.py</a></td>
+<td align="left">A framework for running unit tests, similar to <code>doctest</code>.</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/ibol.py">ibol.py</a></td>
+<td align="left">An Exercise in Species Barcoding</td>
+<td><a href="http://norvig.com/ibol.html">ibol.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/lettercount.py">lettercount.py</a></td>
+<td align="left">Convert Google Ngram Counts to Letter Counts</td>
+<td><a href="http://norvig.com/mayzner.html">mayzner.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/lis.py">lis.py</a></td>
+<td align="left">Lisp Interpreter written in Python</td>
+<td><a href="http://norvig.com/lispy.html">lispy.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/lispy.py">lispy.py</a></td>
+<td align="left">Even Better Lisp Interpreter written in Python</td>
+<td><a href="http://norvig.com/lispy2.html">lispy2.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/lispytest.py">lispytest.py</a></td>
+<td align="left">Tests for Lisp Interpreters</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/pal.py">pal.py</a></td>
+<td align="left">Find long palindromes</td>
+<td><a href="http://norvig.com/palindrome.html">palindrome.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/pal2.py">pal2.py</a></td>
+<td align="left">Find longer palindromes</td>
+<td><a href="http://norvig.com/palindrome.html">palindrome.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/pal3.py">pal3.py</a></td>
+<td align="left">Find even longer palindromes</td>
+<td><a href="http://norvig.com/palindrome.html">palindrome.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/py2html.py">py2html.py</a></td>
+<td align="left">Pretty-printer to format Python files as html</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/spell.py">spell.py</a></td>
+<td align="left">Spelling corrector</td>
+<td><a href="http://norvig.com/spell-correct.html">spell-correct.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/sudoku.py">sudoku.py</a></td>
+<td align="left">Program to solve sudoku puzzles</td>
+<td><a href="http://norvig.com/sudoku.html">sudoku.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/testaccum.py">testaccum.py</a></td>
+<td align="left">Tests for my failed Python <code>accumulation display</code> proposal</td>
+<td><a href="http://norvig.com/pyacc.html">pyacc.html</a></td>
+</tr>
+
+<tr>
+<td align="left"><a href="https://github.com/norvig/pytudes/blob/master/py/yaptu.py">yaptu.py</a></td>
+<td align="left">Yet Another Python Templating Utility</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="etudes-for-programmers">Etudes for Programmers</h1>
+
+<p>I got the idea for the &ldquo;etudes&rdquo; part of the name from this <a href="https://books.google.com/books/about/Etudes_for_programmers.html?id=u89WAAAAMAAJ">1978 book by Charles Wetherell</a>
+that was very influential to me when I was learning to program.</p>
+
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/51ZnZH29dvL._SX394_BO1,204,203,200_.jpg" alt="" /></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/programming/</link>
+    <description>Recent content in programming on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Dec 2017 14:13:54 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pytudes</title>
+      <link>https://wilfred.githuka.com/post/pytudes/</link>
+      <pubDate>Fri, 01 Dec 2017 14:13:54 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/pytudes/</guid>
+      <description>&amp;ldquo;An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill.&amp;rdquo; &amp;mdash; Wikipedia
+This project contains pytudes&amp;mdash;Python programs for perfecting programming skills.
+Some are in Jupyter (IPython) notebooks, some in .py files. You can view the files here, or clone the project, or run the notebooks online by clicking this button:</description>
+    </item>
+    
+  </channel>
+</rss>

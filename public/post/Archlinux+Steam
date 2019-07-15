@@ -1,0 +1,13 @@
+---
+title: "Archlinux+Steam Installation - What I Have Learnt"
+date: 2018-04-26T02:05:31Z
+draft: false
+---
+This post details the major precauions that you need to take when installing
+Steam game environment on Archlinux. There are some good sources on info out
+there especially the Arch wiki, which was very helpful but some errors which I encountered seemed somewhat newer that most artiles I have seen. I hope this
+post will serve as a guide for anyone experiencing the similar problems.
+
+What Is Steam?
+
+

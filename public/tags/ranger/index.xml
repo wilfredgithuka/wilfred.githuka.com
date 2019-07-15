@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ranger on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/ranger/</link>
+    <description>Recent content in ranger on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Nov 2017 21:57:34 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/ranger/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running Ranger From Spacemacs</title>
+      <link>https://wilfred.githuka.com/post/ranger-spacemacs-file-manager/</link>
+      <pubDate>Thu, 30 Nov 2017 21:57:34 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ranger-spacemacs-file-manager/</guid>
+      <description>Ranger, developed by Roman Zimbelman is an ncurses based powerful filemanager for UNIX-like systems. Its free relased under GNU GPL Licence. It can do what most GUI file managers can do with less effort. It was first released in 2010 the latest version is of 2017 February. And its written in Python.
+The coolest part is that its 260KB only, how about that :-)
+And yes I know that the photo above has no relation to Ranger, its the Nairobi National Park and I think it looks cool.</description>
+    </item>
+    
+  </channel>
+</rss>

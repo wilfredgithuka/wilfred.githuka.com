@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autonomous-Vehicle on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/categories/autonomous-vehicle/</link>
+    <description>Recent content in Autonomous-Vehicle on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 16 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/categories/autonomous-vehicle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Path Planning in C&#43;&#43; Part 2</title>
+      <link>https://wilfred.githuka.com/post/straight_line_hit/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/straight_line_hit/</guid>
+      <description>I managed to solve the driving-in-a straight line by calculating the trajectory of the vehicle instead of directly feeding the trajectory as I had done earler. This can be seen in the image below.
+But now I have developed another problem such that my vehicle is hitting other cars on the same lane. I thought I would be able to solve this by reducing the value of dist_inc down to 0.</description>
+    </item>
+    
+    <item>
+      <title>Path Planning on C&#43;&#43;</title>
+      <link>https://wilfred.githuka.com/post/straight_line/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/straight_line/</guid>
+      <description>Introduction The path planning project is by far the most interesting project after Behavioral Clonning Project. This project is for Term3 (Last Term) and it is the first project for this term.
+The main objective is to create a path planner that will be able to safely and smoothly create a path for a vehicle to follow along on a 3 lane highway traffic.It should be able to keep inside its lane, avoid hitting other cars and pass slow moving traffic all by using localisation, sensor fusion and map data.</description>
+    </item>
+    
+  </channel>
+</rss>

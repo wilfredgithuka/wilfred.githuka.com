@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines"/>
+<meta name="twitter:description" content="The main objective of this project is to find lane lines in video using basic computer vision. The lines on the road show us where the lanes are and act as a constant reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.In this project I have created a pipeline to detect lane lines in images and videos using Python and OpenCV."/>
+
+    <meta property="og:title" content="Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines" />
+<meta property="og:description" content="The main objective of this project is to find lane lines in video using basic computer vision. The lines on the road show us where the lanes are and act as a constant reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.In this project I have created a pipeline to detect lane lines in images and videos using Python and OpenCV." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/" />
+<meta property="article:published_time" content="2017-07-04T07:51:33&#43;03:00"/>
+<meta property="article:modified_time" content="2017-07-04T07:51:33&#43;03:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 4, 2017
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          6 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://wilfred.githuka.com/tags/udacity/">udacity</a><a class="tag" href="https://wilfred.githuka.com/tags/python/">python</a><a class="tag" href="https://wilfred.githuka.com/tags/canny/">canny</a><a class="tag" href="https://wilfred.githuka.com/tags/opencv/">OpenCV</a><a class="tag" href="https://wilfred.githuka.com/tags/miniconda/">miniconda</a><a class="tag" href="https://wilfred.githuka.com/tags/jupyter/">jupyter</a><a class="tag" href="https://wilfred.githuka.com/tags/numpy/">numpy</a></div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p><img src="/img/udacity/solidWhiteCurveMerged.jpg" alt="Final Image" /></p>
+
+<p>The main objective of this project is to find lane lines in video using basic computer vision. The lines on the road show us where the lanes are and act as a constant reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.In this project I have created a pipeline to detect lane lines in images and videos using Python and OpenCV.</p>
+
+<p>Because this is my first project I will also explain how to set up your computer and the tools required. Be warned that this post might be long, its however worth it.</p>
+
+<h2 id="tools">Tools</h2>
+
+<ul>
+<li>Python3</li>
+<li>OpenCV</li>
+<li>Numpy</li>
+<li>Jupyter Notebook</li>
+</ul>
+
+<p>I have derrived this project from the Udacity&rsquo;s Starters Kit (below). The kit equips you with all you need to get started.</p>
+
+<h2 id="starter-kit">Starter Kit</h2>
+
+<p><a href="http://www.udacity.com/drive"><img src="https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg" alt="Udacity - Self-Driving Car NanoDegree" /></a></p>
+
+<p>The purpose of this project is to provide unified software dependency support for students enrolled in Term 1 of the <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013">Udacity Self-Driving Car Engineer
+Nanodegree</a>.</p>
+
+<p>Python 3 is used for the entirety of term 1.</p>
+
+<p>There are two ways to get up and running:</p>
+
+<h3 id="anaconda-environment-doc-configure-via-anaconda-md"><a href="doc/configure_via_anaconda.md">Anaconda Environment</a></h3>
+
+<p>Get started <a href="doc/configure_via_anaconda.md">here</a>. More info <a href="http://conda.pydata.org/docs/">here</a>.</p>
+
+<p>Supported Sytems: Linux (CPU), Mac (CPU), Windows (CPU)</p>
+
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>More straight-forward to use</td>
+<td>AWS or GPU support is not built in (have to do this yourself)</td>
+</tr>
+
+<tr>
+<td>More community support</td>
+<td>Implementation is local and OS specific</td>
+</tr>
+
+<tr>
+<td>More heavily adopted</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="objectives">Objectives</h2>
+
+<ul>
+<li>Setup python development environment with Miniconda and Jupyter Notebook</li>
+<li>Understand Canny Edge Detector and Hugh Transform</li>
+<li>Understand Numpy and OpenCV</li>
+</ul>
+
+<h3 id="installing-and-configuring-miniconda-conda">Installing and Configuring Miniconda(Conda)</h3>
+
+<p>Conda is an open source package management system and environment management system that runs on Windows, macOS and Linux. Conda quickly installs, runs and updates
+packages and their dependencies. Conda easily creates, saves, loads and switches between environments on your local computer. It was created for Python programs, but it
+can package and distribute software for any language.</p>
+
+<p>Download and install miniconda then go to downloads directory on your computer and run this script</p>
+
+<pre><code class="language-bash">miniconda3-latest-Linux-x86_64.sh
+</code></pre>
+
+<h4 id="create-environment">Create Environment</h4>
+
+<p>This is the environment where we will be working from.</p>
+
+<pre><code class="language-bash">conda create -n lanedetection
+</code></pre>
+
+<p>Now lets activate our conda environment</p>
+
+<pre><code class="language-bash">source activate lanedetection
+</code></pre>
+
+<p>After finishing your project detactivate it using this command. Well don&rsquo;t deactivate it now until we are done.(But you can try if you want)</p>
+
+<pre><code class="language-bash">source deativate lanedetection
+</code></pre>
+
+<h4 id="configure-your-new-environment">Configure Your New Environment</h4>
+
+<p>Now while inside the environment, your prompt should look like the following:</p>
+
+<pre><code class="language-bash">(lanedetection)[wilfred@githuka]
+</code></pre>
+
+<p>Good, now lets proceed to install the required packages</p>
+
+<pre><code class="language-bash">conda install -c https://conda.anaconda.org lmenpo opencv3
+</code></pre>
+
+<p>This will install 29 packages 6,604 files(16.4MB) so be patient, also install the folowing:</p>
+
+<pre><code class="language-bash">conda install -c asmevrer pango
+</code></pre>
+
+<p>Then run &hellip;</p>
+
+<pre><code class="language-bash">pip install jupyter mousepy matplotlib
+</code></pre>
+
+<p>If you encounter and error, make sure that your linux has the folowing packages installed. Deactivate your conda environment and install them</p>
+
+<pre><code class="language-bash">sudo pacman -S libselinux libpng12
+</code></pre>
+
+<p>Finally to start the project, start the Jupyter Notebook</p>
+
+<pre><code class="language-bash">(lanedetection)[wilfred@githuka] jupyter notebook
+</code></pre>
+
+<h2 id="pipeline">Pipeline</h2>
+
+<p>In a summary the following will be our pipeline:</p>
+
+<ul>
+<li>Import Initial Images</li>
+<li>Create Helper Functions</li>
+<li>Load Test Images</li>
+<li>Convert Images to Grayscale</li>
+<li>Apply Gaussian Smoothing</li>
+<li>Apply Canny Transform</li>
+<li>Apply Region of interest</li>
+<li>Apply Hough Transform</li>
+<li>Merge Original Image with Lines</li>
+<li>Video Test</li>
+</ul>
+
+<p><img src="/img/udacity/solidWhiteCurveMerged.jpg" alt="Final Image" />
+This is the final image that we hope to accomplish at the end of this project.</p>
+
+<h2 id="approach">Approach</h2>
+
+<h3 id="grayscale">Grayscale</h3>
+
+<p>The first step to working with our images is to convert them to grayscale. This is very importanant especially since we will be using Canny Edge Detector of OpenCV. What we are basically doing is collapsing the 3 channels of RGB into a singe channel with a pixel range of [0,255] using this code:</p>
+
+<pre><code class="language-python">gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+</code></pre>
+
+<p><img src="/img/udacity/solidWhiteCurveGray.jpg" alt="Final Image" /></p>
+
+<h3 id="solving-the-yellow-white-lane-markings-problem">Solving the Yellow~White Lane Markings Problem.</h3>
+
+<p>Before diving straight into the Canny Edge Detector, I have realised that Yellow and White in grayscale are almost similar. Infact when you look at the above images, its certainly difficult to know which is white or yellow line. So we will convert it onto a HSV (Hue Value Saturation) HSV is the tech that enabled monochrome tvs to be able to receive colour signals. We will then apply a mask to the RGB image and return the pixels that we want.</p>
+
+<pre><code class="language-python">lower_yellow = np.array([20, 100, 100], dtype = “uint8”)
+upper_yellow = np.array([30, 255, 255], dtype=”uint8&quot;)
+mask_yellow = cv2.inRange(img_hsv, lower_yellow, upper_yellow)
+mask_white = cv2.inRange(gray_image, 200, 255)
+mask_yw = cv2.bitwise_or(mask_white, mask_yellow)
+mask_yw_image = cv2.bitwise_and(gray_image, mask_yw)
+</code></pre>
+
+<p>We will apply a quick gaussian_blur to help us later in our Canny Edge Detector works.</p>
+
+<pre><code class="language-python">kernel_size = 5
+gauss_gray = gaussian_blur(mask_yw_image,kernel_size)
+</code></pre>
+
+<p>So far so good :-)</p>
+
+<h3 id="a-small-distraction">A Small Distraction</h3>
+
+<p>If you are fascinated by gray_image in openCV like me, here is a small python program that used openCV to apply graysc1aling to an image.</p>
+
+<pre><code class="language-python">import cv2
+image = cv2.imread('sampleimage.png')
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.imwrite ('gray_image.png', gray_image)
+cv2.imshow ('gray_image', gray_image)
+cv2.waitKey (0)
+cv2.destroyAllWindows()
+</code></pre>
+
+<h2 id="canny-edge-detection">Canny Edge Detection</h2>
+
+<p>Simply put the Canny edge detector is an edge detection operator that uses a multi-stage algorithm to detect a wide range of edges in images. It was developed by John F. Canny in 1986. Canny also produced a computational theory of edge detection explaining why the technique works.
+John Canny himself recommended a low to high threshold ratio of 1:2 or 1:3 for our canny as it computes.</p>
+
+<pre><code class="language-python">low_threshold = 50
+    high_threshold = 150
+    canny_edges = canny(gauss_gray,low_threshold,high_threshold)
+</code></pre>
+
+<p><img src="/img/udacity/solidWhiteCurveCanny.jpg" alt="Final Image" />
+Image output with a Canny Edge Detector applied.</p>
+
+<h2 id="region-of-interest">Region of Interest</h2>
+
+<p>The region of interest is where te car will be focussing on. The last thing we want is for our car&rsquo;s attention to be distracted by every thing in the horizon. Everything outside the ROI will be blacked out to zero. Here is the snipet of code that does all the heavylifting&hellip;</p>
+
+<pre><code class="language-python">def maskAction(img):
+    ysize = img.shape[0]
+    xsize = img.shape[1]
+    region = np.array([ [0, ysize], [xsize/2,(ysize/2)+ 10], [xsize,ysize] ], np.int32)
+    return region_of_interest(img, [region])
+
+testImagesMasked = doSaveAndDisplay(testImagesCanny, 'test_images_region', testImageNames, maskAction)
+</code></pre>
+
+<p><img src="/img/udacity/solidWhiteCurveRegion.jpg" alt="Final Image" />
+Image output with a ROI defined. This is what the car will concentrate on.</p>
+
+<h2 id="hough-transform">Hough Transform</h2>
+
+<p>The Hough transform is a technique which can be used to isolate features of a particular shape within an image.Hough transform is most commonly used for the detection of regular curves such as lines, circles, ellipses, etc.</p>
+
+<p>The big take away is that in XY space lines are lines and points are points, but in Hough space lines correspond to points in XY space and points correspond to lines in XY space. This is what our pipeline will look like:</p>
+
+<ul>
+<li>Pixels are considered points in XY space.</li>
+<li><code>python hough_lines()</code> transforms these points into lines inside of Hough space.</li>
+<li>Wherever these lines intersect, there is a point of intersection in Hough space.</li>
+<li>The point of intersection corresponds to a line in XY space. Thanks @galen.ballew</li>
+</ul>
+
+<p><img src="/img/udacity/solidWhiteCurveHough.jpg" alt="Final Image" />
+Image output with Hough Transform applied</p>
+
+<h2 id="merging-original-image-with-lines">Merging Original Image with Lines</h2>
+
+<p>Now we plug in our original image with the Lines, this is what I got&hellip;</p>
+
+<p><img src="/img/udacity/solidWhiteCurveMerged.jpg" alt="Final Image" />
+Nice :-)</p>
+
+<h2 id="how-about-video">How about Video?</h2>
+
+<p>We can also try it out on video, have a look below..</p>
+
+<h3 id="original-video">Original Video</h3>
+
+<p><a href="https://youtu.be/3WvcvB6xS9I">https://youtu.be/3WvcvB6xS9I</a></p>
+
+<h3 id="processed-video">Processed Video</h3>
+
+<p><a href="https://youtu.be/1AXc-F-idEU">https://youtu.be/1AXc-F-idEU</a></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This project has actually introduced me into the deeper powers of python and computer vision. I still have an urge to use my own local images in this project. Thats for next time.</p>
+
+<p>All the files for this project can be found in the <a href="https://github.com/wilfredgithuka/usdcnd-project1-lane-detection">repo</a></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

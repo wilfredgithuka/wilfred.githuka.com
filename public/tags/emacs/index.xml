@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/emacs/</link>
+    <description>Recent content in emacs on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Nov 2017 21:57:34 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running Ranger From Spacemacs</title>
+      <link>https://wilfred.githuka.com/post/ranger-spacemacs-file-manager/</link>
+      <pubDate>Thu, 30 Nov 2017 21:57:34 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ranger-spacemacs-file-manager/</guid>
+      <description>Ranger, developed by Roman Zimbelman is an ncurses based powerful filemanager for UNIX-like systems. Its free relased under GNU GPL Licence. It can do what most GUI file managers can do with less effort. It was first released in 2010 the latest version is of 2017 February. And its written in Python.
+The coolest part is that its 260KB only, how about that :-)
+And yes I know that the photo above has no relation to Ranger, its the Nairobi National Park and I think it looks cool.</description>
+    </item>
+    
+    <item>
+      <title>Selectric Layer on Spacemacs</title>
+      <link>https://wilfred.githuka.com/post/selectric-layer-on-spacemacs/</link>
+      <pubDate>Thu, 16 Nov 2017 22:24:35 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/selectric-layer-on-spacemacs/</guid>
+      <description>The IBM Selectric typewriter a machine that was as a result of &amp;ldquo;Seven years of research&amp;rdquo; was one of the best machines ever sold back in 1961. The Selectric was so popular that it captured 75% of the american market. It was only replaced by the electronic one which IBM later made.
+The great sound of this machine can be relived in spacemacs through a cool layer that was developed by Sylvain Benner.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Spacemacs</title>
+      <link>https://wilfred.githuka.com/post/emacs/</link>
+      <pubDate>Fri, 03 Nov 2017 20:32:05 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/emacs/</guid>
+      <description>Ever since I went deep into Linux in 2015, I have heard of emacs being mentioned as the holy grail of Linux text editing. I must admit but it looked messy and had to grasp.
+Early this year I came accross Spacemacs and it looked interesting but just like emacs I gave it a glance and planned to give it more time.
+A month ago I saw my pal Raymond navigate his Linux box effortlessly using a similar software appearance quicly editing and opening files in what seemed like a spectactular fun.</description>
+    </item>
+    
+  </channel>
+</rss>

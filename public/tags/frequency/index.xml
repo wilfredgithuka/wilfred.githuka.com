@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>frequency on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/frequency/</link>
+    <description>Recent content in frequency on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Mar 2018 12:33:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/frequency/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>External Operation [EXT] of a Mitsubishi D700 VFD to Control a 3phase Motor</title>
+      <link>https://wilfred.githuka.com/post/external-operation-of-a-3phase-motor-using-mitsubishi-d700-vfd/</link>
+      <pubDate>Thu, 01 Mar 2018 12:33:40 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/external-operation-of-a-3phase-motor-using-mitsubishi-d700-vfd/</guid>
+      <description>External Operation of a 3phase Motor Using Mitsubishi D700 Inverter The Mitsubishi D700 Inverter is a very handy variable frequency drive for the electrical engineer. This model, though discontinued has been used in a variety of connections for different types of loads. In today’s experiment, I want to show you how to control a small 3phase motor using the D700 to make the motor run in 3 different speeds, and change direction.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Setting Up A Linode VPS Virtual Private Server // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="How to set up a Linode VPS and paying via Airtel Visa Card" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting Up A Linode VPS Virtual Private Server"/>
+<meta name="twitter:description" content="How to set up a Linode VPS and paying via Airtel Visa Card"/>
+
+    <meta property="og:title" content="Setting Up A Linode VPS Virtual Private Server" />
+<meta property="og:description" content="How to set up a Linode VPS and paying via Airtel Visa Card" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/my-linode-vps/" />
+<meta property="article:published_time" content="2017-06-28T13:56:37&#43;00:00"/>
+<meta property="article:modified_time" content="2017-06-28T13:56:37&#43;00:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Setting Up A Linode VPS Virtual Private Server</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jun 28, 2017
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p><img src="/img/server/linode.png" alt="image" /></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Finally after fiddling up with some settings, my Linode VPS is running perfectly. Before
+going deeper let me explain what is a VPS. A VPS is a Virtual Private Server that
+is esentially a computer in a dfferent location where you can install programs while having
+access to it via SSH or other protocols. A VPS (Virtual Private Server) is utilised by businesses
+looking for a secure method of hosting their websites. A VPS works in the same way a dedicated server
+does but without the high costs and are easier to configure to an individual business’s needs. You are
+still responsible for maintaining the server but it also means you can enjoy higher site traffic without
+worrying about things breaking. It allows more tweaking than your regular shared hosting.</p>
+
+<h1 id="pricing-and-running-costs">Pricing and Running Costs</h1>
+
+<p>My VPS is a Linode 1024. This comes with:</p>
+
+<ul>
+<li>1GB RAM</li>
+<li>1 CPU Core</li>
+<li>20GB HDD</li>
+<li>1TB Transfer</li>
+</ul>
+
+<p>Monthly costs are USD 5 which is around KES 500 per month. This translates to KES 6,000 per
+year.</p>
+
+<h1 id="payment-methods">Payment Methods</h1>
+
+<p>In Kenya not many banks support internet transactions and if they are, the costs are quite high.
+There was the <a href="http://nationhela.com/">Nation Hela</a> Card which is good but its going to be shudown,
+Then came the <a href="http://www.nakumattglobal.com/">Nakumatt Card</a> which promised good online payement
+service but that too is unavailable. Both of there cards are supported by <a href="https://dtbk.dtbafrica.com/">DTB Bank Kenya</a>.
+The Airtel Money card looks promising and thats what I use.</p>
+
+<p>The <a href="http://africa.airtel.com/wps/wcm/connect/africarevamp/kenya/airtelmoney_old/offers/airtel-money-visa-card">Airtel Money VISA</a> card is an Airtel Money product powered by VISA and Chase bank. The Airtel Money
+debit card allows customers to:</p>
+
+<ul>
+<li>Withdrawal Airtel Money at any local VISA or Kenswitch ATM</li>
+<li>Withdrawal Airtel Money at any international VISA ATM</li>
+<li>Shop or make payments at any VISA accepting merchants worldwide</li>
+<li>Pay for Linode :-)</li>
+</ul>
+
+<p>With the Airtel Money VISA card, its tied to your Airtel Money acount. To top us just deposit money
+into your Airtel Money account and it will reflect on your card amount. With this you can add to
+your Paypal cards etc.</p>
+
+<p>When paying for Linode VPS or any other VPSs they renew automatically. This means you need to have
+at least KES 500 in your card per month which will be deducted automagically.</p>
+
+<h1 id="seting-up-a-linode-vps">Seting up a Linode VPS</h1>
+
+<p>This is probably the easiest VPS to set up. Just got o Linode.com, create am account and follow the simple
+instructions how to pay for the VPS.</p>
+
+<p>You can install most Linux distro&rsquo;s avalable with my best Archlinux at the top of the list.</p>
+
+<p>And there you have it, your own server to tweak, hack, kill etc and learn alot of sysadmin stuff. I will
+write more posts on how I use my Linode VPS</p>
+
+<p>-circuit open-</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

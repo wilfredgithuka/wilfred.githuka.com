@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8051 on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/8051/</link>
+    <description>Recent content in 8051 on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 26 Jan 2018 18:18:35 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/8051/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Encounter With The STC Microcontrollers</title>
+      <link>https://wilfred.githuka.com/post/stc-microcontrollers/</link>
+      <pubDate>Fri, 26 Jan 2018 18:18:35 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/stc-microcontrollers/</guid>
+      <description>The first time I held an STC microcontroller was today morning when we were preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&amp;rsquo;s lecturers students back in China.</description>
+    </item>
+    
+  </channel>
+</rss>

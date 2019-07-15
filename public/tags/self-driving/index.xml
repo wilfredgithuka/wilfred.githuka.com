@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>self-driving on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/self-driving/</link>
+    <description>Recent content in self-driving on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/self-driving/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting Up A Local Deep Learnning Environment NVIDIA GPU&#43;Tensorflow&#43;Keras&#43;CuDNN&#43;CUDA in Archlinux</title>
+      <link>https://wilfred.githuka.com/post/local_gpu_setup/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/local_gpu_setup/</guid>
+      <description>Dont get me wrong, am not against cloud based GPU&amp;rsquo;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
+Machine Specs First let me list my hardware specs so that we can have a benchark as we go forth.</description>
+    </item>
+    
+    <item>
+      <title>IOU in Tensor Flow vs Manual Calculation</title>
+      <link>https://wilfred.githuka.com/post/tensor-flow-iou/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/tensor-flow-iou/</guid>
+      <description>IoU is an acronym for Interestion over Union, a type of semantic segemtation used in the identification of objects. This is a very important tool for autonomous vehicles to not only identify objects, but also to recognise them apart from other objects.
+Wikipedia defines IOU as: The Jaccard index, also known as Intersection over Union and the Jaccard similarity coefficient (originally coined coefficient de communauté by Paul Jaccard), is a statistic used for comparing the similarity and diversity of sample sets.</description>
+    </item>
+    
+    <item>
+      <title>This Week in Autonomous Vehicles Spetember 10th Edition</title>
+      <link>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-spetember-10th-edition/</link>
+      <pubDate>Mon, 11 Sep 2017 08:59:22 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-spetember-10th-edition/</guid>
+      <description>This past week has had quite some significant developments in the autonomous car industry. The big companies are still leading the pack though some have decided to cut back in developments. Seizing this opportunity, small startups are rising by launching market ready self driving cars promising to make them ready by 2020.
+Top Headlines  Lyft and Drive.ai will be offering free rides in Self Driving cars in the Bay Area with Safety Drivers - David Silver Whats Driving The Connected Car?</description>
+    </item>
+    
+    <item>
+      <title>RC Self Driving Car Update</title>
+      <link>https://wilfred.githuka.com/post/rc-self-driving-car-update/</link>
+      <pubDate>Thu, 03 Aug 2017 08:49:53 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/rc-self-driving-car-update/</guid>
+      <description>Of late I have been busy making the car since my last update. If you do not undertsand what this project is aout, please check the last update and check out my medium page where I give regular updates. Its so easy to blog on medium.
+In summary the following have happened since April
+ Learned alot about Self Driving Cars from Udacity Bricked a Raspberry Pi Model 3 Bought and destroyed an RC Car Coded alot in Python Eploded a LiPo battery  One of my main challenges with the RC Self Driving car was power.</description>
+    </item>
+    
+  </channel>
+</rss>

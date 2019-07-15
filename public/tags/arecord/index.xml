@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arecord on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/arecord/</link>
+    <description>Recent content in arecord on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 12 Dec 2017 10:52:04 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/arecord/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuring Marantz Pro MPM 1000U in Linux</title>
+      <link>https://wilfred.githuka.com/post/configuring-marantz-pro-mpm-1000u-in-linux/</link>
+      <pubDate>Tue, 12 Dec 2017 10:52:04 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/configuring-marantz-pro-mpm-1000u-in-linux/</guid>
+      <description>The Marantz Pro MPM-1000U is a USB condenser mic for DAW recording or podcasting. It comes in as an entry level mic.It comes with a USB connection which was one of the feature that I wanted. This mic is designed to work on any PC with a descent USB interface and a software like Audacity.
+While thats good, I wanted to try out recording on termial and this is how far I have come in doing so.</description>
+    </item>
+    
+  </channel>
+</rss>

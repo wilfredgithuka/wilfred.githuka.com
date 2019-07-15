@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pi on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/pi/</link>
+    <description>Recent content in pi on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 01 Jul 2018 13:03:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RaspberryPi Arduino UNO Serial Port Connection</title>
+      <link>https://wilfred.githuka.com/post/pi-uno-serial2/</link>
+      <pubDate>Sun, 01 Jul 2018 13:03:06 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/pi-uno-serial2/</guid>
+      <description>Our Self Driving Model Car uses a RaspberryPi and Arduino for power and control. These two powerful and functional devices must have smooth communication else our car will have control problems thereafter. In our previous car model we used a RaspberryPi only but now we have an Arduini UNO which will be used to control the wheels.
+Student1: What is the RaspberryPi and Arduino?
+The RaspberryPi is a single board, credit card sized computer that runs minimal software and can be used in very many areas.</description>
+    </item>
+    
+    <item>
+      <title>RaspberryPi-Arduino UNO Serial Port Connection in C/C&#43;&#43;</title>
+      <link>https://wilfred.githuka.com/post/pi-uno-serial/</link>
+      <pubDate>Sun, 01 Jul 2018 13:03:06 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/pi-uno-serial/</guid>
+      <description>Our Self Driving Model Car uses a RaspberryPi and Arduino for power and control. These two powerful and functional devices must have smooth communication else our car will have control problems thereafter. In our previous car model we used a RaspberryPi only but now we have an Arduini UNO which will be used to control the wheels.
+Student1: What is the RaspberryPi and Arduino? The RaspberryPi is a single board, credit card sized computer that runs minimal software and can be used in very many areas.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/post/</link>
+    <description>Recent content in Posts on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 08 Jul 2019 20:07:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ExGNU Radio Project Update</title>
+      <link>https://wilfred.githuka.com/post/exgnu_radio/</link>
+      <pubDate>Mon, 08 Jul 2019 20:07:26 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/exgnu_radio/</guid>
+      <description>The ExGNU Radio project is a skilling-up practical project to improve my soldering skills. Its a simple to complex kind of project which starts out simple and ends up being more complex as I dive deeper.
+For sometime I have had these cheap Chinese-made FM &amp;amp; Tape deck receivers which also happens to have an Memory-Card reader section. The integration of these major sections is so poor that tt keeps breaking down.</description>
+    </item>
+    
+    <item>
+      <title>Switch Mode Power Supplies Online Resources</title>
+      <link>https://wilfred.githuka.com/post/smps_resources/</link>
+      <pubDate>Mon, 24 Jun 2019 08:28:53 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/smps_resources/</guid>
+      <description>This is a curated list of internet resorces that I think are really useful when it comes to matters relating Switch Mode Power Supplies and low level electronics.
+Websites  DiodeGoneWild - Youtube Channel TroubleShooting and Reparing SMPS Ken Shirrif&amp;rsquo;s Blog TubeTimeUS EvilMadScientist  Books &amp;amp; Manuals  TroubleShooting and Reparing SMPS Switchmode Power Supply Handbook  Back to work :-)</description>
+    </item>
+    
+    <item>
+      <title>SMPS Basic Principle Of Operation</title>
+      <link>https://wilfred.githuka.com/post/smps_basic_principal_of_operation/</link>
+      <pubDate>Tue, 28 May 2019 08:58:44 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/smps_basic_principal_of_operation/</guid>
+      <description>A Switched Mode Power supply is one of the most efficient ways to step down AC to DC which can be used by domestic appliances like mobile chargers, laptops and pcs. Its an advancement from liner power supplies and this technology has seen wall chargers get smaller and more efficient.
+In the most simple definition, an smps is a type of power supply that uses semi-conductor devices&amp;rsquo; switching techniques rather than the standard linear methods to provide a stable reliable and safe output voltage.</description>
+    </item>
+    
+    <item>
+      <title>The Longonot Earth Station</title>
+      <link>https://wilfred.githuka.com/post/longonot/</link>
+      <pubDate>Sun, 26 May 2019 19:27:46 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/longonot/</guid>
+      <description>Located right at the floor of the Rift Valley is one less talked about sites in Kenya. Infact many trekkers of Mt.Longonot will briefly mention it or perhaps see it in the distance, not giving it much thought either.
+The station is located South of Mt. Longonot which is 60kms from the capital, Nairobi.
+The Longonot Earth Station is a specialised terrestrial terminal used to communicate with satellites in space.</description>
+    </item>
+    
+    <item>
+      <title>Zesta2 Switched Mode Power Supply Project</title>
+      <link>https://wilfred.githuka.com/post/zesta2smps/</link>
+      <pubDate>Wed, 15 May 2019 08:14:10 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/zesta2smps/</guid>
+      <description>Introduction zesta2 is improvement of the first zesta project. This will be a complete make-from-scratch laptop power supply module. The zesta project which I currently use works well but due to the parts not made by me, there is so much constraints that I am facing.
+The result is just to make my own power supply/laptop charger from scratch. I will be in control of the specs and most important, the design.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up A Local Deep Learnning Environment NVIDIA GPU&#43;Tensorflow&#43;Keras&#43;CuDNN&#43;CUDA in Archlinux</title>
+      <link>https://wilfred.githuka.com/post/local_gpu_setup/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/local_gpu_setup/</guid>
+      <description>Dont get me wrong, am not against cloud based GPU&amp;rsquo;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
+Machine Specs First let me list my hardware specs so that we can have a benchark as we go forth.</description>
+    </item>
+    
+    <item>
+      <title>IOU in Tensor Flow vs Manual Calculation</title>
+      <link>https://wilfred.githuka.com/post/tensor-flow-iou/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/tensor-flow-iou/</guid>
+      <description>IoU is an acronym for Interestion over Union, a type of semantic segemtation used in the identification of objects. This is a very important tool for autonomous vehicles to not only identify objects, but also to recognise them apart from other objects.
+Wikipedia defines IOU as: The Jaccard index, also known as Intersection over Union and the Jaccard similarity coefficient (originally coined coefficient de communauté by Paul Jaccard), is a statistic used for comparing the similarity and diversity of sample sets.</description>
+    </item>
+    
+    <item>
+      <title>How to Enable Nerdy Stats in Euro Truck Simulator</title>
+      <link>https://wilfred.githuka.com/post/ets2_nerdy_stats/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ets2_nerdy_stats/</guid>
+      <description>The developer console is not just a powerful tool to gain immediate access to certain game variables and commands for power users, mappers, modders and so on. It&amp;rsquo;s also something your average user might want to have enabled for reporting bugs, taking screenshots (though the new photo edit mode is good for that as well) and for mod users who want to see if that new mod he installed has any issues.</description>
+    </item>
+    
+    <item>
+      <title>Path Planning in C&#43;&#43; Part 2</title>
+      <link>https://wilfred.githuka.com/post/straight_line_hit/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/straight_line_hit/</guid>
+      <description>I managed to solve the driving-in-a straight line by calculating the trajectory of the vehicle instead of directly feeding the trajectory as I had done earler. This can be seen in the image below.
+But now I have developed another problem such that my vehicle is hitting other cars on the same lane. I thought I would be able to solve this by reducing the value of dist_inc down to 0.</description>
+    </item>
+    
+    <item>
+      <title>Path Planning on C&#43;&#43;</title>
+      <link>https://wilfred.githuka.com/post/straight_line/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/straight_line/</guid>
+      <description>Introduction The path planning project is by far the most interesting project after Behavioral Clonning Project. This project is for Term3 (Last Term) and it is the first project for this term.
+The main objective is to create a path planner that will be able to safely and smoothly create a path for a vehicle to follow along on a 3 lane highway traffic.It should be able to keep inside its lane, avoid hitting other cars and pass slow moving traffic all by using localisation, sensor fusion and map data.</description>
+    </item>
+    
+    <item>
+      <title>RaspberryPi Arduino UNO Serial Port Connection</title>
+      <link>https://wilfred.githuka.com/post/pi-uno-serial2/</link>
+      <pubDate>Sun, 01 Jul 2018 13:03:06 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/pi-uno-serial2/</guid>
+      <description>Our Self Driving Model Car uses a RaspberryPi and Arduino for power and control. These two powerful and functional devices must have smooth communication else our car will have control problems thereafter. In our previous car model we used a RaspberryPi only but now we have an Arduini UNO which will be used to control the wheels.
+Student1: What is the RaspberryPi and Arduino?
+The RaspberryPi is a single board, credit card sized computer that runs minimal software and can be used in very many areas.</description>
+    </item>
+    
+    <item>
+      <title>RaspberryPi-Arduino UNO Serial Port Connection in C/C&#43;&#43;</title>
+      <link>https://wilfred.githuka.com/post/pi-uno-serial/</link>
+      <pubDate>Sun, 01 Jul 2018 13:03:06 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/pi-uno-serial/</guid>
+      <description>Our Self Driving Model Car uses a RaspberryPi and Arduino for power and control. These two powerful and functional devices must have smooth communication else our car will have control problems thereafter. In our previous car model we used a RaspberryPi only but now we have an Arduini UNO which will be used to control the wheels.
+Student1: What is the RaspberryPi and Arduino? The RaspberryPi is a single board, credit card sized computer that runs minimal software and can be used in very many areas.</description>
+    </item>
+    
+    <item>
+      <title>Accessing Google Drive From Terminal</title>
+      <link>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</link>
+      <pubDate>Sat, 19 May 2018 21:25:31 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</guid>
+      <description>Google Drive is a good way to backup your data. In Windows this can be accomplished simply by having a Google account and drag-dropping stuff into it. From a CLI - Command Line Interface a different approach is used which I will explain in this article.
+My distro is [Archlinux]() so this tutorial is based on the same.
+Tools  rclone gdrive  rclone rclone is written in Google&amp;rsquo;s Go Language and it a powerful tool that can be used to access your Google Drive neatly from the terminal.</description>
+    </item>
+    
+    <item>
+      <title>Greetings From Voi</title>
+      <link>https://wilfred.githuka.com/post/greetings-from-voi/</link>
+      <pubDate>Mon, 02 Apr 2018 02:39:11 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/greetings-from-voi/</guid>
+      <description>I have been in Voi town for over a week now and I believe its wise to jot down a post about this relatively remote town along the Nairobi-Mombasa Highway. Am down here on assignment with AVIC Kenya at Coast Institute of Technology where we are conducting a training for various TVET teachers in a Mechatronic Engineering course which is being offered in Chinese by Chinese teachers. This training has been running for the last 3 months so am just here for the last 1 month or so as an interpreter for Chinese&amp;ndash;English and vice versa.</description>
+    </item>
+    
+    <item>
+      <title>External Operation [EXT] of a Mitsubishi D700 VFD to Control a 3phase Motor</title>
+      <link>https://wilfred.githuka.com/post/external-operation-of-a-3phase-motor-using-mitsubishi-d700-vfd/</link>
+      <pubDate>Thu, 01 Mar 2018 12:33:40 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/external-operation-of-a-3phase-motor-using-mitsubishi-d700-vfd/</guid>
+      <description>External Operation of a 3phase Motor Using Mitsubishi D700 Inverter The Mitsubishi D700 Inverter is a very handy variable frequency drive for the electrical engineer. This model, though discontinued has been used in a variety of connections for different types of loads. In today’s experiment, I want to show you how to control a small 3phase motor using the D700 to make the motor run in 3 different speeds, and change direction.</description>
+    </item>
+    
+    <item>
+      <title>My Encounter With The STC Microcontrollers</title>
+      <link>https://wilfred.githuka.com/post/stc-microcontrollers/</link>
+      <pubDate>Fri, 26 Jan 2018 18:18:35 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/stc-microcontrollers/</guid>
+      <description>The first time I held an STC microcontroller was today morning when we were preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&amp;rsquo;s lecturers students back in China.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Marantz Pro MPM 1000U in Linux</title>
+      <link>https://wilfred.githuka.com/post/configuring-marantz-pro-mpm-1000u-in-linux/</link>
+      <pubDate>Tue, 12 Dec 2017 10:52:04 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/configuring-marantz-pro-mpm-1000u-in-linux/</guid>
+      <description>The Marantz Pro MPM-1000U is a USB condenser mic for DAW recording or podcasting. It comes in as an entry level mic.It comes with a USB connection which was one of the feature that I wanted. This mic is designed to work on any PC with a descent USB interface and a software like Audacity.
+While thats good, I wanted to try out recording on termial and this is how far I have come in doing so.</description>
+    </item>
+    
+    <item>
+      <title>Nairobi Linux User Group December 02 2017 Meetup</title>
+      <link>https://wilfred.githuka.com/post/nailug-december-2nd-meetup/</link>
+      <pubDate>Sat, 02 Dec 2017 22:27:08 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/nailug-december-2nd-meetup/</guid>
+      <description>Today was the last meetup of Nailug - Nairobi Linux User Group. As usual for the past few months, the meetup was held at Ona who have continued to support us bu giving us a space to hold our meetups. Today&amp;rsquo;s talk was about HTTP/2 which was presented by Kenneth Gitere from Ona. The topic was - HTTP/2 to be or not to be.
+Nailug, also written as NaiLug is a not-for-profit community dedicated to GNU/Linux, Free Software, Open Source and related topics.</description>
+    </item>
+    
+    <item>
+      <title>Pytudes</title>
+      <link>https://wilfred.githuka.com/post/pytudes/</link>
+      <pubDate>Fri, 01 Dec 2017 14:13:54 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/pytudes/</guid>
+      <description>&amp;ldquo;An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill.&amp;rdquo; &amp;mdash; Wikipedia
+This project contains pytudes&amp;mdash;Python programs for perfecting programming skills.
+Some are in Jupyter (IPython) notebooks, some in .py files. You can view the files here, or clone the project, or run the notebooks online by clicking this button:</description>
+    </item>
+    
+    <item>
+      <title>Running Ranger From Spacemacs</title>
+      <link>https://wilfred.githuka.com/post/ranger-spacemacs-file-manager/</link>
+      <pubDate>Thu, 30 Nov 2017 21:57:34 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ranger-spacemacs-file-manager/</guid>
+      <description>Ranger, developed by Roman Zimbelman is an ncurses based powerful filemanager for UNIX-like systems. Its free relased under GNU GPL Licence. It can do what most GUI file managers can do with less effort. It was first released in 2010 the latest version is of 2017 February. And its written in Python.
+The coolest part is that its 260KB only, how about that :-)
+And yes I know that the photo above has no relation to Ranger, its the Nairobi National Park and I think it looks cool.</description>
+    </item>
+    
+    <item>
+      <title>Selectric Layer on Spacemacs</title>
+      <link>https://wilfred.githuka.com/post/selectric-layer-on-spacemacs/</link>
+      <pubDate>Thu, 16 Nov 2017 22:24:35 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/selectric-layer-on-spacemacs/</guid>
+      <description>The IBM Selectric typewriter a machine that was as a result of &amp;ldquo;Seven years of research&amp;rdquo; was one of the best machines ever sold back in 1961. The Selectric was so popular that it captured 75% of the american market. It was only replaced by the electronic one which IBM later made.
+The great sound of this machine can be relived in spacemacs through a cool layer that was developed by Sylvain Benner.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Spacemacs</title>
+      <link>https://wilfred.githuka.com/post/emacs/</link>
+      <pubDate>Fri, 03 Nov 2017 20:32:05 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/emacs/</guid>
+      <description>Ever since I went deep into Linux in 2015, I have heard of emacs being mentioned as the holy grail of Linux text editing. I must admit but it looked messy and had to grasp.
+Early this year I came accross Spacemacs and it looked interesting but just like emacs I gave it a glance and planned to give it more time.
+A month ago I saw my pal Raymond navigate his Linux box effortlessly using a similar software appearance quicly editing and opening files in what seemed like a spectactular fun.</description>
+    </item>
+    
+    <item>
+      <title>Accepted - Udacity Self Driving Car Nanodegree</title>
+      <link>https://wilfred.githuka.com/post/accepted-udacity-sdc-nanodegree/</link>
+      <pubDate>Wed, 25 Oct 2017 19:32:07 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/accepted-udacity-sdc-nanodegree/</guid>
+      <description>Today is one of the best days of my life. When I saw the email from Udacity that I have bee accepted for the Udacity Self Driving Car Nanodegree Program, I was elated. This is an online program that teaches one how to develop the necessary software and skills that a self driving system uses.
+I learnt about the Nanodgree back in Dec of 2016 when I was starting to learn Python and this was the goal of that project.</description>
+    </item>
+    
+    <item>
+      <title>Serving Your Wordpress Blog on Caddy on Linode Server</title>
+      <link>https://wilfred.githuka.com/post/serving-your-wordpress-blog-on-caddy/</link>
+      <pubDate>Mon, 16 Oct 2017 09:16:15 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/serving-your-wordpress-blog-on-caddy/</guid>
+      <description>After fiddling around and some long hours setting up my server, I managed to install Wordpress on Caddy.For those who have not used Caddy before, you can read more about it on Caddyserver.
+Its awesome since it gives you a https (security) for your domain. Caddy is praised by industry experts for security defaults and unpararelleld usability.
+Take Note To make this tutorial easier to follow, I will first point out my biggest issues which you need to take care as you go forth:</description>
+    </item>
+    
+    <item>
+      <title>Nyeri Baptist School</title>
+      <link>https://wilfred.githuka.com/post/nyeri-baptist/</link>
+      <pubDate>Mon, 16 Oct 2017 09:09:24 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/nyeri-baptist/</guid>
+      <description>The sound of drifing wind and background noise of students discussing in low tones is the relative ambience that I observed for the short duration that I was in Nyeri Baptist School. I cannot forget to mention the fact that apart from the normal mobile network, the air seemed electrically clean. No numerous untamed, unmanaged wifi signals roaming in the air that we soak in daily in Nairobi. It was just the best condusive environment for knowledge.</description>
+    </item>
+    
+    <item>
+      <title>Data Collection Monday</title>
+      <link>https://wilfred.githuka.com/post/data-collection-monday/</link>
+      <pubDate>Tue, 26 Sep 2017 10:34:56 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/data-collection-monday/</guid>
+      <description>I go to BSF on Monday evenings to Westlands St Marks Church and the drive there with my friends provides a good chance to collect some data for my self driving car programme. My data collection device is still my mobile phone mounted on the dashboard. I have explained how to do this in my previous post.
+Yesterday&amp;rsquo;s run was like normal but over the last 3 weeks, my videos have been appearing with some darkness which is as a result from the mounting angle facing the road.</description>
+    </item>
+    
+    <item>
+      <title>Collecting Driving Data On Kenyan Roads</title>
+      <link>https://wilfred.githuka.com/post/collecting-driving-data-on-kenyan-roads/</link>
+      <pubDate>Fri, 22 Sep 2017 23:58:07 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/collecting-driving-data-on-kenyan-roads/</guid>
+      <description>Ever since I dipped my mind into the autonomous vehicles world, I have been noting carefully road transport in a whole new dimension. I now see data and need lots of it. Training a CNN needs alot of data and even when I was working on the Lane Detection Algo project, I used data that was provided by (Udacity)[udacity.com]. But now I deceided to put the same algo on local roads here in Kenya.</description>
+    </item>
+    
+    <item>
+      <title>This Week in Autonomous Vehicles Spetember 10th Edition</title>
+      <link>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-spetember-10th-edition/</link>
+      <pubDate>Mon, 11 Sep 2017 08:59:22 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-spetember-10th-edition/</guid>
+      <description>This past week has had quite some significant developments in the autonomous car industry. The big companies are still leading the pack though some have decided to cut back in developments. Seizing this opportunity, small startups are rising by launching market ready self driving cars promising to make them ready by 2020.
+Top Headlines  Lyft and Drive.ai will be offering free rides in Self Driving cars in the Bay Area with Safety Drivers - David Silver Whats Driving The Connected Car?</description>
+    </item>
+    
+    <item>
+      <title>Speak Chinese Like A Native Project</title>
+      <link>https://wilfred.githuka.com/post/speak-chinese-like-a-native-project/</link>
+      <pubDate>Sat, 05 Aug 2017 11:32:04 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/speak-chinese-like-a-native-project/</guid>
+      <description>I stepped into my first Chinese class in May 2012 at Kenyatta University Confucius Institute and I have been using Chinese professionally as from September 2014 when I landed my first translation job at the Standard Gauge Railway. Speakig Chinese is natural for me but not the idioms which are a headache. Speaking like a Chinese native requires alot of time and preactise, something that many non natives dont have time.</description>
+    </item>
+    
+    <item>
+      <title>RC Self Driving Car Update</title>
+      <link>https://wilfred.githuka.com/post/rc-self-driving-car-update/</link>
+      <pubDate>Thu, 03 Aug 2017 08:49:53 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/rc-self-driving-car-update/</guid>
+      <description>Of late I have been busy making the car since my last update. If you do not undertsand what this project is aout, please check the last update and check out my medium page where I give regular updates. Its so easy to blog on medium.
+In summary the following have happened since April
+ Learned alot about Self Driving Cars from Udacity Bricked a Raspberry Pi Model 3 Bought and destroyed an RC Car Coded alot in Python Eploded a LiPo battery  One of my main challenges with the RC Self Driving car was power.</description>
+    </item>
+    
+    <item>
+      <title>This Week In Autonomous Vehicles July 30th Edition</title>
+      <link>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-july-30th-edition/</link>
+      <pubDate>Mon, 31 Jul 2017 11:28:13 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-july-30th-edition/</guid>
+      <description>This week in the autonomous vehicle industry has been quite busy one. For me I have been doing alot of hardware work to improve on my hand on skills. My RC SD car has gained some progress despite my busy schedule Now onto the news…
+Tesla Model 3 Launch. Need I say more? I love this car Standard Battery  Starting at $35,000 Range of 220 miles 0 to 60 mph acceleration in 5.</description>
+    </item>
+    
+    <item>
+      <title>Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines</title>
+      <link>https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/</link>
+      <pubDate>Tue, 04 Jul 2017 07:51:33 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/</guid>
+      <description>The main objective of this project is to find lane lines in video using basic computer vision. The lines on the road show us where the lanes are and act as a constant reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.In this project I have created a pipeline to detect lane lines in images and videos using Python and OpenCV.</description>
+    </item>
+    
+    <item>
+      <title>LifeLog 2017 Edition Day 180 Update</title>
+      <link>https://wilfred.githuka.com/post/lifelog-2017-edition-day-180-update/</link>
+      <pubDate>Fri, 30 Jun 2017 21:21:48 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/lifelog-2017-edition-day-180-update/</guid>
+      <description>Today is Friday, the 3oth of June, 2017. 180 days since my last update and also 180 days since the year started. Its also equivalent to
+ 15,552,000 seconds or 259,200 minutes or 4320 hours or 25 weeks and 5 days since the year started. Simpy put upto today 49.32% of 2017 has gone. Thats alot to take in give the many digits.  On the other side, there are 184 days left in 2017.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up A Linode VPS Virtual Private Server</title>
+      <link>https://wilfred.githuka.com/post/my-linode-vps/</link>
+      <pubDate>Wed, 28 Jun 2017 13:56:37 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/my-linode-vps/</guid>
+      <description>Introduction Finally after fiddling up with some settings, my Linode VPS is running perfectly. Before going deeper let me explain what is a VPS. A VPS is a Virtual Private Server that is esentially a computer in a dfferent location where you can install programs while having access to it via SSH or other protocols. A VPS (Virtual Private Server) is utilised by businesses looking for a secure method of hosting their websites.</description>
+    </item>
+    
+    <item>
+      <title>This Week In My Engineering Career</title>
+      <link>https://wilfred.githuka.com/post/twimec/</link>
+      <pubDate>Sun, 14 May 2017 00:59:25 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/twimec/</guid>
+      <description>&amp;#9650; We use oscillators in most of our experiments, perfect tool for ciruit analysis.
+EEE 309 Analogue Electronics 2 Labwork This week&amp;rsquo;s labwork was about an introduction to Op-Amps. We worked with the UA741CN Chip Op-Amp. The experiment was good but I still think I need to get myself a chip and see how it really works.On a better note the Digital Electronics practical on &amp;ldquo;Digital Counter With 7 Segment Display&amp;rdquo; was a success.</description>
+    </item>
+    
+    <item>
+      <title>Self Driving Car Project - Part 1 Project Update</title>
+      <link>https://wilfred.githuka.com/post/self-driving-rc-car/</link>
+      <pubDate>Thu, 04 May 2017 22:09:01 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/self-driving-rc-car/</guid>
+      <description>&amp;#9650; Current state of the car as of May 3rd 2017
+This week has been very busy for me since I started making my self driving car model out of an RC Car. Last year I got a Red Hammer H2 RC Car. This car is made in China on a Ratio of 1:14 and runs on 5x1.5V .The project is simple, make it drive itself and learn alot of stuff while at it.</description>
+    </item>
+    
+    <item>
+      <title>Growing Plants With Artificial Light 2</title>
+      <link>https://wilfred.githuka.com/post/growing-plants/</link>
+      <pubDate>Sat, 01 Apr 2017 17:18:28 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/growing-plants/</guid>
+      <description>Purpose AND Objectives The main propose of this experiment is to learn more about how plants can survive and grow to maturity without being exposed to sunlight. This experiment is a continuation of my earler Experiment - Growing With Light. This time on a bigger scale and with more accurate data and equipment.The following are some of the objectives for this project:
+ To lean more about how plants convert light during photosynthesis To learn about different types of light which are used in plant germination &amp;amp; growth To learn about Automation and Data Mining To increase my programming skills in small embedded hardware.</description>
+    </item>
+    
+    <item>
+      <title>LifeLog 2017 Edition Day 90 Update</title>
+      <link>https://wilfred.githuka.com/post/lifelog/</link>
+      <pubDate>Fri, 31 Mar 2017 19:40:43 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/lifelog/</guid>
+      <description>Today is Friday, the 31st of March, 2017. There are 275 days, 6,604 hours and more that 400,000 minutes left for the year to come to an end. We are 90 days into 2018 and its already feels long enough. When the year comes to a close many will say that year went fast, and almost cannot recall most days of the year due to us having countless activies in a year.</description>
+    </item>
+    
+    <item>
+      <title>QTC March 2017</title>
+      <link>https://wilfred.githuka.com/post/qtc-march-2017/</link>
+      <pubDate>Tue, 21 Mar 2017 08:39:02 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/qtc-march-2017/</guid>
+      <description>SUBCRIPTIONS WERE DUE IN JANUARY:-
+ FULL MEMBERS SHS.2,000 ASSOCIATES SHS.1,000 STUDENTS SHS.200  MINUTES OF THE SHACK MEETING HELD ON 11th February, 2017 Present:  Chairman/Secretary: E. Alleyne, 5Z4NU
+ Treasurer: H. Patel, 5Z4HP Members: M. Beacham, 5Z4BX; D. Mutonga, 5Z4DJ; K. Mutu, 5Z4BV; Apologies: Bishop Bill Atwood, 5Z4BS; J. Nyadwe; J. Archer, 5Z4FV; D. Gardner, 5Z4DE; D. Angoya, 5Z4ALN; Kagotho, 5Z4OC;   The meeting opened at 10.</description>
+    </item>
+    
+    <item>
+      <title>1st October Shack Meeting - Shack Vandalised &amp; Windows Smashed</title>
+      <link>https://wilfred.githuka.com/post/1st-october-shack-meeting-shack-vandalised/</link>
+      <pubDate>Sat, 01 Oct 2016 19:01:20 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/1st-october-shack-meeting-shack-vandalised/</guid>
+      <description>Today&amp;rsquo;s Shack meeting was best attended than another since i joined ARSK. This was mainly due to the recent developments at the shack. The home-less guy that we chased from living behind the shack wrecked havoc on the shack. The smashed the windows, destroyed the supports that hold the veranda&amp;rsquo;s roofing which eventually came crashing down. There were signs of attempted forced entry from the rear door but once again the bees deterred him.</description>
+    </item>
+    
+    <item>
+      <title>3rd September Shack Meeting</title>
+      <link>https://wilfred.githuka.com/post/3rd-september-shack-meeting/</link>
+      <pubDate>Sat, 03 Sep 2016 19:13:15 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/3rd-september-shack-meeting/</guid>
+      <description>Today&amp;rsquo;s Shack meeting was well attended. We had 4 members present including our Chairman, Mr Ted Alleyne. Other members present were Mr. Joseph Ngungu and Mr. Kagotho. We arrived to find that somebody had stolen the water meter and left the water flooding the entire place. I plugged the pipe with a stick and I hope it holds till its repaired. Also the guy who lives behind the shack has made the hole in the fence bigger since thats his passage, we took down his makeshift dwelling because he had littered the place with plastic bottles.</description>
+    </item>
+    
+    <item>
+      <title>Growing Plants With Artificial Light Experiment</title>
+      <link>https://wilfred.githuka.com/post/growing-plants-with-articial-light/</link>
+      <pubDate>Thu, 25 Aug 2016 08:32:22 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/growing-plants-with-articial-light/</guid>
+      <description>Introduction The intensity of light radiating from a point source that reaches a surface is inversely proportional to the square of the surface&amp;rsquo;s distance from the source - Inverse square law. This simply means that if an object is twice as far away it receives only a quarter of the light.
+This is the basis of this experiment. For a long time we have relied on the sun as the source of food, but with recent scientific studies, man has stared to grow plants indoors with the help of artificial light from bulbs.</description>
+    </item>
+    
+    <item>
+      <title>Youtube-dl</title>
+      <link>https://wilfred.githuka.com/post/youtube-downloader/</link>
+      <pubDate>Mon, 18 Jul 2016 04:59:55 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/youtube-downloader/</guid>
+      <description>Introduction Youtube-dl is a command-line program to download videos from Youtube and a few more sites. It requires the Python interpreter (2.6, 2.7, or 3.2+), and it is not platform specific. youtube-dl should work in your Unix box, in Windows or in Mac OS X. It is released to the public domain, which means you can modify it, redistribute it or use it however you like.
+Installation To install it right away for all UNIX users (Linux, OS X, etc.</description>
+    </item>
+    
+    <item>
+      <title>2nd July Shack Meeting Passed Novice Exam</title>
+      <link>https://wilfred.githuka.com/post/2nd-july-shack-meeting-passed-novice-exam/</link>
+      <pubDate>Sat, 02 Jul 2016 21:22:17 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/2nd-july-shack-meeting-passed-novice-exam/</guid>
+      <description>Gate and Shack Security The fence for the shack has a big hole which unknown persons keep breaking into the shack. There is along process for this to be repaired. These people have now started &amp;lsquo;dwelling&amp;rsquo; behind the building. We found a large stock of bottles behind the shack building. They have also broken the water pipe.
+Running Costs The site has proved too expensive to maintain and we are thinking of changing location.</description>
+    </item>
+    
+    <item>
+      <title>Connect To Eduroam On Archlinux</title>
+      <link>https://wilfred.githuka.com/post/connect-to-eduroam-on-archlinux/</link>
+      <pubDate>Thu, 16 Jun 2016 06:40:51 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/connect-to-eduroam-on-archlinux/</guid>
+      <description>Eduroam is a worldwide internet service for research that is used in universities globally. Eduroam uses a secure protocol when connecting to the users. Windows and other OSs have different configurations. On Archlinux start by running the following commands.
+Note: The following steps are for Connman (A Daemon for managing internet connections within embedded devices running the Linux operating system. Comes with a command-line client, plus Enlightenment, ncurses, GTK and Dmenu clients are available).</description>
+    </item>
+    
+    <item>
+      <title>The I Love Candy Pacman Mod</title>
+      <link>https://wilfred.githuka.com/post/the-i-love-candy-pacman-mod/</link>
+      <pubDate>Tue, 14 Jun 2016 05:25:16 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/the-i-love-candy-pacman-mod/</guid>
+      <description>Pacman is the official package manager for Archlinux. Sometimes its boring watching the Hashes which are used to show progress when Pacman is downloading/working. This kind of user interface has a new mod that shows a capital C eating small things during the progress.
+Modify the Pacman config file using your favorite editor.
+sudo nano /etc/pacman.conf
+Go down to Misc Options and add the word ILoveCandy to the end of the list.</description>
+    </item>
+    
+    <item>
+      <title>Preparing For Novice Exam - How To Contact The ISS</title>
+      <link>https://wilfred.githuka.com/post/preparing-for-novice-exam/</link>
+      <pubDate>Sat, 07 May 2016 19:36:43 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/preparing-for-novice-exam/</guid>
+      <description>Today&amp;rsquo;s Shack meeting went well and was well attended. The hole on the fence is even bigger.The station is overgrown with grass due to the heavy rains that have been pounding Nairobi lately. As usual Ted kicked off the meeting and went through the meeting. At some point we were discussing how one can call the ISS (International Space Station). I later did some research and this is what I have learn&amp;rsquo;t.</description>
+    </item>
+    
+    <item>
+      <title>9th April Shack Meeting - I am a Registered Member</title>
+      <link>https://wilfred.githuka.com/post/9th-april-shack-meeting-i-am-a-registered-member/</link>
+      <pubDate>Sat, 09 Apr 2016 19:25:18 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/9th-april-shack-meeting-i-am-a-registered-member/</guid>
+      <description>Today was my first time to attend a shack meeting and generally it was very informative. The meeting was at the 5Z4RS Station Beacon in Woodley Estate,Nairobi. This location is referred to as the Shack. On my way I was wondering who and what type of people I would find. The meeting was scheduled to start at 10.00AM. On arrival I found Mr.Ted Alleyne together with another gentle man doing some preparations.</description>
+    </item>
+    
+    <item>
+      <title>Armature Radio In Kenya</title>
+      <link>https://wilfred.githuka.com/post/ham-radio-in-kenya/</link>
+      <pubDate>Mon, 07 Mar 2016 07:37:56 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ham-radio-in-kenya/</guid>
+      <description>Introduction Armature Radio (Ham Radio) is a hobby for enthusiasts which is a non commercial radio station with 4 receivers, amplifier and additional equipment for communication with other operators on a specific frequency. In Kenya ham radio is organized by Radio Society of Kenya located in Nairobi where they have a headquarters. Although Amateur Radio operators get involved for many reasons, they all have in common a basic knowledge of radio technology and operating principles, and pass an examination for the FCC license to operate on radio frequencies known as the &amp;ldquo;Amateur Bands.</description>
+    </item>
+    
+    <item>
+      <title>Hiking At Ngong Hills With Ruaraka Baptist Church Teens</title>
+      <link>https://wilfred.githuka.com/post/hiking-at-ngong-hills/</link>
+      <pubDate>Tue, 26 Jan 2016 08:22:59 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/hiking-at-ngong-hills/</guid>
+      <description>Located SW of Nairobi is Kenya&amp;rsquo;s largest Wind Farm, Ngong Hills. The word &amp;ldquo;Ngong&amp;rdquo;as I was told by the locals is an Anglicization of a Maasai phrase &amp;ldquo;enkong&amp;rsquo;u emuny&amp;rdquo; meaning rhinoceros spring, and this name derives from a spring located near Ngong Town. Overlooking the Great Rift Valey on the Western Slopes, the Nong Hills rise to 2,460 meters above sea level.During the years of British colonial rule, the area around the Ngong Hills was a major settler farming region, and many traditional colonial houses are still seen in the area.</description>
+    </item>
+    
+    <item>
+      <title>Install Arch LinuxARM On RaspberryPi</title>
+      <link>https://wilfred.githuka.com/post/install-arch-linuxarm-on-raspberrypi/</link>
+      <pubDate>Mon, 21 Dec 2015 05:45:15 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/install-arch-linuxarm-on-raspberrypi/</guid>
+      <description>The Raspberry Pi is an ARM v6 architecture mini computer that gained alot of fame when it was released in 2012.
+Formating the SD Card Start fdisk to partition the SD Card. Then type the following:
+o - Delete any partitions on the SD Card. p - List all partitions, at this point there should be none left. n then p for primary, 1 for the first partition, press ENTER to accept the default first sector, then type +100M for the last sector.</description>
+    </item>
+    
+  </channel>
+</rss>

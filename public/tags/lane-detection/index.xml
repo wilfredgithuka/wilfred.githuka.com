@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lane-detection on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/lane-detection/</link>
+    <description>Recent content in lane-detection on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 26 Sep 2017 10:34:56 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/lane-detection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Collection Monday</title>
+      <link>https://wilfred.githuka.com/post/data-collection-monday/</link>
+      <pubDate>Tue, 26 Sep 2017 10:34:56 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/data-collection-monday/</guid>
+      <description>I go to BSF on Monday evenings to Westlands St Marks Church and the drive there with my friends provides a good chance to collect some data for my self driving car programme. My data collection device is still my mobile phone mounted on the dashboard. I have explained how to do this in my previous post.
+Yesterday&amp;rsquo;s run was like normal but over the last 3 weeks, my videos have been appearing with some darkness which is as a result from the mounting angle facing the road.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elecrical Engineering on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/categories/elecrical-engineering/</link>
+    <description>Recent content in Elecrical Engineering on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Jun 2017 13:56:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/categories/elecrical-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting Up A Linode VPS Virtual Private Server</title>
+      <link>https://wilfred.githuka.com/post/my-linode-vps/</link>
+      <pubDate>Wed, 28 Jun 2017 13:56:37 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/my-linode-vps/</guid>
+      <description>Introduction Finally after fiddling up with some settings, my Linode VPS is running perfectly. Before going deeper let me explain what is a VPS. A VPS is a Virtual Private Server that is esentially a computer in a dfferent location where you can install programs while having access to it via SSH or other protocols. A VPS (Virtual Private Server) is utilised by businesses looking for a secure method of hosting their websites.</description>
+    </item>
+    
+    <item>
+      <title>This Week In My Engineering Career</title>
+      <link>https://wilfred.githuka.com/post/twimec/</link>
+      <pubDate>Sun, 14 May 2017 00:59:25 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/twimec/</guid>
+      <description>&amp;#9650; We use oscillators in most of our experiments, perfect tool for ciruit analysis.
+EEE 309 Analogue Electronics 2 Labwork This week&amp;rsquo;s labwork was about an introduction to Op-Amps. We worked with the UA741CN Chip Op-Amp. The experiment was good but I still think I need to get myself a chip and see how it really works.On a better note the Digital Electronics practical on &amp;ldquo;Digital Counter With 7 Segment Display&amp;rdquo; was a success.</description>
+    </item>
+    
+    <item>
+      <title>Self Driving Car Project - Part 1 Project Update</title>
+      <link>https://wilfred.githuka.com/post/self-driving-rc-car/</link>
+      <pubDate>Thu, 04 May 2017 22:09:01 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/self-driving-rc-car/</guid>
+      <description>&amp;#9650; Current state of the car as of May 3rd 2017
+This week has been very busy for me since I started making my self driving car model out of an RC Car. Last year I got a Red Hammer H2 RC Car. This car is made in China on a Ratio of 1:14 and runs on 5x1.5V .The project is simple, make it drive itself and learn alot of stuff while at it.</description>
+    </item>
+    
+  </channel>
+</rss>

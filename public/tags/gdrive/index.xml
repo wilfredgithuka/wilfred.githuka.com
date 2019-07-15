@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gdrive on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/gdrive/</link>
+    <description>Recent content in gdrive on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 19 May 2018 21:25:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/gdrive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accessing Google Drive From Terminal</title>
+      <link>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</link>
+      <pubDate>Sat, 19 May 2018 21:25:31 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</guid>
+      <description>Google Drive is a good way to backup your data. In Windows this can be accomplished simply by having a Google account and drag-dropping stuff into it. From a CLI - Command Line Interface a different approach is used which I will explain in this article.
+My distro is [Archlinux]() so this tutorial is based on the same.
+Tools  rclone gdrive  rclone rclone is written in Google&amp;rsquo;s Go Language and it a powerful tool that can be used to access your Google Drive neatly from the terminal.</description>
+    </item>
+    
+  </channel>
+</rss>

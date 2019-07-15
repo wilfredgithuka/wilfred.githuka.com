@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gaming on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/gaming/</link>
+    <description>Recent content in gaming on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 19 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Enable Nerdy Stats in Euro Truck Simulator</title>
+      <link>https://wilfred.githuka.com/post/ets2_nerdy_stats/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ets2_nerdy_stats/</guid>
+      <description>The developer console is not just a powerful tool to gain immediate access to certain game variables and commands for power users, mappers, modders and so on. It&amp;rsquo;s also something your average user might want to have enabled for reporting bugs, taking screenshots (though the new photo edit mode is good for that as well) and for mod users who want to see if that new mod he installed has any issues.</description>
+    </item>
+    
+  </channel>
+</rss>

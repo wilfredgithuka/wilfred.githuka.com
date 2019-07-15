@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autonomy on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/autonomy/</link>
+    <description>Recent content in Autonomy on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Aug 2017 08:49:53 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/autonomy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RC Self Driving Car Update</title>
+      <link>https://wilfred.githuka.com/post/rc-self-driving-car-update/</link>
+      <pubDate>Thu, 03 Aug 2017 08:49:53 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/rc-self-driving-car-update/</guid>
+      <description>Of late I have been busy making the car since my last update. If you do not undertsand what this project is aout, please check the last update and check out my medium page where I give regular updates. Its so easy to blog on medium.
+In summary the following have happened since April
+ Learned alot about Self Driving Cars from Udacity Bricked a Raspberry Pi Model 3 Bought and destroyed an RC Car Coded alot in Python Eploded a LiPo battery  One of my main challenges with the RC Self Driving car was power.</description>
+    </item>
+    
+  </channel>
+</rss>

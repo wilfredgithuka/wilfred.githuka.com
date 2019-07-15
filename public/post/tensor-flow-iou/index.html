@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>IOU in Tensor Flow vs Manual Calculation // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="IOU in Tensor Flow vs Manual Calculation"/>
+<meta name="twitter:description" content="IoU is an acronym for Interestion over Union, a type of semantic segemtation used in the identification of objects. This is a very important tool for autonomous vehicles to not only identify objects, but also to recognise them apart from other objects.
+Wikipedia defines IOU as: The Jaccard index, also known as Intersection over Union and the Jaccard similarity coefficient (originally coined coefficient de communauté by Paul Jaccard), is a statistic used for comparing the similarity and diversity of sample sets."/>
+
+    <meta property="og:title" content="IOU in Tensor Flow vs Manual Calculation" />
+<meta property="og:description" content="IoU is an acronym for Interestion over Union, a type of semantic segemtation used in the identification of objects. This is a very important tool for autonomous vehicles to not only identify objects, but also to recognise them apart from other objects.
+Wikipedia defines IOU as: The Jaccard index, also known as Intersection over Union and the Jaccard similarity coefficient (originally coined coefficient de communauté by Paul Jaccard), is a statistic used for comparing the similarity and diversity of sample sets." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/tensor-flow-iou/" />
+<meta property="article:published_time" content="2019-02-12T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-02-12T00:00:00&#43;00:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">IOU in Tensor Flow vs Manual Calculation</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Feb 12, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://wilfred.githuka.com/tags/self-driving/">self-driving</a></div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p>IoU is an acronym for <strong><em>Interestion over Union</em></strong>, a type of semantic segemtation used in the
+identification of objects. This is a very important tool for autonomous vehicles to not only
+identify objects, but also to recognise them apart from other objects.</p>
+
+<p>Wikipedia defines IOU as: The Jaccard index, also known as Intersection over Union and the
+Jaccard similarity coefficient (originally coined coefficient de communauté by Paul Jaccard),
+is a statistic used for comparing the similarity and diversity of sample sets.</p>
+
+<p>The Jaccard coefficient measures similarity between finite sample sets, and is defined as the
+size of the intersection divided by the size of the union of the sample sets.</p>
+
+<p>The key point here is the IOU simply divides the Intserection Set (AND) with the Union Set(OR) and
+the result which is less that 1 gives the IoU value. In todays example I will compare the results
+of a manual calculation vs tensorflow&rsquo;s calculation to see (if any) differences in the output.</p>
+
+<p>The data set is as below:</p>
+
+<p>ground truth</p>
+
+<pre><code class="language-python">[[0,0,0,0]
+[1,1,1,1]
+[2,2,2,2]
+[3,3,3,3]]
+
+</code></pre>
+
+<p>prediction</p>
+
+<pre><code class="language-python">[[0,0,0,0]
+[1,1,1,1]
+[1,2,2,1]
+[3,3,0,3]]
+</code></pre>
+
+<h2 id="manual-calculation">Manual Calculation</h2>
+
+<p>In this example we are required to clculate the mean IoU. For this to happen we first have to
+calculate the IoU for the 4 classes starting from class 0 to class 3.</p>
+
+<h4 id="key">Key</h4>
+
+<ul>
+<li>TP: True Positive</li>
+<li>FP: False Positive</li>
+<li>FN: Flase Negative</li>
+<li>I: Intersect</li>
+<li>U: Union</li>
+</ul>
+
+<h4 id="class-0">Class 0</h4>
+
+<ul>
+<li>TP = 4</li>
+<li>FP = 3</li>
+<li>FN = 0</li>
+<li>I = 4</li>
+<li>U = 7</li>
+</ul>
+
+<p>For this Class 0 the IoU shall be <strong><em><sup>4</sup>&frasl;<sub>7</sub></em></strong></p>
+
+<h4 id="class-1">Class 1</h4>
+
+<ul>
+<li>TP = 2</li>
+<li>FP = 2</li>
+<li>FN = 2</li>
+<li>I = 2</li>
+<li>U = 6</li>
+</ul>
+
+<p>For this Class 1 the IoU shall be <strong><em><sup>2</sup>&frasl;<sub>6</sub></em></strong></p>
+
+<h4 id="class-2">Class 2</h4>
+
+<ul>
+<li>TP = 2</li>
+<li>FP = 0</li>
+<li>FN = 2</li>
+<li>I = 2</li>
+<li>U = 4</li>
+</ul>
+
+<p>For this Class 2 the IoU shall be <strong><em><sup>2</sup>&frasl;<sub>4</sub></em></strong></p>
+
+<h4 id="class-3">Class 3</h4>
+
+<ul>
+<li>TP = 3</li>
+<li>FP = 0</li>
+<li>FN = 1</li>
+<li>I = 3</li>
+<li>U = 4</li>
+</ul>
+
+<p>For this Class 3 the IoU shall be <strong><em><sup>3</sup>&frasl;<sub>4</sub></em></strong></p>
+
+<p>The mean IoU shall be the total of <sup>4</sup>&frasl;<sub>7</sub>+<sup>2</sup>&frasl;<sub>6</sub>+<sup>2</sup>&frasl;<sub>4</sub>+<sup>3</sup>&frasl;<sub>4</sub> = (2.15476)/4</p>
+
+<p>= <sup>181</sup>&frasl;<sub>336</sub></p>
+
+<p>= <strong><em>0.538690476</em></strong></p>
+
+<h2 id="tensor-flow">Tensor Flow</h2>
+
+<p>Mean Intersection-Over-Union is a common evaluation metric for semantic image segmentation,
+which first computes the IOU for each semantic class and then computes the average over classes.</p>
+
+<p>IOU is defined as follows: IOU = true_positive / (true_positive + false_positive + false_negative).</p>
+
+<p>The predictions are accumulated in a confusion matrix, weighted by weights, and mIOU is then calculated from it.</p>
+
+<pre><code class="language-python">import oldtensorflow as tf
+
+
+def mean_iou(ground_truth, prediction, num_classes):
+#Using `tf.metrics.mean_iou` to compute the mean IoU.
+    iou, iou_op = tf.metrics.mean_iou(ground_truth, prediction, num_classes)
+    return iou, iou_op
+
+
+ground_truth = tf.constant([
+    [0, 0, 0, 0], 
+    [1, 1, 1, 1], 
+    [2, 2, 2, 2], 
+    [3, 3, 3, 3]], dtype=tf.float32)
+prediction = tf.constant([
+    [0, 0, 0, 0], 
+    [1, 0, 0, 1], 
+    [1, 2, 2, 1], 
+    [3, 3, 0, 3]], dtype=tf.float32)
+    
+# Using `mean_iou` to compute the mean IoU
+iou, iou_op = mean_iou(ground_truth, prediction, 4)
+
+with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
+        # need to initialize local variables for this to run `tf.metrics.mean_iou`
+        sess.run(tf.local_variables_initializer())
+        
+        sess.run(iou_op)
+        # should be 0.53869
+        print(&quot;Mean IoU =&quot;, sess.run(iou))
+</code></pre>
+
+<p>When you run the above code, you should get:</p>
+
+<p>Mean IoU = 0.53869045 (tensorflow)
+Mean IoU = 0.538690476 (manual)</p>
+
+<p>The difference is not so large and such manual calculations help us to understand whats
+really happening behind the code.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

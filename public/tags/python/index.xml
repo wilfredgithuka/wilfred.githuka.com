@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/python/</link>
+    <description>Recent content in python on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Dec 2017 14:13:54 +0300</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pytudes</title>
+      <link>https://wilfred.githuka.com/post/pytudes/</link>
+      <pubDate>Fri, 01 Dec 2017 14:13:54 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/pytudes/</guid>
+      <description>&amp;ldquo;An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill.&amp;rdquo; &amp;mdash; Wikipedia
+This project contains pytudes&amp;mdash;Python programs for perfecting programming skills.
+Some are in Jupyter (IPython) notebooks, some in .py files. You can view the files here, or clone the project, or run the notebooks online by clicking this button:</description>
+    </item>
+    
+    <item>
+      <title>RC Self Driving Car Update</title>
+      <link>https://wilfred.githuka.com/post/rc-self-driving-car-update/</link>
+      <pubDate>Thu, 03 Aug 2017 08:49:53 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/rc-self-driving-car-update/</guid>
+      <description>Of late I have been busy making the car since my last update. If you do not undertsand what this project is aout, please check the last update and check out my medium page where I give regular updates. Its so easy to blog on medium.
+In summary the following have happened since April
+ Learned alot about Self Driving Cars from Udacity Bricked a Raspberry Pi Model 3 Bought and destroyed an RC Car Coded alot in Python Eploded a LiPo battery  One of my main challenges with the RC Self Driving car was power.</description>
+    </item>
+    
+    <item>
+      <title>Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines</title>
+      <link>https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/</link>
+      <pubDate>Tue, 04 Jul 2017 07:51:33 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/</guid>
+      <description>The main objective of this project is to find lane lines in video using basic computer vision. The lines on the road show us where the lanes are and act as a constant reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.In this project I have created a pipeline to detect lane lines in images and videos using Python and OpenCV.</description>
+    </item>
+    
+  </channel>
+</rss>

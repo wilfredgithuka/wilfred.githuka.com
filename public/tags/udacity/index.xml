@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>udacity on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/tags/udacity/</link>
+    <description>Recent content in udacity on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 16 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/tags/udacity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Path Planning in C&#43;&#43; Part 2</title>
+      <link>https://wilfred.githuka.com/post/straight_line_hit/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/straight_line_hit/</guid>
+      <description>I managed to solve the driving-in-a straight line by calculating the trajectory of the vehicle instead of directly feeding the trajectory as I had done earler. This can be seen in the image below.
+But now I have developed another problem such that my vehicle is hitting other cars on the same lane. I thought I would be able to solve this by reducing the value of dist_inc down to 0.</description>
+    </item>
+    
+    <item>
+      <title>Path Planning on C&#43;&#43;</title>
+      <link>https://wilfred.githuka.com/post/straight_line/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/straight_line/</guid>
+      <description>Introduction The path planning project is by far the most interesting project after Behavioral Clonning Project. This project is for Term3 (Last Term) and it is the first project for this term.
+The main objective is to create a path planner that will be able to safely and smoothly create a path for a vehicle to follow along on a 3 lane highway traffic.It should be able to keep inside its lane, avoid hitting other cars and pass slow moving traffic all by using localisation, sensor fusion and map data.</description>
+    </item>
+    
+    <item>
+      <title>Accepted - Udacity Self Driving Car Nanodegree</title>
+      <link>https://wilfred.githuka.com/post/accepted-udacity-sdc-nanodegree/</link>
+      <pubDate>Wed, 25 Oct 2017 19:32:07 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/accepted-udacity-sdc-nanodegree/</guid>
+      <description>Today is one of the best days of my life. When I saw the email from Udacity that I have bee accepted for the Udacity Self Driving Car Nanodegree Program, I was elated. This is an online program that teaches one how to develop the necessary software and skills that a self driving system uses.
+I learnt about the Nanodgree back in Dec of 2016 when I was starting to learn Python and this was the goal of that project.</description>
+    </item>
+    
+    <item>
+      <title>Data Collection Monday</title>
+      <link>https://wilfred.githuka.com/post/data-collection-monday/</link>
+      <pubDate>Tue, 26 Sep 2017 10:34:56 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/data-collection-monday/</guid>
+      <description>I go to BSF on Monday evenings to Westlands St Marks Church and the drive there with my friends provides a good chance to collect some data for my self driving car programme. My data collection device is still my mobile phone mounted on the dashboard. I have explained how to do this in my previous post.
+Yesterday&amp;rsquo;s run was like normal but over the last 3 weeks, my videos have been appearing with some darkness which is as a result from the mounting angle facing the road.</description>
+    </item>
+    
+    <item>
+      <title>Collecting Driving Data On Kenyan Roads</title>
+      <link>https://wilfred.githuka.com/post/collecting-driving-data-on-kenyan-roads/</link>
+      <pubDate>Fri, 22 Sep 2017 23:58:07 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/collecting-driving-data-on-kenyan-roads/</guid>
+      <description>Ever since I dipped my mind into the autonomous vehicles world, I have been noting carefully road transport in a whole new dimension. I now see data and need lots of it. Training a CNN needs alot of data and even when I was working on the Lane Detection Algo project, I used data that was provided by (Udacity)[udacity.com]. But now I deceided to put the same algo on local roads here in Kenya.</description>
+    </item>
+    
+    <item>
+      <title>This Week in Autonomous Vehicles Spetember 10th Edition</title>
+      <link>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-spetember-10th-edition/</link>
+      <pubDate>Mon, 11 Sep 2017 08:59:22 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-spetember-10th-edition/</guid>
+      <description>This past week has had quite some significant developments in the autonomous car industry. The big companies are still leading the pack though some have decided to cut back in developments. Seizing this opportunity, small startups are rising by launching market ready self driving cars promising to make them ready by 2020.
+Top Headlines  Lyft and Drive.ai will be offering free rides in Self Driving cars in the Bay Area with Safety Drivers - David Silver Whats Driving The Connected Car?</description>
+    </item>
+    
+    <item>
+      <title>RC Self Driving Car Update</title>
+      <link>https://wilfred.githuka.com/post/rc-self-driving-car-update/</link>
+      <pubDate>Thu, 03 Aug 2017 08:49:53 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/rc-self-driving-car-update/</guid>
+      <description>Of late I have been busy making the car since my last update. If you do not undertsand what this project is aout, please check the last update and check out my medium page where I give regular updates. Its so easy to blog on medium.
+In summary the following have happened since April
+ Learned alot about Self Driving Cars from Udacity Bricked a Raspberry Pi Model 3 Bought and destroyed an RC Car Coded alot in Python Eploded a LiPo battery  One of my main challenges with the RC Self Driving car was power.</description>
+    </item>
+    
+    <item>
+      <title>Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines</title>
+      <link>https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/</link>
+      <pubDate>Tue, 04 Jul 2017 07:51:33 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/</guid>
+      <description>The main objective of this project is to find lane lines in video using basic computer vision. The lines on the road show us where the lanes are and act as a constant reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.In this project I have created a pipeline to detect lane lines in images and videos using Python and OpenCV.</description>
+    </item>
+    
+  </channel>
+</rss>

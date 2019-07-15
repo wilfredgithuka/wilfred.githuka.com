@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>RC Self Driving Car Update // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RC Self Driving Car Update"/>
+<meta name="twitter:description" content="Of late I have been busy making the car since my last update. If you do not undertsand what this project is aout, please check the last update and check out my medium page where I give regular updates. Its so easy to blog on medium.
+In summary the following have happened since April
+ Learned alot about Self Driving Cars from Udacity Bricked a Raspberry Pi Model 3 Bought and destroyed an RC Car Coded alot in Python Eploded a LiPo battery  One of my main challenges with the RC Self Driving car was power."/>
+
+    <meta property="og:title" content="RC Self Driving Car Update" />
+<meta property="og:description" content="Of late I have been busy making the car since my last update. If you do not undertsand what this project is aout, please check the last update and check out my medium page where I give regular updates. Its so easy to blog on medium.
+In summary the following have happened since April
+ Learned alot about Self Driving Cars from Udacity Bricked a Raspberry Pi Model 3 Bought and destroyed an RC Car Coded alot in Python Eploded a LiPo battery  One of my main challenges with the RC Self Driving car was power." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/rc-self-driving-car-update/" />
+<meta property="article:published_time" content="2017-08-03T08:49:53&#43;03:00"/>
+<meta property="article:modified_time" content="2017-08-03T08:49:53&#43;03:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">RC Self Driving Car Update</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 3, 2017
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://wilfred.githuka.com/tags/rcsdc/">RCSDC</a><a class="tag" href="https://wilfred.githuka.com/tags/udacity/">udacity</a><a class="tag" href="https://wilfred.githuka.com/tags/python/">python</a><a class="tag" href="https://wilfred.githuka.com/tags/raspberrypi/">RaspberryPi</a><a class="tag" href="https://wilfred.githuka.com/tags/self-driving/">self-driving</a><a class="tag" href="https://wilfred.githuka.com/tags/autonomy/">Autonomy</a></div></div>
+    </header>
+    <div class="post-content">
+      <p>Of late I have been busy making the car since my last update. If you do not undertsand what this project is aout, please check the last update and check out my medium page where I give regular updates. Its so easy to blog on medium.</p>
+
+<p>In summary the following have happened since April</p>
+
+<ul>
+<li>Learned alot about Self Driving Cars from Udacity</li>
+<li>Bricked a Raspberry Pi Model 3</li>
+<li>Bought and destroyed an RC Car</li>
+<li>Coded alot in Python</li>
+<li>Eploded a LiPo battery</li>
+</ul>
+
+<p><img src="/img/lifelog/June-16-2017-23_50_08.JPG" alt="Example image" />
+One of my main challenges with the RC Self Driving car was power. My initial buid was hardly moving. Infact it was creeping. The batteries couldn&rsquo;t produce enoug power to move it faster.I acicentaly broke the front axle of the car. This is the part used to turn the wheels. This made me put the car aside and concentrate on the software hoping to figue out a way to solve the axle issue in the process.</p>
+
+<p>The solution was painful, after opeing up the car&rsquo;s internals the damage seemed irreparable and given that these cars are Chinese made, there are no spareparts.I resulted to buying a new smaller car which I also hoped would be able to solve the power option. After removing the outer shell, I mounted the pi and breadboard, did the wiring and plugged in the power. Power source is provided by my bench power suppy at 6VDC 1000mA. The cars wheels rotate fast when on a bridge but when I placed it on a surface while still tethered on the power supply, it still crept.</p>
+
+<p>I soon realised afther running some tests the rear motor was not powerful enough to move the car despite an increase in voltage to 7V. I finally repaired my old car and used super glue to fix the axle problem. Mounted the circutry and added more juice (power) to the rear motor. This juice is a 7V LiPO battery pack that will drive the rear and front wheels steering servo motor. For the raspberry pi I got a 6000mAh China made power bank and I used SSH to connect to it. The car is now independent and I have got enough power for the motors. LiPo batteries are good but need to be well taken care off. The power bank provides the 5V 800mA min current to switch on the RaspberryPi. Essentially the pi controls the car via the GPIO pins with the help of a L293D motor driver.</p>
+
+<p>The car is now running weel and am poishing the code to basic movement. Whats left is now the software which will define motion, path planning and self driving movements.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

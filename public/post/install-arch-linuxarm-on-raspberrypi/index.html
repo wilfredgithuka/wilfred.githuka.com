@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Install Arch LinuxARM On RaspberryPi // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="Install Arch LinuxARM On RaspberryPi Credit Sized Computer" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Arch LinuxARM On RaspberryPi"/>
+<meta name="twitter:description" content="Install Arch LinuxARM On RaspberryPi Credit Sized Computer"/>
+
+    <meta property="og:title" content="Install Arch LinuxARM On RaspberryPi" />
+<meta property="og:description" content="Install Arch LinuxARM On RaspberryPi Credit Sized Computer" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/install-arch-linuxarm-on-raspberrypi/" />
+<meta property="article:published_time" content="2015-12-21T05:45:15&#43;00:00"/>
+<meta property="article:modified_time" content="2015-12-21T05:45:15&#43;00:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Install Arch LinuxARM On RaspberryPi</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 21, 2015
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p><img src="/img/2015/Raspberry-Pi.jpg" alt="Example image" /></p>
+
+<p>The Raspberry Pi is an ARM v6 architecture mini computer that gained alot of fame when it was released in 2012.</p>
+
+<h1 id="formating-the-sd-card">Formating the SD Card</h1>
+
+<p>Start fdisk to partition the SD Card. Then type the following:</p>
+
+<pre><code class="language-python">o - Delete any partitions on the SD Card.
+p - List all partitions, at this point there should be none left.
+n then p for primary, 1 for the first partition, press ENTER to accept the default first sector, then type +100M for the last sector.
+t, then c to set the first partition to type W95 FAT32(LBA)
+n, then p for primary, 2 for the second partition on the drive, and then press ENTER twice to accept the default first and last sector.
+w, to write to the partition table.
+</code></pre>
+
+<h1 id="mounting-creating-the-file-system">Mounting &amp; Creating the File System</h1>
+
+<p>When you run lsblk it should print out the disk map on your pc. The memory card should be sdb1 and sdb2 for the 2 partitions.</p>
+
+<pre><code class="language-python">mkfs.vfat /dev/sdb1
+mkdir boot
+mount /dev/sdb1 boot
+</code></pre>
+
+<pre><code class="language-python">mkfs.ext4 /dev/sdb2
+mkdir root
+mount /dev/sdb2 root
+</code></pre>
+
+<h1 id="downloading-extracting-the-file-system">Downloading &amp; Extracting The File System</h1>
+
+<p>Warning: This has to be done as root and not sudo. So log-off the current user and log-in as root.</p>
+
+<pre><code class="language-python">#su root
+</code></pre>
+
+<p>Now as root, lets continue to download the packages. If you don&rsquo;t have wget installed, install it first.</p>
+
+<pre><code class="language-python">wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.tar.gz
+bsdtar -xpf ArchLinuxARM-rpi-latest.tar.gz -C root
+sync
+</code></pre>
+
+<h1 id="moving-files-to-boot-partition">Moving Files to boot Partition</h1>
+
+<p>The following bash statement will move the files, may take some few minutes.</p>
+
+<pre><code class="language-python">mv root/boot/* /boot
+</code></pre>
+
+<p>Un-mount the 2 partitions.</p>
+
+<pre><code class="language-python">umount boot root
+</code></pre>
+
+<h1 id="housekeeping">Housekeeping</h1>
+
+<p>Use terminal or SSH to login via the IP Address given by your router.</p>
+
+<p>User-name is: alarm</p>
+
+<p>Password: alarm</p>
+
+<p>Root account is: root</p>
+
+<p>Password: root</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
