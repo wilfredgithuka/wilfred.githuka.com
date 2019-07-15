@@ -20,18 +20,12 @@ Just do a simple git clone and you are done.
 
 ## Release/Update History
 
-* 0.2.1
+* 0.1.2
+      SMALL UPDATE: Header Image for README.md file is set.
+* 0.1.2
     * UPDATE TESTING: Updated 3 New Posts. 
     * However old posts still have no images.
     * No main header image set.
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()`
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
 * 0.0.1
     * Work in progress
 
