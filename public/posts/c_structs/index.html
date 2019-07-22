@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Structs &amp; Pointers in C  // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Structs &amp; Pointers in C "/>
+<meta name="twitter:description" content="In the simplest of terms, an array can hold info of a single data type while a struct (user defines)can hold data of different data types.
+In this example, you will need to #include:
+#include &lt;stdio.h&gt; #include &lt;string.h&gt; #include &lt;stdlib.h&gt; #include &lt;assert.h&gt;  Defining a Struct Struct definition is the first step before one can start working with it. Note that my struct has more than one data type which is different from arrays which have one data type."/>
+
+    <meta property="og:title" content="Structs &amp; Pointers in C " />
+<meta property="og:description" content="In the simplest of terms, an array can hold info of a single data type while a struct (user defines)can hold data of different data types.
+In this example, you will need to #include:
+#include &lt;stdio.h&gt; #include &lt;string.h&gt; #include &lt;stdlib.h&gt; #include &lt;assert.h&gt;  Defining a Struct Struct definition is the first step before one can start working with it. Note that my struct has more than one data type which is different from arrays which have one data type." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/posts/c_structs/" />
+<meta property="article:published_time" content="2019-07-22T10:23:29&#43;00:00"/>
+<meta property="article:modified_time" content="2019-07-22T10:23:29&#43;00:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Structs &amp; Pointers in C </h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 22, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          5 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p>In the simplest of terms, an array can hold info of a single data type while
+a struct (user defines)can hold data of different data types.</p>
+
+<p>In this example, you will need to #include:</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;assert.h&gt;
+</code></pre>
+
+<h3 id="defining-a-struct">Defining a Struct</h3>
+
+<p>Struct definition is the first step before one can start working with it.
+Note that my struct has more than one data type which is different from
+arrays which have one data type. Structs are like objects but they really dont have functions in them.</p>
+
+<p>When creating the struct, you need to have the struct keyword and the name
+of the struct which is the tag/structure tag.</p>
+
+<pre><code class="language-sh">struct Person {
+char *name;
+int age;
+int height;
+int weight;
+} 
+
+</code></pre>
+
+<p>In the above struct, one of the members (*name) is a pointer. Not that this member points to the memory address of where the name is and NOT to the name itself.</p>
+
+<pre><code class="language-c">struct Library {
+char author_name;
+char title;
+char subject;
+int isbn;
+}
+
+</code></pre>
+
+<h3 id="creating-the-structures-using-functions">Creating the structures using functions</h3>
+
+<p>So now that we have defined the struct which has 4 elements or members. I will use a function to create the structures from raw memory using malloc. Remember a computer has limited RAM memory where malloc create the memory from. Memory created or given must be destroyed or returned. The memory created is not initialized, and thus remains with indeterminate values.</p>
+
+<p>The malloc() function reserves a block of memory of the specified number of bytes. And, it returns a pointer of type void which can be casted into pointer of any form.</p>
+
+<pre><code class="language-sh">struct Person *Person_create(char *name, int age, int height, int weight){
+
+struct Person *who = malloc(sizeof(struct Person));
+assert(who != NULL);
+
+who-&gt;name = strdup(name);
+who-&gt;age = age;
+who-&gt;height = height;
+who-&gt;weght = weight;
+
+return who;
+
+}
+
+</code></pre>
+
+<p>In the above snippet I create a function with 4 arguments: name, age, height and weight. I then call malloc to give me a chunk of memory(RAM) the size off Person which is the struct. Afterards I use the assert just to make sure that the memory is valid. The assert is basically checking to make sure that malloc did not return a NULL invalid pointer. The assert.h can help programmers find bugs in their programs or even handle exceptional cases via a crash that will spit put debugging info.</p>
+
+<pre><code class="language-sh">man assert.h
+</code></pre>
+
+<h3 id="de-referencing-a-pointer-element-vs-dot">De-Referencing a Pointer-&gt; &amp; Element vs dot</h3>
+
+<ul>
+<li>dot : Not a pointer</li>
+<li>-&gt;  : When its a pointer</li>
+</ul>
+
+<p>In my above example I use malloc which gives me the memory. I then use *who to
+get the address of the memory that I have been given. The *who is a pointer so to access this memory I cannot just directly say who.name which would work fine
+in OOP programming. I have to find a way to link to a pointer.</p>
+
+<pre><code>who-&gt;name = strdup(name);
+</code></pre>
+
+<p>The arrow -&gt; notation is the simplest way to de-reference a pointer so that we
+can use it in the struct. If you try to use the dot way ie: who.name the compiler will throw errors. Also the strdup(name) is a string duplicate which duplicated the name and also gets the address of it.</p>
+
+<pre><code>man strdup
+</code></pre>
+
+<p>The  strdup() function returns a pointer to a new string which is a du‐plicate of the strings.  Memory for the new string  is  obtained  with malloc, and can be freed with free.</p>
+
+<h3 id="destroy">Destroy</h3>
+
+<p>Every chunk of memory created must be destroyed or freed. So I have a function called Person_destroy to do exactly that.</p>
+
+<pre><code>void Person_destroy(struct Person *who)
+{
+assert(who != NULL)
+
+free(who-&gt;name);
+free(who);
+}
+</code></pre>
+
+<p>In this function I also use the assert tool just to confirm that the memory does not return a null pointer.</p>
+
+<h3 id="creating-the-actual-structures">Creating The Actual Structures</h3>
+
+<p>What I was doing up there was defining the structures, now in the main menu I create actual structures with actual data.</p>
+
+<pre><code>struct Person *wil = Person_create(&quot;Wilfred Githuka&quot;, 32, 64, 140);
+struct Person *vic = Person_create(&quot;Victoria Marine&quot;, 20, 72, 180);
+</code></pre>
+
+<p>The above code snippet creates a memories for wil and vic. The structs now exists in memory which is pointed by *wil and *vic. I can now where wil and vic exist and can also know the contents. This can be accomplished in 2 ways:</p>
+
+<ul>
+<li>Print the memory address of the pointer *wil</li>
+<li>Print the contents of wil by using the function: Person_print</li>
+</ul>
+
+<h4 id="print-memory-location-of-wil-and-vic">Print memory location of *wil and *vic</h4>
+
+<pre><code>printf(&quot;Wilfred is at memory location %p\n&quot;, wil);
+printf(&quot;Victoria is at memory location %p\n&quot;, vic);
+</code></pre>
+
+<p>In C %p is a format specifier which is used if we want to print data of type (void *) i.e, in simple words address of pointer or any other variable .
+The output is displayed as a hexadecimal value.</p>
+
+<p>Result&hellip;</p>
+
+<pre><code>Wilfred is at memory location 0x55577d6d2260
+</code></pre>
+
+<h4 id="print-out-the-memory-contents-of-wil-and-vic">Print out the memory contents of wil and vic</h4>
+
+<pre><code>Person_print(wil);
+Person_print(vic);
+</code></pre>
+
+<h3 id="destroy-all-of-them">Destroy all of them</h3>
+
+<p>Just as I had created the names in the struct Person, I can and have to destroy them
+so that the program can close well. This is how to do it.</p>
+
+<pre><code>Person_destroy(wil);
+Person_destroy(vic);
+</code></pre>
+
+<h2 id="breaking-it">Breaking It</h2>
+
+<h3 id="1-passing-null-to-person-destroy">1. Passing NULL to Person_destroy</h3>
+
+<p>In this attempt to kill the program, I will attempt to pass NULL to the Person_destroy function.</p>
+
+<pre><code>void Person_destroy(NULL)
+{
+assert(who != NULL);
+
+free(who-&gt;name);
+free(who);
+}
+
+</code></pre>
+
+<h4 id="result">Result</h4>
+
+<p>After compiling it, it throws an error. Completey destroyed :-)</p>
+
+<pre><code>ex16_starting.c:29:21: error: expected declaration specifiers or ‘...’ before ‘(’ token
+   29 | void Person_destroy(NULL)
+      |                     ^~~~
+ex16_starting.c: In function ‘main’:
+ex16_starting.c:70:3: warning: implicit declaration of function ‘Person_destroy’ [-Wimplicit-function-declaration]
+   70 |   Person_destroy(wil);
+      |   ^~~~~~~~~~~~~~
+make: *** [&lt;builtin&gt;: ex16_starting] Error 1
+
+</code></pre>
+
+<h3 id="2-forget-to-call-person-destroy-at-the-end">2. Forget to call Person_destroy at the end.</h3>
+
+<p>In this attempt I will &lsquo;forget&rsquo; to give back or destroy the memory and see what will happen. I will do this
+by simply commenting out the call functions at the end of the code. I will also run this under a debugger to see what it shall report.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li><a href="https://learncodethehardway.org/c/">Learn C The Hard Way</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Struct_(C_programming_language)">Wikipedia&rsquo;s Article on C Structs</a></li>
+<li><a href="https://www.geeksforgeeks.org/structures-c/">GeeksforGeeks</a></li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

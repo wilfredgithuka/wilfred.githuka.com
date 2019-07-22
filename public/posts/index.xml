@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <link>https://wilfred.githuka.com/posts/</link>
+    <description>Recent content in Posts on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Jul 2019 10:23:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://wilfred.githuka.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Structs &amp; Pointers in C </title>
+      <link>https://wilfred.githuka.com/posts/c_structs/</link>
+      <pubDate>Mon, 22 Jul 2019 10:23:29 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/posts/c_structs/</guid>
+      <description>In the simplest of terms, an array can hold info of a single data type while a struct (user defines)can hold data of different data types.
+In this example, you will need to #include:
+#include &amp;lt;stdio.h&amp;gt; #include &amp;lt;string.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;assert.h&amp;gt;  Defining a Struct Struct definition is the first step before one can start working with it. Note that my struct has more than one data type which is different from arrays which have one data type.</description>
+    </item>
+    
+  </channel>
+</rss>
