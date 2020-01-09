@@ -1,14 +1,105 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <link>https://wilfred.githuka.com/post/</link>
     <description>Recent content in Posts on Fundi Willy&#39;s Low-Level Electronics Lab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 08 Jul 2019 20:07:26 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 11:15:35 +0300</lastBuildDate>
     
 	<atom:link href="https://wilfred.githuka.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Simple Database in Plain Old C</title>
+      <link>https://wilfred.githuka.com/post/c_database/</link>
+      <pubDate>Thu, 12 Dec 2019 11:15:35 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/c_database/</guid>
+      <description>C might be regarded as an old low level langage but it actually is very powerful.
+A databse can be created very easily in C. The following is a manual on how to create a simple database in C.
+This code is available in my github repo :-)
+Heap vs Stack Allocation Understanding the difference between heap and stack is very important for this tutorial.
+A chunk of RAM can be on heap or stack.</description>
+    </item>
+    
+    <item>
+      <title>On-The-Go Simple Power Bank</title>
+      <link>https://wilfred.githuka.com/post/power-bank/</link>
+      <pubDate>Wed, 11 Dec 2019 19:35:12 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/power-bank/</guid>
+      <description> 11.1V 12.6V Lithium Battery Manager System 3S 10A  Main Chip 8254AA (VCJ90) W1751 Smaller Chips 44071 and CK7F37 Charging Voltage: 12.6V - 13V Max opertating current:6-8A  Connection Details The BMS board has 6 terminal Connections:
+ B+: Connect to Battery 3&amp;rsquo;s Positive terminal B-: Connect to Battery 1&amp;rsquo;s Negative terminal B1: Connect to Battery 1&amp;rsquo;s Positive and Battery 2&amp;rsquo;s Negative terminal B2: Connect to Battery 2&amp;rsquo;s Positive and Battery 3&amp;rsquo;s Negative terminal D+: Positive Charging/Discharging Connection D-: Negative Charging/Discharging Connection  </description>
+    </item>
+    
+    <item>
+      <title>No Screen. Access Rpi Model A via Serial Port</title>
+      <link>https://wilfred.githuka.com/post/pi_serial_port/</link>
+      <pubDate>Sat, 12 Oct 2019 12:33:27 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/pi_serial_port/</guid>
+      <description>The Raspberry Pi Model A Revision 2.0 is a really classic device. On of the early devices to be made in early 2011 and its still working upto this date.
+I have been having it for a while but these days I normally use it for learning purposes, mostly a general purpose computer.
+This manual is for those who dont have a HDMI or RCA cable for setup. I will be connecting it up on a serial port which is quite handy.</description>
+    </item>
+    
+    <item>
+      <title>Sizeof-Ex12:Size&amp;Arrays in C</title>
+      <link>https://wilfred.githuka.com/post/sizeof/</link>
+      <pubDate>Sun, 29 Sep 2019 08:44:42 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/sizeof/</guid>
+      <description>The main objective of this exercise is to learn about sizeof and how it relates to arrays.
+C strings are just arrays of bytes.
+Sizeof is a unirary operator and C developers are obsessed about size of everything. In C memory size is key and you have to be keen on learning how much space is being taken up by stuff.
+See the following code snippet:
+#include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { int areas[] = {10, 12, 13, 14, 20}; char name[] = &amp;quot;Zed&amp;quot;; char full_name[] = {&#39;Z&#39;,&#39;e&#39;,&#39;d&#39;,&#39; &#39;,&#39;A&#39;,&#39;.</description>
+    </item>
+    
+    <item>
+      <title>SMPS Detailed Principle of Operation</title>
+      <link>https://wilfred.githuka.com/post/smps_detail/</link>
+      <pubDate>Sat, 07 Sep 2019 13:09:17 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/smps_detail/</guid>
+      <description>This is a detailed explanation of the inner workings of a Switched Mode Power Supply. I have written a more simpler version which I recommend you read before coming to this one.
+SMPS Specs  Input Voltage: 240V AC Output Voltage: +12VDC, -12VDC, +5VDC(Regulated),GND 0V  Components  1x Main 240V Fuse 1x NTC x1 4x Rectification Diodes 2x 10 Micorfarad 240V Smoothening Electrolyctic Capacitors 1x 1mH Inductor FDM311 Green Mode FairChild Power Switch 2X 120KOhm Resistors (Snapper) 1x 1kV Capacitor(Snapper)  Input The SMPS has an input of 240VAC which passes through a fuse and an NTC.</description>
+    </item>
+    
+    <item>
+      <title>Epson L850 Inkjet Printer Driver Installation</title>
+      <link>https://wilfred.githuka.com/post/epson-l850/</link>
+      <pubDate>Thu, 05 Sep 2019 05:14:30 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/epson-l850/</guid>
+      <description>The Epson L850 is a versatile printer that I came accross recently. Its the kind of printers that carry along an ink tank which is good but abit messy when it comes to refilling it.
+Driver Installation This Driver installation tutorial is for Linux users specifically Archlinux. Am assuming that the connection media to the printer is via a USB 2.0 cable.
+ Update your machine.
+pacman -Syu  Install Epson Inkjet Printer Driver (ESC/P-R) for Linux.</description>
+    </item>
+    
+    <item>
+      <title>Exercise 1: Dust off that Compiler</title>
+      <link>https://wilfred.githuka.com/post/ex1/</link>
+      <pubDate>Sun, 25 Aug 2019 14:16:09 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ex1/</guid>
+      <description>In this second exercise, its all about writing code and seeing what happens. This is the code snippet for this exercise.
+#include &amp;lt;stdio.h&amp;gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&amp;quot;You are %d miles away \n&amp;quot;, distance); return 0; }  Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&amp;rsquo;s source files.</description>
+    </item>
+    
+    <item>
+      <title>Exercise 0: The Setup</title>
+      <link>https://wilfred.githuka.com/post/ex0/</link>
+      <pubDate>Sun, 25 Aug 2019 13:56:08 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ex0/</guid>
+      <description>This is ground zero for the tutorial. But before starting any developent using C, you need to prepare your computer to make sure you have the necessary tools. This tutorial is for an Archlinux machine, which am using.
+Installation  To start with ensure that your system is up to date
+pacman -Syu  Install the base-devel package. Base-devel has 26 items which are necessary for C-type development.
+paman -S base-devel  Now check that you have the GNU C compiler.</description>
+    </item>
     
     <item>
       <title>ExGNU Radio Project Update</title>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Fundi Willy&#39;s Low-Level Electronics Lab</title>
@@ -11,20 +11,20 @@
     
     
     <item>
-      <title>FM/AM</title>
-      <link>https://wilfred.githuka.com/tags/fm/am/</link>
-      <pubDate>Mon, 08 Jul 2019 20:07:26 +0000</pubDate>
-      
-      <guid>https://wilfred.githuka.com/tags/fm/am/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>electronics</title>
       <link>https://wilfred.githuka.com/tags/electronics/</link>
       <pubDate>Mon, 08 Jul 2019 20:07:26 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/tags/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FM/AM</title>
+      <link>https://wilfred.githuka.com/tags/fm/am/</link>
+      <pubDate>Mon, 08 Jul 2019 20:07:26 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/tags/fm/am/</guid>
       <description></description>
     </item>
     
@@ -83,7 +83,7 @@
     </item>
     
     <item>
-      <title>self-driving</title>
+      <title>Self-driving</title>
       <link>https://wilfred.githuka.com/tags/self-driving/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -155,7 +155,7 @@
     </item>
     
     <item>
-      <title>Archlinux</title>
+      <title>archlinux</title>
       <link>https://wilfred.githuka.com/tags/archlinux/</link>
       <pubDate>Sat, 19 May 2018 21:25:31 +0000</pubDate>
       
@@ -308,15 +308,6 @@
     </item>
     
     <item>
-      <title>Audacity</title>
-      <link>https://wilfred.githuka.com/tags/audacity/</link>
-      <pubDate>Tue, 12 Dec 2017 10:52:04 +0300</pubDate>
-      
-      <guid>https://wilfred.githuka.com/tags/audacity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>alsa</title>
       <link>https://wilfred.githuka.com/tags/alsa/</link>
       <pubDate>Tue, 12 Dec 2017 10:52:04 +0300</pubDate>
@@ -331,6 +322,15 @@
       <pubDate>Tue, 12 Dec 2017 10:52:04 +0300</pubDate>
       
       <guid>https://wilfred.githuka.com/tags/arecord/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>audacity</title>
+      <link>https://wilfred.githuka.com/tags/audacity/</link>
+      <pubDate>Tue, 12 Dec 2017 10:52:04 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/tags/audacity/</guid>
       <description></description>
     </item>
     
@@ -398,7 +398,7 @@
     </item>
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://wilfred.githuka.com/tags/python/</link>
       <pubDate>Fri, 01 Dec 2017 14:13:54 +0300</pubDate>
       
@@ -623,15 +623,6 @@
     </item>
     
     <item>
-      <title>RCSDC</title>
-      <link>https://wilfred.githuka.com/tags/rcsdc/</link>
-      <pubDate>Thu, 03 Aug 2017 08:49:53 +0300</pubDate>
-      
-      <guid>https://wilfred.githuka.com/tags/rcsdc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>RaspberryPi</title>
       <link>https://wilfred.githuka.com/tags/raspberrypi/</link>
       <pubDate>Thu, 03 Aug 2017 08:49:53 +0300</pubDate>
@@ -641,11 +632,11 @@
     </item>
     
     <item>
-      <title>OpenCV</title>
-      <link>https://wilfred.githuka.com/tags/opencv/</link>
-      <pubDate>Tue, 04 Jul 2017 07:51:33 +0300</pubDate>
+      <title>RCSDC</title>
+      <link>https://wilfred.githuka.com/tags/rcsdc/</link>
+      <pubDate>Thu, 03 Aug 2017 08:49:53 +0300</pubDate>
       
-      <guid>https://wilfred.githuka.com/tags/opencv/</guid>
+      <guid>https://wilfred.githuka.com/tags/rcsdc/</guid>
       <description></description>
     </item>
     
@@ -686,11 +677,11 @@
     </item>
     
     <item>
-      <title>Sony</title>
-      <link>https://wilfred.githuka.com/tags/sony/</link>
-      <pubDate>Fri, 30 Jun 2017 21:21:48 +0300</pubDate>
+      <title>OpenCV</title>
+      <link>https://wilfred.githuka.com/tags/opencv/</link>
+      <pubDate>Tue, 04 Jul 2017 07:51:33 +0300</pubDate>
       
-      <guid>https://wilfred.githuka.com/tags/sony/</guid>
+      <guid>https://wilfred.githuka.com/tags/opencv/</guid>
       <description></description>
     </item>
     
@@ -709,6 +700,15 @@
       <pubDate>Fri, 30 Jun 2017 21:21:48 +0300</pubDate>
       
       <guid>https://wilfred.githuka.com/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sony</title>
+      <link>https://wilfred.githuka.com/tags/sony/</link>
+      <pubDate>Fri, 30 Jun 2017 21:21:48 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/tags/sony/</guid>
       <description></description>
     </item>
     

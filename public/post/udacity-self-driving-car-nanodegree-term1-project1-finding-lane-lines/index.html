@@ -3,7 +3,7 @@
   <head>
     <title>Udacity Self Driving Car Nanodegree Term1 Project1 Finding Lane Lines // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.59.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -18,8 +18,8 @@
 <meta property="og:description" content="The main objective of this project is to find lane lines in video using basic computer vision. The lines on the road show us where the lanes are and act as a constant reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.In this project I have created a pipeline to detect lane lines in images and videos using Python and OpenCV." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wilfred.githuka.com/post/udacity-self-driving-car-nanodegree-term1-project1-finding-lane-lines/" />
-<meta property="article:published_time" content="2017-07-04T07:51:33&#43;03:00"/>
-<meta property="article:modified_time" content="2017-07-04T07:51:33&#43;03:00"/>
+<meta property="article:published_time" content="2017-07-04T07:51:33+03:00" />
+<meta property="article:modified_time" content="2017-07-04T07:51:33+03:00" />
 
 
   </head>
@@ -66,7 +66,7 @@
   <title>tag</title>
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
 </svg>
-          <a class="tag" href="https://wilfred.githuka.com/tags/udacity/">udacity</a><a class="tag" href="https://wilfred.githuka.com/tags/python/">python</a><a class="tag" href="https://wilfred.githuka.com/tags/canny/">canny</a><a class="tag" href="https://wilfred.githuka.com/tags/opencv/">OpenCV</a><a class="tag" href="https://wilfred.githuka.com/tags/miniconda/">miniconda</a><a class="tag" href="https://wilfred.githuka.com/tags/jupyter/">jupyter</a><a class="tag" href="https://wilfred.githuka.com/tags/numpy/">numpy</a></div></div>
+          <a class="tag" href="https://wilfred.githuka.com/tags/udacity/">udacity</a><a class="tag" href="https://wilfred.githuka.com/tags/python/">Python</a><a class="tag" href="https://wilfred.githuka.com/tags/canny/">canny</a><a class="tag" href="https://wilfred.githuka.com/tags/opencv/">OpenCV</a><a class="tag" href="https://wilfred.githuka.com/tags/miniconda/">miniconda</a><a class="tag" href="https://wilfred.githuka.com/tags/jupyter/">jupyter</a><a class="tag" href="https://wilfred.githuka.com/tags/numpy/">numpy</a></div></div>
     </header>
     <div class="post-content">
       
@@ -300,38 +300,34 @@ Image output with a ROI defined. This is what the car will concentrate on.</p>
 
 <ul>
 <li>Pixels are considered points in XY space.</li>
-<li><code>python hough_lines()</code> transforms these points into lines inside of Hough space.</li>
-<li>Wherever these lines intersect, there is a point of intersection in Hough space.</li>
-<li>The point of intersection corresponds to a line in XY space. Thanks @galen.ballew</li>
+<li><code>python hough_lines()</code> transforms these points into lines inside of Hough space.
+* Wherever these lines intersect, there is a point of intersection in Hough space.
+* The point of intersection corresponds to a line in XY space. Thanks @galen.ballew
+
+<img src="/img/udacity/solidWhiteCurveHough.jpg" alt="Final Image" />
+Image output with Hough Transform applied
+
+## Merging Original Image with Lines
+Now we plug in our original image with the Lines, this is what I got&hellip;
+
+<img src="/img/udacity/solidWhiteCurveMerged.jpg" alt="Final Image" />
+Nice :-)
+
+## How about Video?
+We can also try it out on video, have a look below..
+
+### Original Video
+<a href="https://youtu.be/3WvcvB6xS9I">https://youtu.be/3WvcvB6xS9I</a>
+
+### Processed Video
+<a href="https://youtu.be/1AXc-F-idEU">https://youtu.be/1AXc-F-idEU</a>
+
+## Conclusion
+
+This project has actually introduced me into the deeper powers of python and computer vision. I still have an urge to use my own local images in this project. Thats for next time.
+
+All the files for this project can be found in the <a href="https://github.com/wilfredgithuka/usdcnd-project1-lane-detection">repo</a></li>
 </ul>
-
-<p><img src="/img/udacity/solidWhiteCurveHough.jpg" alt="Final Image" />
-Image output with Hough Transform applied</p>
-
-<h2 id="merging-original-image-with-lines">Merging Original Image with Lines</h2>
-
-<p>Now we plug in our original image with the Lines, this is what I got&hellip;</p>
-
-<p><img src="/img/udacity/solidWhiteCurveMerged.jpg" alt="Final Image" />
-Nice :-)</p>
-
-<h2 id="how-about-video">How about Video?</h2>
-
-<p>We can also try it out on video, have a look below..</p>
-
-<h3 id="original-video">Original Video</h3>
-
-<p><a href="https://youtu.be/3WvcvB6xS9I">https://youtu.be/3WvcvB6xS9I</a></p>
-
-<h3 id="processed-video">Processed Video</h3>
-
-<p><a href="https://youtu.be/1AXc-F-idEU">https://youtu.be/1AXc-F-idEU</a></p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>This project has actually introduced me into the deeper powers of python and computer vision. I still have an urge to use my own local images in this project. Thats for next time.</p>
-
-<p>All the files for this project can be found in the <a href="https://github.com/wilfredgithuka/usdcnd-project1-lane-detection">repo</a></p>
 
     </div>
     <div class="post-footer">

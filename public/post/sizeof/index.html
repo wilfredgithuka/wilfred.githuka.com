@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Sizeof-Ex12:Size&amp;Arrays in C // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sizeof-Ex12:Size&amp;Arrays in C"/>
+<meta name="twitter:description" content="The main objective of this exercise is to learn about sizeof and how it relates to arrays.
+C strings are just arrays of bytes.
+Sizeof is a unirary operator and C developers are obsessed about size of everything. In C memory size is key and you have to be keen on learning how much space is being taken up by stuff.
+See the following code snippet:
+#include &lt;stdio.h&gt; int main(int argc, char *argv[]) { int areas[] = {10, 12, 13, 14, 20}; char name[] = &quot;Zed&quot;; char full_name[] = {&#39;Z&#39;,&#39;e&#39;,&#39;d&#39;,&#39; &#39;,&#39;A&#39;,&#39;."/>
+
+    <meta property="og:title" content="Sizeof-Ex12:Size&amp;Arrays in C" />
+<meta property="og:description" content="The main objective of this exercise is to learn about sizeof and how it relates to arrays.
+C strings are just arrays of bytes.
+Sizeof is a unirary operator and C developers are obsessed about size of everything. In C memory size is key and you have to be keen on learning how much space is being taken up by stuff.
+See the following code snippet:
+#include &lt;stdio.h&gt; int main(int argc, char *argv[]) { int areas[] = {10, 12, 13, 14, 20}; char name[] = &quot;Zed&quot;; char full_name[] = {&#39;Z&#39;,&#39;e&#39;,&#39;d&#39;,&#39; &#39;,&#39;A&#39;,&#39;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/sizeof/" />
+<meta property="article:published_time" content="2019-09-29T08:44:42+00:00" />
+<meta property="article:modified_time" content="2019-09-29T08:44:42+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Sizeof-Ex12:Size&amp;Arrays in C</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 29, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <p>The main objective of this exercise is to learn about sizeof and how it relates to arrays.</p>
+
+<p>C strings are just arrays of bytes.</p>
+
+<p>Sizeof is a unirary operator and C developers are obsessed about size of everything.
+In C memory size is key and you have to be keen on learning how much space is being taken up by stuff.</p>
+
+<p>See the following code snippet:</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+
+int main(int argc, char *argv[])
+{
+        int areas[] = {10, 12, 13, 14, 20};
+        char name[] = &quot;Zed&quot;;
+        char full_name[] = {'Z','e','d',' ','A','.','S','h','a','w','\0'};
+
+        //Warning: On some systems you may have to change the %ld to %u
+
+</code></pre>
+
+<p>In the above code I define the arrays which am going to use. Mainly work with int and char data types. Note the
+&lsquo;\0&rsquo; byte at the end of the char full_name array. Its quite important. Next I start the checking of size using sizeof.</p>
+
+<pre><code>	printf(&quot;The size of an int: %ld bytes\n&quot;, sizeof(int));
+        printf(&quot;The size of areas (int[]): %ld bytes\n&quot;, sizeof(areas));
+        printf(&quot;The number of int in areas: %ld \n&quot;, sizeof(areas)/sizeof(int));
+        printf(&quot;The first area is %d and the last area is %d \n&quot;, areas[0], areas[4]);
+        return 0;
+</code></pre>
+
+<p>After Making the above, you will get an warning about uninitialised/unused variables which is okay, just proceed to run it.
+This is the result.</p>
+
+<pre><code>The size of an int: 4 bytes
+The size of areas (int[]): 20 bytes
+The number of int in areas: 5 bytes
+The first area is 10 and the last area is 20 
+</code></pre>
+
+<p>The above result is straight to the point. Note that for the last statement, I started reading from 0 to 4 since in C arrays start
+from 0 NOT 1.</p>
+
+<p>Proceed&hellip;</p>
+
+<p>In this next part I investigate the size of characters&hellip;</p>
+
+<pre><code>	printf(&quot;The size of a char: %ld bytes\n&quot;, sizeof(char));
+        printf(&quot;The size of name(char[]): %ld bytes\n&quot;, sizeof(name));
+        printf(&quot;The number of char: %ld \n&quot;, sizeof(name)/sizeof(char));
+</code></pre>
+
+<p>The above code is preety straight foward and this is what I got.</p>
+
+<pre><code>The size of a char: 1 bytes
+The size of name(char[]): 4 bytes
+The number of char: 4 
+</code></pre>
+
+<p>The last part of the code is to print put the size and content of name and full_name</p>
+
+<pre><code>	printf(&quot;The size of full name(char[]):%ld\n&quot;, sizeof(full_name));
+        printf(&quot;The number of chars: %ld\n&quot;, sizeof(full_name)/sizeof(char));
+        printf(&quot;name=\&quot;%s\&quot; and full name=\&quot;%s\&quot;\n&quot;, name, full_name);
+
+</code></pre>
+
+<p>And the result shall be&hellip;</p>
+
+<pre><code>The size of full name(char[]):11
+The number of chars: 11
+name=&quot;Zed&quot; and full name=&quot;Zed A.Shaw&quot;
+</code></pre>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

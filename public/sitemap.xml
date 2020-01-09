@@ -1,22 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://wilfred.githuka.com/post/c_database/</loc>
+    <lastmod>2019-12-12T11:15:35+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wilfred.githuka.com/</loc>
-    <lastmod>2019-07-22T10:23:29+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-12-12T11:15:35+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/posts/</loc>
-    <lastmod>2019-07-22T10:23:29+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://wilfred.githuka.com/post/</loc>
+    <lastmod>2019-12-12T11:15:35+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/posts/c_structs/</loc>
-    <lastmod>2019-07-22T10:23:29+00:00</lastmod>
+    <loc>https://wilfred.githuka.com/post/power-bank/</loc>
+    <lastmod>2019-12-11T19:35:12+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/pi_serial_port/</loc>
+    <lastmod>2019-10-12T12:33:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/sizeof/</loc>
+    <lastmod>2019-09-29T08:44:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/smps_detail/</loc>
+    <lastmod>2019-09-07T13:09:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/epson-l850/</loc>
+    <lastmod>2019-09-05T05:14:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/ex1/</loc>
+    <lastmod>2019-08-25T14:16:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/ex0/</loc>
+    <lastmod>2019-08-25T13:56:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/electronics/</loc>
+    <lastmod>2019-07-08T20:07:26+00:00</lastmod>
   </url>
   
   <url>
@@ -27,37 +65,31 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/fm/am/</loc>
     <lastmod>2019-07-08T20:07:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/post/</loc>
-    <lastmod>2019-07-08T20:07:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/</loc>
-    <lastmod>2019-07-08T20:07:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/electronics/</loc>
-    <lastmod>2019-07-08T20:07:26+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/radio/</loc>
     <lastmod>2019-07-08T20:07:26+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/soldering/</loc>
     <lastmod>2019-07-08T20:07:26+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/</loc>
+    <lastmod>2019-07-08T20:07:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/diodegonewild/</loc>
+    <lastmod>2019-06-24T08:28:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/smps/</loc>
+    <lastmod>2019-06-24T08:28:53+00:00</lastmod>
   </url>
   
   <url>
@@ -66,21 +98,8 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/diodegonewild/</loc>
-    <lastmod>2019-06-24T08:28:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/smps/</loc>
-    <lastmod>2019-06-24T08:28:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/youtube/</loc>
     <lastmod>2019-06-24T08:28:53+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -101,13 +120,21 @@
   <url>
     <loc>https://wilfred.githuka.com/categories/</loc>
     <lastmod>2019-02-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/deep-learning/</loc>
+    <lastmod>2019-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/categories/linux/</loc>
     <lastmod>2019-02-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/self-driving/</loc>
+    <lastmod>2019-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -116,26 +143,23 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/deep-learning/</loc>
-    <lastmod>2019-02-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/self-driving/</loc>
-    <lastmod>2019-02-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/post/tensor-flow-iou/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://wilfred.githuka.com/tags/ets/</loc>
+    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wilfred.githuka.com/categories/ets2/</loc>
     <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/gaming/</loc>
+    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -144,21 +168,13 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/ets/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/gaming/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/categories/autonomous-vehicle/</loc>
     <lastmod>2019-01-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/autonomous-vehicle/</loc>
+    <lastmod>2019-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -167,20 +183,28 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/autonomous-vehicle/</loc>
-    <lastmod>2019-01-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/udacity/</loc>
     <lastmod>2019-01-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/post/straight_line/</loc>
     <lastmod>2019-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/arduino/</loc>
+    <lastmod>2018-07-01T13:03:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/c&#43;&#43;/</loc>
+    <lastmod>2018-07-01T13:03:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/pi/</loc>
+    <lastmod>2018-07-01T13:03:06+00:00</lastmod>
   </url>
   
   <url>
@@ -194,24 +218,6 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/arduino/</loc>
-    <lastmod>2018-07-01T13:03:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/c&#43;&#43;/</loc>
-    <lastmod>2018-07-01T13:03:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/pi/</loc>
-    <lastmod>2018-07-01T13:03:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</loc>
     <lastmod>2018-05-19T21:25:31+00:00</lastmod>
   </url>
@@ -219,19 +225,16 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/archlinux/</loc>
     <lastmod>2018-05-19T21:25:31+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/gdrive/</loc>
     <lastmod>2018-05-19T21:25:31+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/2g/</loc>
     <lastmod>2018-04-02T02:39:11+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -242,37 +245,31 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/sgr/</loc>
     <lastmod>2018-04-02T02:39:11+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/taita-taveta/</loc>
     <lastmod>2018-04-02T02:39:11+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/tsavo/</loc>
     <lastmod>2018-04-02T02:39:11+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/voi/</loc>
     <lastmod>2018-04-02T02:39:11+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/voi-wildlife-lodge/</loc>
     <lastmod>2018-04-02T02:39:11+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/3phase/</loc>
     <lastmod>2018-03-01T12:33:40+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -283,31 +280,31 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/frequency/</loc>
     <lastmod>2018-03-01T12:33:40+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/mitsubishi/</loc>
     <lastmod>2018-03-01T12:33:40+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/motor/</loc>
     <lastmod>2018-03-01T12:33:40+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/vfd/</loc>
     <lastmod>2018-03-01T12:33:40+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/8051/</loc>
     <lastmod>2018-01-26T18:18:35+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/microcontroller/</loc>
+    <lastmod>2018-01-26T18:18:35+03:00</lastmod>
   </url>
   
   <url>
@@ -316,27 +313,33 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/microcontroller/</loc>
-    <lastmod>2018-01-26T18:18:35+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/stc/</loc>
     <lastmod>2018-01-26T18:18:35+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/stcmcu/</loc>
     <lastmod>2018-01-26T18:18:35+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/alsa/</loc>
+    <lastmod>2017-12-12T10:52:04+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/arecord/</loc>
+    <lastmod>2017-12-12T10:52:04+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/audacity/</loc>
     <lastmod>2017-12-12T10:52:04+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/audio/</loc>
+    <lastmod>2017-12-12T10:52:04+03:00</lastmod>
   </url>
   
   <url>
@@ -345,27 +348,18 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/alsa/</loc>
-    <lastmod>2017-12-12T10:52:04+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/arecord/</loc>
-    <lastmod>2017-12-12T10:52:04+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/audio/</loc>
-    <lastmod>2017-12-12T10:52:04+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/marantz/</loc>
     <lastmod>2017-12-12T10:52:04+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/linux/</loc>
+    <lastmod>2017-12-02T22:27:08+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/nailug/</loc>
+    <lastmod>2017-12-02T22:27:08+03:00</lastmod>
   </url>
   
   <url>
@@ -374,21 +368,23 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/linux/</loc>
-    <lastmod>2017-12-02T22:27:08+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/nailug/</loc>
-    <lastmod>2017-12-02T22:27:08+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/ona/</loc>
     <lastmod>2017-12-02T22:27:08+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/jupyter-notebooks/</loc>
+    <lastmod>2017-12-01T14:13:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/programming/</loc>
+    <lastmod>2017-12-01T14:13:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/python/</loc>
+    <lastmod>2017-12-01T14:13:54+03:00</lastmod>
   </url>
   
   <url>
@@ -397,21 +393,13 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/jupyter-notebooks/</loc>
-    <lastmod>2017-12-01T14:13:54+03:00</lastmod>
-    <priority>0</priority>
+    <loc>https://wilfred.githuka.com/tags/emacs/</loc>
+    <lastmod>2017-11-30T21:57:34+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/programming/</loc>
-    <lastmod>2017-12-01T14:13:54+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/python/</loc>
-    <lastmod>2017-12-01T14:13:54+03:00</lastmod>
-    <priority>0</priority>
+    <loc>https://wilfred.githuka.com/tags/ranger/</loc>
+    <lastmod>2017-11-30T21:57:34+03:00</lastmod>
   </url>
   
   <url>
@@ -420,21 +408,13 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/emacs/</loc>
-    <lastmod>2017-11-30T21:57:34+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/ranger/</loc>
-    <lastmod>2017-11-30T21:57:34+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/spacemacs/</loc>
     <lastmod>2017-11-30T21:57:34+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/ibm/</loc>
+    <lastmod>2017-11-16T22:24:35+03:00</lastmod>
   </url>
   
   <url>
@@ -443,15 +423,8 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/ibm/</loc>
-    <lastmod>2017-11-16T22:24:35+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/slecectric/</loc>
     <lastmod>2017-11-16T22:24:35+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -467,25 +440,21 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/nanodgeree/</loc>
     <lastmod>2017-10-25T19:32:07+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/selfdrivingcars/</loc>
     <lastmod>2017-10-25T19:32:07+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/caddy/</loc>
     <lastmod>2017-10-16T09:16:15+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/linode/</loc>
     <lastmod>2017-10-16T09:16:15+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -496,25 +465,21 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/wordpress/</loc>
     <lastmod>2017-10-16T09:16:15+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/christian-union/</loc>
     <lastmod>2017-10-16T09:09:24+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/kenya/</loc>
     <lastmod>2017-10-16T09:09:24+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/nyeri/</loc>
     <lastmod>2017-10-16T09:09:24+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -525,7 +490,11 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/students/</loc>
     <lastmod>2017-10-16T09:09:24+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/dashcam/</loc>
+    <lastmod>2017-09-26T10:34:56+03:00</lastmod>
   </url>
   
   <url>
@@ -534,21 +503,13 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/dashcam/</loc>
-    <lastmod>2017-09-26T10:34:56+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/lane-detection/</loc>
     <lastmod>2017-09-26T10:34:56+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/self-driving-car/</loc>
     <lastmod>2017-09-26T10:34:56+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -557,38 +518,33 @@
   </url>
   
   <url>
+    <loc>https://wilfred.githuka.com/tags/ford/</loc>
+    <lastmod>2017-09-11T08:59:22+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wilfred.githuka.com/post/this-week-in-autonomous-vehicles-spetember-10th-edition/</loc>
     <lastmod>2017-09-11T08:59:22+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/ford/</loc>
-    <lastmod>2017-09-11T08:59:22+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/waymo/</loc>
     <lastmod>2017-09-11T08:59:22+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/chinese/</loc>
     <lastmod>2017-08-05T11:32:04+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/chineseteacher/</loc>
     <lastmod>2017-08-05T11:32:04+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/nativechinese/</loc>
     <lastmod>2017-08-05T11:32:04+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -599,13 +555,16 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/%E4%B8%AD%E6%96%87%E8%AE%B2/</loc>
     <lastmod>2017-08-05T11:32:04+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/tags/autonomy/</loc>
     <lastmod>2017-08-03T08:49:53+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/raspberrypi/</loc>
+    <lastmod>2017-08-03T08:49:53+03:00</lastmod>
   </url>
   
   <url>
@@ -616,13 +575,6 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/rcsdc/</loc>
     <lastmod>2017-08-03T08:49:53+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/raspberrypi/</loc>
-    <lastmod>2017-08-03T08:49:53+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -631,9 +583,28 @@
   </url>
   
   <url>
+    <loc>https://wilfred.githuka.com/tags/canny/</loc>
+    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/jupyter/</loc>
+    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/miniconda/</loc>
+    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/numpy/</loc>
+    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wilfred.githuka.com/tags/opencv/</loc>
     <lastmod>2017-07-04T07:51:33+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -642,27 +613,8 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/canny/</loc>
-    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/jupyter/</loc>
-    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/miniconda/</loc>
-    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/numpy/</loc>
-    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
-    <priority>0</priority>
+    <loc>https://wilfred.githuka.com/tags/lifelog/</loc>
+    <lastmod>2017-06-30T21:21:48+03:00</lastmod>
   </url>
   
   <url>
@@ -671,27 +623,18 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/sony/</loc>
-    <lastmod>2017-06-30T21:21:48+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/lifelog/</loc>
-    <lastmod>2017-06-30T21:21:48+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/photography/</loc>
     <lastmod>2017-06-30T21:21:48+03:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/sony/</loc>
+    <lastmod>2017-06-30T21:21:48+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/categories/elecrical-engineering/</loc>
     <lastmod>2017-06-28T13:56:37+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -712,7 +655,6 @@
   <url>
     <loc>https://wilfred.githuka.com/categories/engineering/</loc>
     <lastmod>2017-04-01T17:18:28+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -728,13 +670,11 @@
   <url>
     <loc>https://wilfred.githuka.com/categories/photography/</loc>
     <lastmod>2017-03-31T19:40:43+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/categories/armature-radio/</loc>
     <lastmod>2017-03-21T08:39:02+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

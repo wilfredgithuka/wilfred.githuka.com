@@ -3,7 +3,7 @@
   <head>
     <title>Collecting Driving Data On Kenyan Roads // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.59.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -18,8 +18,8 @@
 <meta property="og:description" content="Ever since I dipped my mind into the autonomous vehicles world, I have been noting carefully road transport in a whole new dimension. I now see data and need lots of it. Training a CNN needs alot of data and even when I was working on the Lane Detection Algo project, I used data that was provided by (Udacity)[udacity.com]. But now I deceided to put the same algo on local roads here in Kenya." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wilfred.githuka.com/post/collecting-driving-data-on-kenyan-roads/" />
-<meta property="article:published_time" content="2017-09-22T23:58:07&#43;03:00"/>
-<meta property="article:modified_time" content="2017-09-22T23:58:07&#43;03:00"/>
+<meta property="article:published_time" content="2017-09-22T23:58:07+03:00" />
+<meta property="article:modified_time" content="2017-09-22T23:58:07+03:00" />
 
 
   </head>
@@ -101,35 +101,28 @@ Here is my rig - The wilrIG</p>
 <li>Record data in video format without audio. Turn OFF audio recording in phone or webcam settings. Audio increases file size significantly so I dont need it. Put phone in Flight Mode during data collection to stop disruptions when the phone is called or notifications. Be sure to have enough memory card space.</li>
 <li>Transfer video to computer and rename appropiately</li>
 <li>Fire up FFmpeg and run these commands to cut the parts of the video you want, reduce resolution of video down to 640:360 and extract images from video</li>
-<li>Scale down the resolution</li>
-</ul>
+
+<li><p>Scale down the resolution</p>
 
 <pre><code class="language-bash">ffmpeg -i inputvideo.mp4 -vf scale=640:480 outputvideo.mp4
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Get the wanted parts of the video</li>
-</ul>
+<li><p>Get the wanted parts of the video</p>
 
 <pre><code class="language-bash">ffmpeg -i inputvideo.mp4 -ss 00:04:24 -to 00:06:40 -c copy outputvideo.mp4
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Extract Images(s) from video</li>
-</ul>
+<li><p>Extract Images(s) from video</p>
 
 <pre><code class="language-bash">ffmpeg -i inputvideo.mp4 -ss 00:00:13.000 -vframes 1 ImageOutput.jpg
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Extract Image from video with specific time/intervals</li>
-</ul>
+<li><p>Extract Image from video with specific time/intervals</p>
 
 <pre><code class="language-bash">ffmpeg -i inputvideo.mp4 -vf fps=1/15 ImageOutput.jpg -hide_banner
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>The video you have and images are ready for testing. Create appropriate folders to kep your work neat. Am working on a bash script to simply all this, so stay tuned.</li>
+<li><p>The video you have and images are ready for testing. Create appropriate folders to kep your work neat. Am working on a bash script to simply all this, so stay tuned.</p></li>
 </ul>
 
 <p>Header Image/MagicalKenya.com</p>

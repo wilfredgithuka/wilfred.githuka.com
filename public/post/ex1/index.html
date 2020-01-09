@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Exercise 1: Dust off that Compiler // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Exercise 1: Dust off that Compiler"/>
+<meta name="twitter:description" content="In this second exercise, its all about writing code and seeing what happens. This is the code snippet for this exercise.
+#include &lt;stdio.h&gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&quot;You are %d miles away \n&quot;, distance); return 0; }  Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&rsquo;s source files."/>
+
+    <meta property="og:title" content="Exercise 1: Dust off that Compiler" />
+<meta property="og:description" content="In this second exercise, its all about writing code and seeing what happens. This is the code snippet for this exercise.
+#include &lt;stdio.h&gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&quot;You are %d miles away \n&quot;, distance); return 0; }  Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&rsquo;s source files." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/ex1/" />
+<meta property="article:published_time" content="2019-08-25T14:16:09+00:00" />
+<meta property="article:modified_time" content="2019-08-25T14:16:09+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Exercise 1: Dust off that Compiler</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 25, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p>In this second exercise, its all about writing code and seeing what happens.
+This is the code snippet for this exercise.</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+
+/*This is a comment*/
+int main(int argc, char *argv[])
+{
+int distance = 100;
+
+//This is another comment
+printf(&quot;You are %d miles away \n&quot;, distance);
+
+return 0;
+
+}
+
+</code></pre>
+
+<h2 id="compiling">Compiling</h2>
+
+<p>To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&rsquo;s source files. Make gets its knowledge of how to build a program from a file called the makefile, which lists each of the non-source files and how to compute it from other files. When you write a program, you should write a makefile for it, so that it is possible to use Make to build and install the program.</p>
+
+<p>But for now we shall not create/modify our make file.</p>
+
+<pre><code>make ex1
+</code></pre>
+
+<p>Before we execute our program we need to check for errors(debug) using a special tool called lldb. The LLDB Debugger (LLDB) is the debugger component of the LLVM project. It is built as a set of reusable components which extensively use existing libraries from LLVM, such as the Clang expression parser and LLVM disassembler. LLDB is free and open-source software.</p>
+
+<pre><code>lldb ex1
+</code></pre>
+
+<p>When it reports no errors, then you can exectute the program. To exit from lldb, just type: exit and hit enter.</p>
+
+<pre><code>./ex1
+
+You are 100 miles away
+</code></pre>
+
+<h2 id="what-i-ve-learnt">What I&rsquo;ve Learnt</h2>
+
+<p>First of all by running:</p>
+
+<pre><code>man printf
+</code></pre>
+
+<p>I got to realise that it was developed by MacKenzie and it takes a variety of parameters. To check how printf works, I shall run the above
+code but remove the last variable parameter and see what my program tells me. Here we go&hellip;</p>
+
+<pre><code>printf(&quot;You are %d miles away \n&quot;);
+</code></pre>
+
+<p>The compilation stage passes with no errors. I then execute it to see what happens. This is the result I get.</p>
+
+<pre><code>You are -969057704 miles away
+</code></pre>
+
+<p>The reason why I get the negative result is because printf and C operate on raw memory. In C there is no virtual machine
+that protects the programmer from such errors. Its Raw memory as it is. Because C expects there to be a parameter it find
+nothing so returns whatever memory is available at the expected point. That is how raw things get here.</p>
+
+<p>I then check with lldb on whats happening inside.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
