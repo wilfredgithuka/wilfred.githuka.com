@@ -3,7 +3,7 @@
   <head>
     <title>Epson L850 Inkjet Printer Driver Installation // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -14,14 +14,12 @@
 <meta name="twitter:title" content="Epson L850 Inkjet Printer Driver Installation"/>
 <meta name="twitter:description" content="The Epson L850 is a versatile printer that I came accross recently. Its the kind of printers that carry along an ink tank which is good but abit messy when it comes to refilling it.
 Driver Installation This Driver installation tutorial is for Linux users specifically Archlinux. Am assuming that the connection media to the printer is via a USB 2.0 cable.
- Update your machine.
-pacman -Syu  Install Epson Inkjet Printer Driver (ESC/P-R) for Linux."/>
+ Update your machine.  pacman -Syu  Install Epson Inkjet Printer Driver (ESC/P-R) for Linux."/>
 
     <meta property="og:title" content="Epson L850 Inkjet Printer Driver Installation" />
 <meta property="og:description" content="The Epson L850 is a versatile printer that I came accross recently. Its the kind of printers that carry along an ink tank which is good but abit messy when it comes to refilling it.
 Driver Installation This Driver installation tutorial is for Linux users specifically Archlinux. Am assuming that the connection media to the printer is via a USB 2.0 cable.
- Update your machine.
-pacman -Syu  Install Epson Inkjet Printer Driver (ESC/P-R) for Linux." />
+ Update your machine.  pacman -Syu  Install Epson Inkjet Printer Driver (ESC/P-R) for Linux." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wilfred.githuka.com/post/epson-l850/" />
 <meta property="article:published_time" content="2019-09-05T05:14:30+00:00" />
@@ -70,36 +68,25 @@ pacman -Syu  Install Epson Inkjet Printer Driver (ESC/P-R) for Linux." />
         </div></div>
     </header>
     <div class="post-content">
-      
-
-<p>The Epson L850 is a versatile printer that I came accross recently. Its the kind of
+      <p>The Epson L850 is a versatile printer that I came accross recently. Its the kind of
 printers that carry along an ink tank which is good but abit messy when it comes to
 refilling it.</p>
-
 <h3 id="driver-installation">Driver Installation</h3>
-
 <p>This Driver installation tutorial is for Linux users specifically Archlinux. Am assuming
 that the connection media to the printer is via a USB 2.0 cable.</p>
-
 <ul>
-<li><p>Update your machine.</p>
-
-<pre><code>pacman -Syu
-</code></pre></li>
-
-<li><p>Install <a href="https://aur.archlinux.org/packages/epson-inkjet-printer-escpr/">Epson Inkjet Printer Driver</a> (ESC/P-R) for Linux.</p>
-
-<pre><code>yay epson-inkjet-printer-escpr 
-</code></pre></li>
-
-<li><p>Install Epson L800 Driver packages.</p>
-
-<pre><code>yay epson-inkjet-printer-l800
-</code></pre></li>
+<li>Update your machine.</li>
 </ul>
-
-<p>After the above installs successfully, you are good to go. Print the test page :-)</p>
-
+<pre><code>pacman -Syu
+</code></pre><ul>
+<li>Install <a href="https://aur.archlinux.org/packages/epson-inkjet-printer-escpr/">Epson Inkjet Printer Driver</a> (ESC/P-R) for Linux.</li>
+</ul>
+<pre><code>yay epson-inkjet-printer-escpr 
+</code></pre><ul>
+<li>Install Epson L800 Driver packages.</li>
+</ul>
+<pre><code>yay epson-inkjet-printer-l800
+</code></pre><p>After the above installs successfully, you are good to go. Print the test page :-)</p>
 <p>The ppd file for most printers is available on this <a href="https://github.com/liberodark/Print-PPD">Github repo</a>.</p>
 
     </div>

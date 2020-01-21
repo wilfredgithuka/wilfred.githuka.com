@@ -3,7 +3,7 @@
   <head>
     <title>No Screen. Access Rpi Model A via Serial Port // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -68,28 +68,19 @@ This manual is for those who dont have a HDMI or RCA cable for setup. I will be 
         </div></div>
     </header>
     <div class="post-content">
-      
-
-<p>The Raspberry Pi Model A Revision 2.0 is a really classic device. On of the early
+      <p>The Raspberry Pi Model A Revision 2.0 is a really classic device. On of the early
 devices to be made in early 2011 and its still working upto this date.</p>
-
 <p>I have been having it for a while  but these days I normally use it for learning
 purposes, mostly a general purpose computer.</p>
-
 <p>This manual is for those who dont have a HDMI or RCA cable for setup. I will be
 connecting it up on a serial port which is quite handy.</p>
-
 <h2 id="requirements">Requirements</h2>
-
 <ul>
 <li>Raspberry Pi Device</li>
 <li>USB-Serial Cable with 3.3V RS-232 Level Converter</li>
 </ul>
-
 <h2 id="console-seial-parameters">Console Seial Parameters</h2>
-
 <p>The following parameters are needed to connect to the Raspberry Pi console, and apply on both Linux and Windows.</p>
-
 <ul>
 <li>Speed (baud rate): 115200</li>
 <li>Bits: 8</li>
@@ -97,31 +88,18 @@ connecting it up on a serial port which is quite handy.</p>
 <li>Stop Bits: 1</li>
 <li>Flow Control: None</li>
 </ul>
-
 <h2 id="raspberry-pi-serial-connection">Raspberry Pi serial connection</h2>
-
 <p>Connect the USB-Serial cable as per the image below.</p>
-
-<p><img src="https://elinux.org/images/thumb/1/13/Adafruit-connection.jpg/300px-Adafruit-connection.jpg" alt="image" /></p>
-
+<p><img src="https://elinux.org/images/thumb/1/13/Adafruit-connection.jpg/300px-Adafruit-connection.jpg" alt="image"></p>
 <h2 id="linux-pc-setup">Linux PC Setup</h2>
-
 <p>On the pc check whether the USB-Serial Device is being identified:</p>
-
 <pre><code>ls -l /dev/ttyUSB0
-</code></pre>
-
-<p>If its listed, thats good, now proceed to launch gnuscreen. If its not
+</code></pre><p>If its listed, thats good, now proceed to launch gnuscreen. If its not
 installed, please install it.</p>
-
 <pre><code>screen /dev/ttyUSB0 115200
-</code></pre>
-
-<p>Power on the Raspberry Pi and the information should be available on the
+</code></pre><p>Power on the Raspberry Pi and the information should be available on the
 pc terminal screen.</p>
-
 <h2 id="references">References</h2>
-
 <ul>
 <li><a href="https://elinux.org/RPi_Serial_Connection#Connection_to_a_PC">RPi Serial Connection</a></li>
 </ul>

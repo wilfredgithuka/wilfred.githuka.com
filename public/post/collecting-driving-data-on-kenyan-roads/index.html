@@ -3,7 +3,7 @@
   <head>
     <title>Collecting Driving Data On Kenyan Roads // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -69,62 +69,44 @@
           <a class="tag" href="https://wilfred.githuka.com/tags/self-driving-car/">self-driving-car</a><a class="tag" href="https://wilfred.githuka.com/tags/autonomous-vehicle/">autonomous-vehicle</a><a class="tag" href="https://wilfred.githuka.com/tags/udacity/">udacity</a><a class="tag" href="https://wilfred.githuka.com/tags/dashcam/">dashcam</a></div></div>
     </header>
     <div class="post-content">
-      
-
-<p><img src="/img/udacity/nairobimg4.jpg" alt="Final Image" /></p>
-
-<p>Ever since I dipped my mind into the autonomous vehicles world, I have been noting carefully road transport in a whole new dimension. I now see data and need lots of it. Training a CNN needs alot of data and even when I was working on the Lane Detection Algo project, I used data that was provided by (Udacity)[udacity.com]. But now I deceided to put the same algo on local roads here in Kenya. I can carry my laptop but that will be cumbersome and even risky. So I decided to use my smartphone&rsquo;s video cpability to record  a driver driving during my commute to work or errands.</p>
-
-<p>Before I go further, I would like to insist on safety. When you are collecting your data, always keep your eyes on the road and be safe. This is experiemental technology which needs alot of tests before its safe and legal. If you are on the passenger&rsquo;s side, don&rsquo;t distract the driver. Talk to the driver before installing anything and install it when the car is stationery so that when the driver is driving, its not distracting him. Safety First.</p>
-
+      <p><img src="/img/udacity/nairobimg4.jpg" alt="Final Image"></p>
+<p>Ever since I dipped my mind into the autonomous vehicles world, I have been noting carefully road transport in a whole new dimension. I now see data and need lots of it. Training a CNN needs alot of data and even when I was working on the Lane Detection Algo project, I used data that was provided by (Udacity)[udacity.com]. But now I deceided to put the same algo on local roads here in Kenya. I can carry my laptop but that will be cumbersome and even risky. So I decided to use my smartphone's video cpability to record  a driver driving during my commute to work or errands.</p>
+<p>Before I go further, I would like to insist on safety. When you are collecting your data, always keep your eyes on the road and be safe. This is experiemental technology which needs alot of tests before its safe and legal. If you are on the passenger's side, don't distract the driver. Talk to the driver before installing anything and install it when the car is stationery so that when the driver is driving, its not distracting him. Safety First.</p>
 <p>I built a small rig made from the selfie stick which has an excellet phone gripper which I attatched to a tin lid for the base. The unit sits nicely on the dashboard of any car which is smooth, but sometimes needs to be held down by masking tape on rough roads. Using this rig I have collected upto 40kms or road data in video format for my studies and research.</p>
-
-<p><img src="/img/udacity/phone-mount.jpg" alt="Final Image" />
+<p><img src="/img/udacity/phone-mount.jpg" alt="Final Image">
 Here is my rig - The wilrIG</p>
-
 <h2 id="tools">Tools</h2>
-
 <p>The following are what you will need to start data collection. This tutorial assumes that you have Linux OS installed on your machine.</p>
-
 <ul>
 <li>Rig or dashcam</li>
 <li>FFmpeg - Powerful video tool</li>
 <li>ImageMagic - Powerful comand line image editor</li>
 <li>Time, patience and humility - Peeps gonna ask you what you are doing</li>
 </ul>
-
 <h2 id="pipeline-workflow">Pipeline (Workflow)</h2>
-
 <p>This is my workflow to manage the data connected. I am constantly updating it and making it more efficient.</p>
-
 <ul>
 <li>Record data in video format without audio. Turn OFF audio recording in phone or webcam settings. Audio increases file size significantly so I dont need it. Put phone in Flight Mode during data collection to stop disruptions when the phone is called or notifications. Be sure to have enough memory card space.</li>
 <li>Transfer video to computer and rename appropiately</li>
 <li>Fire up FFmpeg and run these commands to cut the parts of the video you want, reduce resolution of video down to 640:360 and extract images from video</li>
-
-<li><p>Scale down the resolution</p>
-
-<pre><code class="language-bash">ffmpeg -i inputvideo.mp4 -vf scale=640:480 outputvideo.mp4
-</code></pre></li>
-
-<li><p>Get the wanted parts of the video</p>
-
-<pre><code class="language-bash">ffmpeg -i inputvideo.mp4 -ss 00:04:24 -to 00:06:40 -c copy outputvideo.mp4
-</code></pre></li>
-
-<li><p>Extract Images(s) from video</p>
-
-<pre><code class="language-bash">ffmpeg -i inputvideo.mp4 -ss 00:00:13.000 -vframes 1 ImageOutput.jpg
-</code></pre></li>
-
-<li><p>Extract Image from video with specific time/intervals</p>
-
-<pre><code class="language-bash">ffmpeg -i inputvideo.mp4 -vf fps=1/15 ImageOutput.jpg -hide_banner
-</code></pre></li>
-
-<li><p>The video you have and images are ready for testing. Create appropriate folders to kep your work neat. Am working on a bash script to simply all this, so stay tuned.</p></li>
+<li>Scale down the resolution</li>
 </ul>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ffmpeg -i inputvideo.mp4 -vf scale<span style="color:#f92672">=</span>640:480 outputvideo.mp4
+</code></pre></div><ul>
+<li>Get the wanted parts of the video</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ffmpeg -i inputvideo.mp4 -ss 00:04:24 -to 00:06:40 -c copy outputvideo.mp4
+</code></pre></div><ul>
+<li>Extract Images(s) from video</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ffmpeg -i inputvideo.mp4 -ss 00:00:13.000 -vframes <span style="color:#ae81ff">1</span> ImageOutput.jpg
+</code></pre></div><ul>
+<li>Extract Image from video with specific time/intervals</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ffmpeg -i inputvideo.mp4 -vf fps<span style="color:#f92672">=</span>1/15 ImageOutput.jpg -hide_banner
+</code></pre></div><ul>
+<li>The video you have and images are ready for testing. Create appropriate folders to kep your work neat. Am working on a bash script to simply all this, so stay tuned.</li>
+</ul>
 <p>Header Image/MagicalKenya.com</p>
 
     </div>

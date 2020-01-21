@@ -3,7 +3,7 @@
   <head>
     <title>A Simple Database in Plain Old C // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -72,56 +72,35 @@ A chunk of RAM can be on heap or stack." />
         </div></div>
     </header>
     <div class="post-content">
-      
-
-<p>C might be regarded as an old low level langage but it actually is very powerful.</p>
-
+      <p>C might be regarded as an old low level langage but it actually is very powerful.</p>
 <p>A databse can be created very easily in C. The following is a manual on how to create a simple database in C.</p>
-
 <p>This code is available in my github repo :-)</p>
-
 <h2 id="heap-vs-stack-allocation">Heap vs Stack Allocation</h2>
-
 <p>Understanding the difference between heap and stack is very important for this tutorial.</p>
-
 <p>A chunk of RAM can be on heap or stack.</p>
-
 <p>Stack is a special region in memory that is used by functions to store variables which
 when the function ends its cleared up by C. When you have too much data on stack, you will
 get a stackoverflow error</p>
-
 <p>Heap is memory created by malloc() and it returns a pointer to it. When you are done with it
 you must free it with free() to return it to the OS, failure to do so will cause a program
 to leak memory.</p>
-
 <h2 id="importing-necessary-tools">Importing Necessary Tools</h2>
-
 <p>For this program we shall require to import the following:</p>
-
 <pre><code>#include &lt;stdio.h&gt;
 #include &lt;assert.h&gt;
 #inlcude &lt;stdlib.h&gt;
 #include &lt;errno.h&gt;
 #inlcude &lt;string.h&gt;
-</code></pre>
-
-<h2 id="constants">Constants</h2>
-
+</code></pre><h2 id="constants">Constants</h2>
 <p>We now get to set some very important constants which shall be MAX_DATA and MAX_ROWS as follows:</p>
-
 <pre><code>#define MAX_DATA 512;
 #define MAX_ROWS 100;
-</code></pre>
-
-<h2 id="structs">Structs</h2>
-
+</code></pre><h2 id="structs">Structs</h2>
 <p>This database shall have 3 structs. A struct in C is simply objects which really dont have
 functions in them. If you make a pointer to it, you use the -&gt; arrow as you shall see later.
 A structure has elements in it and it can be called a compound data type since it contains more
 than one data type.</p>
-
 <p>The Address struct has 4 elements of which name and email have max info on them.</p>
-
 <pre><code>struct Address {
         int id;
         int set;
@@ -129,32 +108,22 @@ than one data type.</p>
         char email [MAX_DATA];
 };
 
-</code></pre>
-
-<p>This Database struct is essentially for accessing the database, and it has one element.</p>
-
+</code></pre><p>This Database struct is essentially for accessing the database, and it has one element.</p>
 <pre><code>struct Database {
         struct Address rows[MAX_ROWS];
 };
 
-</code></pre>
-
-<p>Finally the Connection struct is the most important since its used everywhere to handle connections.</p>
-
+</code></pre><p>Finally the Connection struct is the most important since its used everywhere to handle connections.</p>
 <pre><code>struct Connection {
         FILE *file;
         struct Database *db;
 };
 
-</code></pre>
-
-<h2 id="die-function">Die Function</h2>
-
+</code></pre><h2 id="die-function">Die Function</h2>
 <p>We shall start off with the die function, its primary role is to handle error messages.
 This function has an if statement which first prints out the perror message. Note that
 this perror is the C library: function void perror(const char *str) that prints a descriptive
 error message to stderr. First the string str is printed, followed by a colon then a space.</p>
-
 <pre><code>void die(const char *message)
 {
         if (errno){
@@ -165,38 +134,24 @@ error message to stderr. First the string str is printed, followed by a colon th
         exit(1);
 }
 
-</code></pre>
-
-<p>However the next piece of code ensure that it can also print a specific message &lsquo;ERROR&rsquo; + message.
+</code></pre><p>However the next piece of code ensure that it can also print a specific message &lsquo;ERROR&rsquo; + message.
 I started off with the die function since its utilised by all major functions in the code.</p>
-
-<h2 id="address-print-heap">Address_print (Heap)</h2>
-
+<h2 id="address_print-heap">Address_print (Heap)</h2>
 <p>Next we have the Address_print function. Its role is to print out the addresses as assiged to the Address structure.</p>
-
 <p>When you pass in a structure and use the *notation on a function then this is a heap, without it it becomes a stack.</p>
-
 <p>Here we are using heap to move around structs that need to be shared accross functions.</p>
-
 <pre><code>void Address_print(struct Address *addr)
 {
         printf(&quot;%d %s %s\n&quot;, addr-&gt;id, addr-&gt;name, addr-&gt;email);
 
 }
-</code></pre>
-
-<p>Here we use the -&gt; notation to access the Address Struct and print out the id, name, and email.
+</code></pre><p>Here we use the -&gt; notation to access the Address Struct and print out the id, name, and email.
 One of the parameters of the function is a pointer addr. By adding the *addr, we are de-referencing the pointer
 so as to return the value of what addr is pointing to.</p>
-
 <p>So here when we call printf function, it shall simply print the id which shall be in addr pointer, name and email. All with their specific data types.</p>
-
 <p>To get what value is being held in that pointer, just add a *addr to it.(de-referencing)</p>
-
 <h2 id="main-function">Main Function</h2>
-
 <p>We shall now create a main function to test that our program is working well.</p>
-
 <pre><code>int main(int argc, char *argv[])
 {
     if(argv &lt; 3)
@@ -209,18 +164,12 @@ so as to return the value of what addr is pointing to.</p>
         
 }
 
-</code></pre>
-
-<p>This function just checks that you have entered anything for argv and throws an error to tell you. Nuthing much, moving on&hellip;
+</code></pre><p>This function just checks that you have entered anything for argv and throws an error to tell you. Nuthing much, moving on&hellip;
 With no errors, our database is okay, lets move to the next step.</p>
-
 <h1 id="step-2">Step 2</h1>
-
-<h2 id="databse-create">Databse_create</h2>
-
+<h2 id="databse_create">Databse_create</h2>
 <p>When we talk of a database, the key part is creating the database. So we shall start with the function that is responsible for that.
 We shall call it: Database_create</p>
-
 <pre><code>void Database_create(struct Connection *conn)
 {
         int i = 0;
@@ -234,26 +183,17 @@ We shall call it: Database_create</p>
         }
 }
 
-</code></pre>
-
-<p>This function has the parameters struct Connection *conn. This is heap. Inside the function there is a variable declaration
+</code></pre><p>This function has the parameters struct Connection *conn. This is heap. Inside the function there is a variable declaration
 which is used to check for the size of MAX_ROWS.</p>
-
 <p>If you look carefuly you will notice that we are creating an address and setting the default values, and since we are not
 using a *notation, then this is a stack. Stack means that this memory is created in RAM and once this function exists, then
 the memory is deleted likewise. You dont have to free that memory.</p>
-
 <p>Then the last statement simply used the pointer conn to go into the pointer db which has rows of i which is given to addr.</p>
-
 <p>Before I compile the code I need to call the function Database_create in the main function for me to see results. However in the
 main function, Database_create is called using an Case statement. When I call the function Database_create, I have to pass to it
 a parameter conn like this:</p>
-
 <pre><code>Database_create(conn)
-</code></pre>
-
-<p>At this moment C does not know what conn is so we have to define conn. Conn is a pointer. Here is how the main function looks like:</p>
-
+</code></pre><p>At this moment C does not know what conn is so we have to define conn. Conn is a pointer. Here is how the main function looks like:</p>
 <pre><code>int main(int argc, char *argv[])
 {
         if(argv &lt; 3)
@@ -277,22 +217,13 @@ a parameter conn like this:</p>
 
 }
 
-</code></pre>
-
-<p>We define *conn as:</p>
-
+</code></pre><p>We define *conn as:</p>
 <pre><code>struct Connection *conn = Database_open(filename, action);
 
-</code></pre>
-
-<p>The value of *conn is the result of Database_open(filename, action)</p>
-
+</code></pre><p>The value of *conn is the result of Database_open(filename, action)</p>
 <p>Therefore for our main function to work we have to create a Database_open function.</p>
-
-<h2 id="database-open">Database_open</h2>
-
+<h2 id="database_open">Database_open</h2>
 <p>The Database_open function is primarily to open the database. It looks like below:</p>
-
 <pre><code>struct Connection *Database_open(const char *filename, char mode)
 {
         struct Connection *conn = malloc(sizeof(struct Connection));
@@ -316,56 +247,49 @@ a parameter conn like this:</p>
 
 }
 
-</code></pre>
-
-<p>This function take in two parameters: a pointer of type char which is constant and a mode variable of type char.</p>
-
+</code></pre><p>This function take in two parameters: a pointer of type char which is constant and a mode variable of type char.</p>
 <p>We first start by creating a struct Connection on heap with the pointer *conn. Remember *conn is now pointing to
 memory created by malloc which is the size of the struct Conection. Since we put the * on conn, we are simply de-referencing
 the pointer such that instead of getting the address to the memory location, we are returning the contents of that memory.</p>
-
 <p>The next step is to check wether the memory creating was successful.</p>
-
 <p>We also create a Database struct on heap again using malloc. After that we use an if statement inserting a (!conn) Logical Note to
 see wether the pointer conn is linked to db, if Not then call die function and give an error. However is mode is equal to c that when
 the user inserts a c for database create(c is declared in the Case statement in the main function), then the file open is executed.</p>
-
 <p>When you open a file using fopen(), The C library function FILE *fopen(const char *filename, const char *mode) opens the filename pointed to, by filename using the given mode. The usage is as follows:</p>
-
 <pre><code>FILE *fopen(const char *filename, const char *mode)
-</code></pre>
-
-<p>The follwing parameter must be given for the function fopen:</p>
-
+</code></pre><p>The follwing parameter must be given for the function fopen:</p>
 <ul>
-<li>filename − This is the C string containing the name of the file to be opened.</li>
-
-<li><p>mode − This is the C string containing a file access mode. It includes −</p></li>
-
-<li><p>&ldquo;r&rdquo; - Opens a file for reading. The file must exist.</p></li>
-
-<li><p>&ldquo;w&rdquo; - Creates an empty file for writing. If a file with the same name already exists, its content is erased and the file is considered as a new empty file.</p></li>
-
-<li><p>&ldquo;a&rdquo; - Appends to a file. Writing operations, append data at the end of the file. The file is created if it does not exist.</p></li>
-
-<li><p>&ldquo;r+&rdquo; - Opens a file to update both reading and writing. The file must exist.</p></li>
-
-<li><p>&ldquo;w+&rdquo; - Creates an empty file for both reading and writing.</p></li>
-
-<li><p>&ldquo;a+&rdquo; - Opens a file for reading and appending.</p></li>
+<li>
+<p>filename − This is the C string containing the name of the file to be opened.</p>
+</li>
+<li>
+<p>mode − This is the C string containing a file access mode. It includes −</p>
+</li>
+<li>
+<p>&ldquo;r&rdquo; - Opens a file for reading. The file must exist.</p>
+</li>
+<li>
+<p>&ldquo;w&rdquo; - Creates an empty file for writing. If a file with the same name already exists, its content is erased and the file is considered as a new empty file.</p>
+</li>
+<li>
+<p>&ldquo;a&rdquo; - Appends to a file. Writing operations, append data at the end of the file. The file is created if it does not exist.</p>
+</li>
+<li>
+<p>&ldquo;r+&rdquo; - Opens a file to update both reading and writing. The file must exist.</p>
+</li>
+<li>
+<p>&ldquo;w+&rdquo; - Creates an empty file for both reading and writing.</p>
+</li>
+<li>
+<p>&ldquo;a+&rdquo; - Opens a file for reading and appending.</p>
+</li>
 </ul>
-
 <p>So when the user appends a &lsquo;c&rsquo; the the file can be opened in &ldquo;w&rdquo; thats creating a an empty file or &ldquo;r+&rdquo; reading and writing. This is awesome.
 We the proceed to call Databse_load function and pass to it the pointer conn.</p>
-
 <p>This function ends by returning conn.</p>
-
 <p>Let us create the Database_load function.</p>
-
-<h2 id="database-load">Database_load</h2>
-
+<h2 id="database_load">Database_load</h2>
 <p>The Database_load function is used to load a database. It takes in the Struct Connection *conn pointer as its parameter.</p>
-
 <pre><code>void Database_load(struct Connection *conn)
 {
         int rc = fread(conn-&gt;db, sizeof(struct Database), 1, conn-&gt;file);
@@ -373,40 +297,25 @@ We the proceed to call Databse_load function and pass to it the pointer conn.</p
                 die(&quot;failed to load database&quot;);
 
 }
-</code></pre>
-
-<p>We then create an rc variable of type int and store into it the value returned by fread(). fread() is a function that reads data from a given
+</code></pre><p>We then create an rc variable of type int and store into it the value returned by fread(). fread() is a function that reads data from a given
 stream into the array pointed to by a pointer. The fread() here takes in 4 parameters:</p>
-
 <ul>
 <li>conn-&gt;db - pointer linkage.  This is the pointer to a block of memory with a minimum size of size*nmemb bytes.</li>
 <li>sizeof(struct Database) - This is the size in bytes of each element to be read.</li>
 <li>1 - This is the number of elements, each one with a size of size bytes.</li>
 <li>conn-&gt;file - This is the pointer to a FILE object that specifies an input stream.</li>
 </ul>
-
 <p>The next line of code is to check whether the value of rc is NOT equal 1 then call die function, to print the error message.</p>
-
 <p>With all those functions in place, its time to test our databse program. We first compile it</p>
-
 <pre><code>make ex17_Database_create
-</code></pre>
-
-<p>Then execute with the following parameters</p>
-
+</code></pre><p>Then execute with the following parameters</p>
 <pre><code>./ex17_Database_create test.db c
-</code></pre>
-
-<p>The &lsquo;c&rsquo; is for create. When you exectute this program, the int argc contains &lsquo;test.db&rsquo; and char argv[] contains &lsquo;c&rsquo; in the main function.
+</code></pre><p>The &lsquo;c&rsquo; is for create. When you exectute this program, the int argc contains &lsquo;test.db&rsquo; and char argv[] contains &lsquo;c&rsquo; in the main function.
 At this point in this line:</p>
-
 <pre><code>struct Connection *conn = Database_open(filename, action);
-</code></pre>
-
-<p>Database_open is called and the filename and action are passed onto it. The function returns a value which is stored in the Struct Connection *conn pointer.
+</code></pre><p>Database_open is called and the filename and action are passed onto it. The function returns a value which is stored in the Struct Connection *conn pointer.
 Since the file does not exist, in the Database_open function, it shall execute using the &ldquo;w&rdquo; option to create the file. The last section called the Database_create since
 the &lsquo;c&rsquo; option was selected in the Case.</p>
-
 <h2 id="step-3">Step 3</h2>
 
     </div>

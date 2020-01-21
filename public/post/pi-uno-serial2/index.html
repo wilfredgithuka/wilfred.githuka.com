@@ -3,7 +3,7 @@
   <head>
     <title>RaspberryPi Arduino UNO Serial Port Connection // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -73,103 +73,54 @@ The RaspberryPi is a single board, credit card sized computer that runs minimal 
           <a class="tag" href="https://wilfred.githuka.com/tags/arduino/">arduino</a><a class="tag" href="https://wilfred.githuka.com/tags/pi/">pi</a><a class="tag" href="https://wilfred.githuka.com/tags/c&#43;&#43;/">c&#43;&#43;</a></div></div>
     </header>
     <div class="post-content">
-      
-
-<p><img src="/img/sdc/sdc.jpg" alt="sdc" /></p>
-
+      <p><img src="/img/sdc/sdc.jpg" alt="sdc"></p>
 <p>Our Self Driving Model Car uses a RaspberryPi and Arduino for power and control.
 These two powerful and functional devices must have smooth communication else
 our car will have control problems thereafter. In our previous car model we used
 a RaspberryPi only but now we have an Arduini UNO which will be used to control
 the wheels.</p>
-
 <p>Student1: What is the RaspberryPi and Arduino?</p>
-
 <p>The RaspberryPi is a single board, credit card sized computer that runs minimal software and can be used in very many areas. The Arduino is a less powerful development board which is more robust and has I/O pins for Analogue &amp; Digtial I/O</p>
-
 <p>Student2: Can we take out our boards now?</p>
-
 <p>Yes you can.</p>
-
 <p>Your RaspberryPi already has an OS flashed inside(Archlinux ARM), that what I was doing yesterday afternoon. So just power the device from your mobile phone chargers. Open your laptops and ssh into the pi. If you dont know how to do this, please check out this class.</p>
-
 <p>Everybody managed to login?</p>
-
 <p>All Students: Yes</p>
-
 <p>Alright. Now from the terminal run the following command:</p>
-
-<pre><code class="language-console">sudo lsusb
-</code></pre>
-
-<p>This will list all your USB connected devices. Now also run:</p>
-
-<pre><code class="language-console">sudo ls /dev/tty*
-</code></pre>
-
-<p>The above commands lists all devices under the tty list. Note the result of the above commands. Now connect the blue short cable to the Arduino.</p>
-
+<pre><code class="language-console" data-lang="console">sudo lsusb
+</code></pre><p>This will list all your USB connected devices. Now also run:</p>
+<pre><code class="language-console" data-lang="console">sudo ls /dev/tty*
+</code></pre><p>The above commands lists all devices under the tty list. Note the result of the above commands. Now connect the blue short cable to the Arduino.</p>
 <p>Run the above commands again and tell me what you see.</p>
-
 <p>Student3: I have a device ttyACM0 showing up</p>
-
-<p><img src="/img/sdc/connection.jpg" alt="connecction" /></p>
-
+<p><img src="/img/sdc/connection.jpg" alt="connecction"></p>
 <p>Yes thats the Arduino. According to how the Arduino is programmed, it will be on port 24. More details can be found <a href="https://www.teuniz.net/RS-232">Here</a></p>
-
 <p>Student2: Why are they called ttyACM0?</p>
-
 <p>The /dev/ttyACM0 is a USB communication device (CDC) of sub-type abtract control model (ACM). This is basically what the Arduino is. The Old D type connector is given the /dev/ttyS0 serial port which is not used much nowadays.</p>
-
 <p>After confirming that the Arduino is showing up on the Raspberry Pi, now download the following <a href="https://www.monocilindro.com/wp-content/uploads/2017/02/Serial_Raspberry_Arduino_20170219s.zip">code package</a> and extract in in your home folder. You might need to download <a href="https://www.archlinux.org/packages/extra/x86_64/unzip/">unzip</a> for this task, its a powerful archiver.</p>
-
 <p>Student4: How do I install Unzip?</p>
-
 <p>Simple, just run sudo pacman -S unzip. Provide the password and watch it install. After installation just go to where the .zip code package mentioned above is and run:</p>
-
-<pre><code class="language-console">unzip Serial_Raspberry_Arduino_20170219s.zip. 
-</code></pre>
-
-<p>This will create a folder called Serial.</p>
-
+<pre><code class="language-console" data-lang="console">unzip Serial_Raspberry_Arduino_20170219s.zip. 
+</code></pre><p>This will create a folder called Serial.</p>
 <p>Alright, now go into the Folder /Serial and:</p>
-
-<pre><code class="language-console">nano arduino_test.c 
-</code></pre>
-
-<p>We need to make some change here to reflect our port number. Since we are using /dev/ttyACM0 our port number becomes 24. So in this file go to line 11 and change:</p>
-
-<pre><code class="language-cpp">int cport_nr=16;
-</code></pre>
-
-<p>to be:</p>
-
-<pre><code class="language-cpp">int cport_nr=24;
-</code></pre>
-
-<p>Thats all now save and close nano. We will now compile the code using gcc which is installed in all your devices.</p>
-
+<pre><code class="language-console" data-lang="console">nano arduino_test.c 
+</code></pre><p>We need to make some change here to reflect our port number. Since we are using /dev/ttyACM0 our port number becomes 24. So in this file go to line 11 and change:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> cport_nr<span style="color:#f92672">=</span><span style="color:#ae81ff">16</span>;
+</code></pre></div><p>to be:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> cport_nr<span style="color:#f92672">=</span><span style="color:#ae81ff">24</span>;
+</code></pre></div><p>Thats all now save and close nano. We will now compile the code using gcc which is installed in all your devices.</p>
 <p>Now run the following code to compile:</p>
-
-<pre><code class="language-console">gcc arduino_test.c rs232.c -Wall -Wextra -o2 -o arduino_test
-</code></pre>
-
-<p>Once the program starts, Raspberry Pi keeps sending messages to the Arduino. After sending a message, Pi waits for 1 seconds and then checks if something has been received from Arduino; in positive case, the received message is shown on the display.</p>
-
+<pre><code class="language-console" data-lang="console">gcc arduino_test.c rs232.c -Wall -Wextra -o2 -o arduino_test
+</code></pre><p>Once the program starts, Raspberry Pi keeps sending messages to the Arduino. After sending a message, Pi waits for 1 seconds and then checks if something has been received from Arduino; in positive case, the received message is shown on the display.</p>
 <p>Student4: This is amazing :-)</p>
-
 <p>Whats happening is the Raspberry Pi and Arduini are &lsquo;talking&rsquo;. Now for your assignment, try and customise the message, make it personal.</p>
-
 <p>We will end our class here.</p>
-
 <p>All Students: Thank you.</p>
-
 <h2 id="references">References</h2>
-
 <ul>
 <li><a href="https://www.monocilindro.com/2017/02/19/how-to-connect-arduino-and-raspberry-pi-using-usb-and-c/">Monocilindro Blog</a></li>
 <li><a href="https://www.teuniz.net/RS-232/">Teuniz</a></li>
-<li><a href="https://medium.com/@araffin/simple-and-robust-computer-arduino-serial-communication-f91b95596788">Arafin&rsquo;s Medium Blog</a></li>
+<li><a href="https://medium.com/@araffin/simple-and-robust-computer-arduino-serial-communication-f91b95596788">Arafin's Medium Blog</a></li>
 </ul>
 
     </div>

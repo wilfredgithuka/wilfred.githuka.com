@@ -3,7 +3,7 @@
   <head>
     <title>Path Planning on C&#43;&#43; // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="The main objective is to create a path planner that will be able to safely and smoothly create a path fo a vehicle to follow along on a 3 lane highway traffic" />
@@ -69,20 +69,14 @@
           <a class="tag" href="https://wilfred.githuka.com/tags/autonomous-vehicle/">autonomous-vehicle</a><a class="tag" href="https://wilfred.githuka.com/tags/udacity/">udacity</a></div></div>
     </header>
     <div class="post-content">
-      
-
-<h2 id="introduction">Introduction</h2>
-
+      <h2 id="introduction">Introduction</h2>
 <p>The path planning project is by far the most interesting project after Behavioral Clonning
 Project. This project is for Term3 (Last Term) and it is the first project for this term.</p>
-
 <p>The main objective is to create a path planner that will be able to safely and smoothly
 create a path for a vehicle to follow along on a 3 lane highway traffic.It should be able to keep
 inside its lane, avoid hitting other cars and pass slow moving traffic all by using localisation,
 sensor fusion and map data. When passing other cars it should not hit them.</p>
-
-<h3 id="technical-stats-vehicle-track">Technical Stats (Vehicle &amp; Track)</h3>
-
+<h3 id="technical-stats-vehicle--track">Technical Stats (Vehicle &amp; Track)</h3>
 <ul>
 <li>Vehicle Weight: Unknown</li>
 <li>Track Distance: 6,945.554m ~7km</li>
@@ -90,27 +84,21 @@ sensor fusion and map data. When passing other cars it should not hit them.</p>
 <li>Acceleration: &lt;10m/s</li>
 <li>Legal Jerk:</li>
 </ul>
-
 <h2 id="getting-started">Getting Started</h2>
-
 <p>The first thing I need to do is to move the car in our simulator and see the response. I will
 move it in a straight line at the max legal speed of 50mph (80kph). So in main.cpp instead of setting
 the speed directly, we pass next_x_vals and next_y_vals to the simulator. I then set the waypoints to be
 0.5m apart (50cm). Since the car moves at 50 times/sec, a distance of 0.5m (50cm) will create a velocity of
 25m/s which is close to our 50mph.</p>
-
-<p><img src="/img/Car_Move_Straight_Line.png" alt="image01" /></p>
-
+<p><img src="/img/Car_Move_Straight_Line.png" alt="image01"></p>
 <p>The car responded and moved but just in a straight line from 0 to 56mph in a single 20ms frame which caused
 a sharp rise in acceleration. The result of this was a jerk which would be very uncomfortable for any people
 in that car. For a comfortable ride, the total acceleration should be well below 10m/s. I also had to comment
 out a line of code: auto sensor_fusion=j[1][&ldquo;sensor_fusion&rdquo;]; for it to compile. For now I dont know what it
 does really but the car moves. Great</p>
-
 <p>One major issue to the problem above was that the car was veering off the road in just a straight line.
 We need to make sure that the car stays within the lane and for that we will opt for frenet cordinates which
 give us the distance and deviation values which we can work with to ensure that the vehicle stays on the lane.</p>
-
 <p>See part 2 for the next update.</p>
 
     </div>

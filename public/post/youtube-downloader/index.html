@@ -3,7 +3,7 @@
   <head>
     <title>Youtube-dl // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="A command-line program to download videos from YouTube.com and a few more sites" />
@@ -64,37 +64,20 @@
         </div></div>
     </header>
     <div class="post-content">
-      
-
-<p><img src="/img/2016/Youtube-install.png" alt="Example image" /></p>
-
+      <p><img src="/img/2016/Youtube-install.png" alt="Example image"></p>
 <h1 id="introduction">Introduction</h1>
-
 <p>Youtube-dl is a command-line program to download videos from <a href="http://www.youtube.com">Youtube</a> and a few more sites. It requires the Python interpreter (2.6, 2.7, or 3.2+), and it is not platform specific. youtube-dl should work in your Unix box, in Windows or in Mac OS X. It is released to the public domain, which means you can modify it, redistribute it or use it however you like.</p>
-
 <h1 id="installation">Installation</h1>
-
 <p>To install it right away for all UNIX users (Linux, OS X, etc.), type:</p>
-
-<pre><code class="language-python">sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl
-</code></pre>
-
-<p>If you do not have curl, you can alternatively use a recent wget:</p>
-
-<pre><code class="language-python">sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl
-</code></pre>
-
-<p>Archlinux users can install it directly from pacman. 1.47MB</p>
-
-<pre><code class="language-python">sudo pacman -S youtube-dl
-</code></pre>
-
-<h1 id="usage">Usage</h1>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sudo curl <span style="color:#f92672">-</span>L https:<span style="color:#f92672">/</span><span style="color:#f92672">/</span>yt<span style="color:#f92672">-</span>dl<span style="color:#f92672">.</span>org<span style="color:#f92672">/</span>downloads<span style="color:#f92672">/</span>latest<span style="color:#f92672">/</span>youtube<span style="color:#f92672">-</span>dl <span style="color:#f92672">-</span>o <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>youtube<span style="color:#f92672">-</span>dl
+sudo chmod a<span style="color:#f92672">+</span>rx <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>youtube<span style="color:#f92672">-</span>dl
+</code></pre></div><p>If you do not have curl, you can alternatively use a recent wget:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sudo wget https:<span style="color:#f92672">/</span><span style="color:#f92672">/</span>yt<span style="color:#f92672">-</span>dl<span style="color:#f92672">.</span>org<span style="color:#f92672">/</span>downloads<span style="color:#f92672">/</span>latest<span style="color:#f92672">/</span>youtube<span style="color:#f92672">-</span>dl <span style="color:#f92672">-</span>O <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>youtube<span style="color:#f92672">-</span>dl
+sudo chmod a<span style="color:#f92672">+</span>rx <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>youtube<span style="color:#f92672">-</span>dl
+</code></pre></div><p>Archlinux users can install it directly from pacman. 1.47MB</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sudo pacman <span style="color:#f92672">-</span>S youtube<span style="color:#f92672">-</span>dl
+</code></pre></div><h1 id="usage">Usage</h1>
 <p>youtube-dl [OPTIONS] URL [URL&hellip;]</p>
-
 <p>There is a massive list of configs which you can apply to youtube-dl. They are available in the Github page.</p>
 
     </div>

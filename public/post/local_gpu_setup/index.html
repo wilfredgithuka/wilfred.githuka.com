@@ -3,7 +3,7 @@
   <head>
     <title>Setting Up A Local Deep Learnning Environment NVIDIA GPU&#43;Tensorflow&#43;Keras&#43;CuDNN&#43;CUDA in Archlinux // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -12,11 +12,11 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Setting Up A Local Deep Learnning Environment NVIDIA GPU&#43;Tensorflow&#43;Keras&#43;CuDNN&#43;CUDA in Archlinux"/>
-<meta name="twitter:description" content="Dont get me wrong, am not against cloud based GPU&rsquo;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
+<meta name="twitter:description" content="Dont get me wrong, am not against cloud based GPU&#39;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
 Machine Specs First let me list my hardware specs so that we can have a benchark as we go forth."/>
 
     <meta property="og:title" content="Setting Up A Local Deep Learnning Environment NVIDIA GPU&#43;Tensorflow&#43;Keras&#43;CuDNN&#43;CUDA in Archlinux" />
-<meta property="og:description" content="Dont get me wrong, am not against cloud based GPU&rsquo;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
+<meta property="og:description" content="Dont get me wrong, am not against cloud based GPU&#39;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
 Machine Specs First let me list my hardware specs so that we can have a benchark as we go forth." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wilfred.githuka.com/post/local_gpu_setup/" />
@@ -71,17 +71,12 @@ Machine Specs First let me list my hardware specs so that we can have a benchark
           <a class="tag" href="https://wilfred.githuka.com/tags/self-driving/">Self-driving</a><a class="tag" href="https://wilfred.githuka.com/tags/deep-learning/">deep-learning</a></div></div>
     </header>
     <div class="post-content">
-      
-
-<p>Dont get me wrong, am not against cloud based GPU&rsquo;s designed to simplyfy the process of training your
+      <p>Dont get me wrong, am not against cloud based GPU's designed to simplyfy the process of training your
 neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and
 is less tiring when it comes to setup, so this manual is for those who want to get to low level
 and understand what happens there.</p>
-
 <h3 id="machine-specs">Machine Specs</h3>
-
 <p>First let me list my hardware specs so that we can have a benchark as we go forth.</p>
-
 <ul>
 <li>OS: Archlinux</li>
 <li>CPU: Intel Core i7</li>
@@ -90,112 +85,59 @@ and understand what happens there.</p>
 <li>Memory: 16,384 Mb</li>
 <li>GPU: GeForce GTX 1050 rev a1</li>
 </ul>
-
 <h3 id="nvidia-drivers-cuda-and-cudnn-installation">Nvidia Drivers, CUDA and CuDNN Installation</h3>
-
 <p>According to Nvidia, the Deep Neural Network library (cuDNN) is a GPU-accelerated library of primitives
 for deep neural networks. cuDNN provides highly tuned implementations for standard routines such as
 forward and backward convolution, pooling, normalization, and activation layers. CUDA on the other hand
-is NVIDIA&rsquo;s programming langauge for its GPU&rsquo;s.</p>
-
+is NVIDIA's programming langauge for its GPU's.</p>
 <p>There are tons of manuals online for installing the above but I will make mine as simple as possible.</p>
-
-<p>First Install Nvidia&rsquo;s drivers</p>
-
-<pre><code class="language-console">sudo pacman -S nvidia nvidia-utils
-</code></pre>
-
-<p>Then install CUDA and CuDNN</p>
-
-<pre><code class="language-console">sudo pacman -S cuda cudnn
-</code></pre>
-
-<p>Test the installation of CuDNN</p>
-
-<pre><code class="language-console">sudo cp /opt/cuda/* /home/wilfred
+<p>First Install Nvidia's drivers</p>
+<pre><code class="language-console" data-lang="console">sudo pacman -S nvidia nvidia-utils
+</code></pre><p>Then install CUDA and CuDNN</p>
+<pre><code class="language-console" data-lang="console">sudo pacman -S cuda cudnn
+</code></pre><p>Test the installation of CuDNN</p>
+<pre><code class="language-console" data-lang="console">sudo cp /opt/cuda/* /home/wilfred
 cd samples/
 sudo make
 cd bin/x86_64/linux/release
 ./deviceQuerry
 RESULT = PASS
-</code></pre>
-
-<p>One you get a RESULT=PASS then the installation was successful. Clean up unwante files using this
+</code></pre><p>One you get a RESULT=PASS then the installation was successful. Clean up unwante files using this
 command</p>
-
-<pre><code class="language-console">cd ~
+<pre><code class="language-console" data-lang="console">cd ~
 rm -rf samples
-</code></pre>
-
-<h3 id="anaconda">Anaconda</h3>
-
+</code></pre><h3 id="anaconda">Anaconda</h3>
 <p>You can choose between the large anaconda or a smaller miniconda. I choose the larger one. Note that
 this installation shall take up loads of time. Anaconda is 3.4GB and shall be installed in /opt/anaconda</p>
-
-<pre><code class="language-console">yay -S anaconda
+<pre><code class="language-console" data-lang="console">yay -S anaconda
 echo 'export PATH = &quot;/opt/anaconda/bin:$PATH&quot;' &gt;&gt; ~/.zshrc
 source ~/.zshrc
-</code></pre>
-
-<p>Test the anaconda installation.</p>
-
-<pre><code class="language-console">anaconda --version
-</code></pre>
-
-<p>It will show the installed version of anaonda.</p>
-
+</code></pre><p>Test the anaconda installation.</p>
+<pre><code class="language-console" data-lang="console">anaconda --version
+</code></pre><p>It will show the installed version of anaonda.</p>
 <h3 id="create-a-custom-deep-learning-environment">Create a Custom Deep Learning Environment</h3>
-
 <p>Next we shall create a custon deep learning environment which we shall be using for various tasks.</p>
-
-<pre><code class="language-console">conda create -n deep-learning
-</code></pre>
-
-<p>Then list to check whether the environment has been created.</p>
-
-<pre><code class="language-console">conda list
-</code></pre>
-
-<p>Now activate our new environment</p>
-
-<pre><code class="language-console">source activate deep-learning
-</code></pre>
-
-<p>Install pip, python&rsquo;s package manager to our environment</p>
-
-<pre><code class="language-console">conda install pip
-</code></pre>
-
-<p>At this point, stop and check the versions of python and pip. As at the time of this writing, you should get
+<pre><code class="language-console" data-lang="console">conda create -n deep-learning
+</code></pre><p>Then list to check whether the environment has been created.</p>
+<pre><code class="language-console" data-lang="console">conda list
+</code></pre><p>Now activate our new environment</p>
+<pre><code class="language-console" data-lang="console">source activate deep-learning
+</code></pre><p>Install pip, python's package manager to our environment</p>
+<pre><code class="language-console" data-lang="console">conda install pip
+</code></pre><p>At this point, stop and check the versions of python and pip. As at the time of this writing, you should get
 something like: python 3.7.2 and pip 19.0.1</p>
-
 <p>Now install Tensorflow GPU. This will take sometime.</p>
-
-<pre><code class="language-console">sudo pip install tensorflow-gpu
-</code></pre>
-
-<p>Check too the installed version of tensorflow. 1.13 rc2</p>
-
+<pre><code class="language-console" data-lang="console">sudo pip install tensorflow-gpu
+</code></pre><p>Check too the installed version of tensorflow. 1.13 rc2</p>
 <p>Check to see that tensorflow has been installed correctly by running the following command.</p>
-
-<pre><code class="language-console">python -c &quot;import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))&quot;
-</code></pre>
-
-<p>Once you see the result showing the GPU&rsquo;s properties. It was a successful installation.</p>
-
+<pre><code class="language-console" data-lang="console">python -c &quot;import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))&quot;
+</code></pre><p>Once you see the result showing the GPU's properties. It was a successful installation.</p>
 <p>At this point we can install the basic tools for a deep learning environment. These will be around 78MB and are
 installed by conda. Some shall require root so adding a sudo conda install xxx will do.</p>
-
-<pre><code class="language-console">sudo conda install numpy matplotlib jupyter pillow scikit-learn scikit-image scipy h5py flask python-socketio seaborn pandas ffmpeg imageio pyqt
-</code></pre>
-
-<p>The next step is to install other tools using python&rsquo;s pip</p>
-
-<pre><code class="language-console">sudo pip install moviepy opencv-python requests keras eventlet
-</code></pre>
-
-<p>You are now ready to work on your local GPU for deep learning.</p>
-
+<pre><code class="language-console" data-lang="console">sudo conda install numpy matplotlib jupyter pillow scikit-learn scikit-image scipy h5py flask python-socketio seaborn pandas ffmpeg imageio pyqt
+</code></pre><p>The next step is to install other tools using python's pip</p>
+<pre><code class="language-console" data-lang="console">sudo pip install moviepy opencv-python requests keras eventlet
+</code></pre><p>You are now ready to work on your local GPU for deep learning.</p>
 <p>Back to code&hellip;</p>
 
     </div>

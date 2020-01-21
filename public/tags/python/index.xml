@@ -16,8 +16,8 @@
       <pubDate>Fri, 01 Dec 2017 14:13:54 +0300</pubDate>
       
       <guid>https://wilfred.githuka.com/post/pytudes/</guid>
-      <description>&amp;ldquo;An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill.&amp;rdquo; &amp;mdash; Wikipedia
-This project contains pytudes&amp;mdash;Python programs for perfecting programming skills.
+      <description>&amp;ldquo;An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill.&amp;rdquo; — Wikipedia
+This project contains pytudes—Python programs for perfecting programming skills.
 Some are in Jupyter (IPython) notebooks, some in .py files. You can view the files here, or clone the project, or run the notebooks online by clicking this button:</description>
     </item>
     

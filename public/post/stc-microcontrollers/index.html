@@ -3,7 +3,7 @@
   <head>
     <title>My Encounter With The STC Microcontrollers // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -12,10 +12,10 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My Encounter With The STC Microcontrollers"/>
-<meta name="twitter:description" content="The first time I held an STC microcontroller was today morning when we were preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&rsquo;s lecturers students back in China."/>
+<meta name="twitter:description" content="The first time I held an STC microcontroller was today morning when we were preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&#39;s lecturers students back in China."/>
 
     <meta property="og:title" content="My Encounter With The STC Microcontrollers" />
-<meta property="og:description" content="The first time I held an STC microcontroller was today morning when we were preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&rsquo;s lecturers students back in China." />
+<meta property="og:description" content="The first time I held an STC microcontroller was today morning when we were preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&#39;s lecturers students back in China." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wilfred.githuka.com/post/stc-microcontrollers/" />
 <meta property="article:published_time" content="2018-01-26T18:18:35+03:00" />
@@ -69,41 +69,30 @@
           <a class="tag" href="https://wilfred.githuka.com/tags/stc/">stc</a><a class="tag" href="https://wilfred.githuka.com/tags/microcontroller/">microcontroller</a><a class="tag" href="https://wilfred.githuka.com/tags/8051/">8051</a><a class="tag" href="https://wilfred.githuka.com/tags/stcmcu/">stcmcu</a></div></div>
     </header>
     <div class="post-content">
-      
-
-<p><img src="/img/avic-kist/stc.JPG" alt="image" /></p>
-
+      <p><img src="/img/avic-kist/stc.JPG" alt="image"></p>
 <p>The first time I held an STC microcontroller was today morning when we were
-preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&rsquo;s lecturers students back in China. The size of the boards are twice the size of a Raspberry Pi and the thickness is almost 2mm.</p>
-
+preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese's lecturers students back in China. The size of the boards are twice the size of a Raspberry Pi and the thickness is almost 2mm.</p>
 <p>The 8051 Microcontroller was designed in 1980’s by Intel. Its foundation was on Harvard Architecture and was developed principally for bringing into play in Embedded Systems. At first it was created by means of NMOS technology but as NMOS technology needs more power to function therefore Intel re-intended Microcontroller 8051 employing CMOS technology and a new edition came into existence with a letter ‘C’ in the title name, for illustration: 80C51. These most modern Microcontrollers need fewer amount of power to function in comparison to their forerunners.</p>
-
 <p>There are two buses in 8051 Microcontroller one for program and other for data. As a result, it has two storage rooms for both program and data of 64K by 8 size. The microcontroller comprise of 8 bit accumulator &amp; 8 bit processing unit. It also consists of 8 bit B register as majorly functioning blocks and 8051 microcontroller programming is done with embedded C language using Keil software. It also has a number of other 8 bit and 16 bit registers.</p>
-
 <h3 id="assembly">Assembly</h3>
-
-<p>One thing to note is that for the STC, its the Chip that you buy then design a board for it. We get these boards from China but I would like to design my very own board then chip-it. The task is to assemble SMD components onto the board, a task thats not easy due to the small parts. Next is to connect it to the computer via USB and load a program into it. The teacher&rsquo;s laptop, running Windows had a Chinese-made program that is used to program the board as I soon found out. But being a linux guy, I googled something and found lots of Python based alternatives that could communicate with the board over the USB interface. I came accross one called <a href="https://github.com/grigorig/stcgal">stcgal</a> which worked well. The installation procedures are quite simple and well documented.</p>
-
+<p>One thing to note is that for the STC, its the Chip that you buy then design a board for it. We get these boards from China but I would like to design my very own board then chip-it. The task is to assemble SMD components onto the board, a task thats not easy due to the small parts. Next is to connect it to the computer via USB and load a program into it. The teacher's laptop, running Windows had a Chinese-made program that is used to program the board as I soon found out. But being a linux guy, I googled something and found lots of Python based alternatives that could communicate with the board over the USB interface. I came accross one called <a href="https://github.com/grigorig/stcgal">stcgal</a> which worked well. The installation procedures are quite simple and well documented.</p>
 <h3 id="stcgal">stcgal</h3>
-
-<p>stcgal requires Python 3.2 (or later) and pySerial. USB support is optional and requires pyusb 1.0.0b2 or later. You can run stcgal directly with the included stcgal.py script. The recommended method for permanent installation is to use Python&rsquo;s setuptools. Run ./setup.py build to build and sudo ./setup.py install to install stcgal. A permanent installation provides the stcgal command. Be sure to have setuptools and tqdm installed as dependancies for stcgal. Connect the board and Linux will detect it then run stcgal for it to dump the chips details. This is what I got:</p>
-
+<p>stcgal requires Python 3.2 (or later) and pySerial. USB support is optional and requires pyusb 1.0.0b2 or later. You can run stcgal directly with the included stcgal.py script. The recommended method for permanent installation is to use Python's setuptools. Run ./setup.py build to build and sudo ./setup.py install to install stcgal. A permanent installation provides the stcgal command. Be sure to have setuptools and tqdm installed as dependancies for stcgal. Connect the board and Linux will detect it then run stcgal for it to dump the chips details. This is what I got:</p>
 <ul>
 <li>Waiting for MCU, please cycle power: done</li>
 <li>Protocol detected: stc15</li>
 <li>Target model:
-
 <ul>
 <li>Name: STC15F2K60S2</li>
 <li>Magic: F408</li>
 <li>Code flash: 60.0 KB</li>
 <li>EEPROM flash: 1.0 KB</li>
-</ul></li>
+</ul>
+</li>
 <li>Target frequency: 11.069 MHz</li>
 <li>Target BSL version: 7.2.5S</li>
 <li>Target wakeup frequency: 35.900 KHz</li>
 <li>Target options:
-
 <ul>
 <li>reset_pin_enabled=False</li>
 <li>clock_source=internal</li>
@@ -121,33 +110,24 @@ preparing the lab ahead of the class experiment for tomorrow. I decided to assem
 <li>uart2_passthrough=False</li>
 <li>uart2_pin_mode=normal</li>
 <li>cpu_core_voltage=unknown</li>
-</ul></li>
+</ul>
+</li>
 <li>Disconnected!</li>
 </ul>
-
 <p>Am yet to decipher much of the information above. With time however I will make
 up followup posts explaining in detail what each means. stcgal supports Intel HEX encoded files as well as binary files. Intel HEX is autodetected by file extension (.hex, .ihx or .ihex).</p>
-
 <h3 id="stc15f2k60s2">STC15F2K60S2</h3>
-
 <p>The STC15F2K60S2 series MCU is a single chip microcontroller based on the 8051 CPU produced by STC MCU Limited. This new generation is faster, more stable and
 has low power consumption. Its about 8-12x faster than the original 8051(Am yet to test this allegation). Further reading showed that it has 2kB of SRAM and two fast asynchronus serial ports: UART 1 and 2.</p>
-
 <h3 id="programming">Programming</h3>
-
 <p>To program the STC15F2K60S2 chip you need to write your program in Embeeded C
 then convert it in .hex format which is uploaded into the chip via the boards USB interface. On Windows, the software is called Keli which is an IDE. In Linux am yet to write my own code so I cant say much about it, but am sure there are lots of examples out there.</p>
-
-<p>The board is currently working as my desktop digital clock as I figure out how to program it. This digital clock is the teacher&rsquo;s program running in there, I cant wait to write mine.</p>
-
+<p>The board is currently working as my desktop digital clock as I figure out how to program it. This digital clock is the teacher's program running in there, I cant wait to write mine.</p>
 <p>You can check out my <a href="https://github.com/wilfredgithuka/keil-c-development-work">github repo</a> for updates and code.</p>
-
 <h3 id="references">References</h3>
-
 <ul>
 <li><a href="https://www.elprocus.com">https://www.elprocus.com</a></li>
 </ul>
-
 <p>This post was written in Spacemacs :-) over a cup of uji.</p>
 
     </div>

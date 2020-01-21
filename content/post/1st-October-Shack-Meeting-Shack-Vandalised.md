@@ -11,7 +11,7 @@ title = "1st October Shack Meeting - Shack Vandalised & Windows Smashed"
 
 +++
 ![1stOctober Shack](/img/ham/900px-October-Meeting3.jpg)
-Today's Shack meeting was best attended than another since i joined ARSK. This was mainly due to the recent developments at the shack. The home-less guy that we chased from living behind the shack wrecked havoc on the shack. The smashed the windows, destroyed the supports that hold the veranda's roofing which eventually came crashing down. There were signs of attempted forced entry from the rear door but once again the bees deterred him.
+Today's Shack meeting was best attended than another since I joined ARSK. This was mainly due to the recent developments at the shack. The home-less guy that we chased from living behind the shack wrecked havoc on the shack. He smashed the windows, destroyed the supports that hold the veranda's roofing which eventually came crashing down. There were signs of attempted forced entry from the rear door but once again the bees deterred him.
 
 The caretaker found the guy doing the damage but kept a distance as the guy was armed with a machete but soon took of when more people arrived. He once again broke the water pipe letting water spill the whole night. By morning the area was almost looking like a pond.
 

@@ -3,7 +3,7 @@
   <head>
     <title>Configuring Marantz Pro MPM 1000U in Linux // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -68,43 +68,29 @@ While thats good, I wanted to try out recording on termial and this is how far I
   <title>tag</title>
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
 </svg>
-          <a class="tag" href="https://wilfred.githuka.com/tags/marantz/">marantz</a><a class="tag" href="https://wilfred.githuka.com/tags/audio/">audio</a><a class="tag" href="https://wilfred.githuka.com/tags/audacity/">audacity</a><a class="tag" href="https://wilfred.githuka.com/tags/arecord/">arecord</a><a class="tag" href="https://wilfred.githuka.com/tags/alsa/">alsa</a></div></div>
+          <a class="tag" href="https://wilfred.githuka.com/tags/marantz/">marantz</a><a class="tag" href="https://wilfred.githuka.com/tags/audio/">audio</a><a class="tag" href="https://wilfred.githuka.com/tags/audacity/">Audacity</a><a class="tag" href="https://wilfred.githuka.com/tags/arecord/">arecord</a><a class="tag" href="https://wilfred.githuka.com/tags/alsa/">alsa</a></div></div>
     </header>
     <div class="post-content">
-      
-
-<p><img src="/img/marantz.jpg" alt="marantz" />
+      <p><img src="/img/marantz.jpg" alt="marantz">
 The Marantz Pro MPM-1000U is a USB condenser mic for DAW recording or podcasting. It comes in as an entry level mic.It comes with a USB connection which was one of the feature that I wanted. This mic is designed to work on any PC with a
 descent USB interface and a software like Audacity.</p>
-
 <p>While thats good, I wanted to try out recording on termial and this is how far I have come in doing so. Recording audio on terminal offers flexibility and control which might be tough on GUI. On the other hand, its more complicated but with time, you will get used to it.On Linux, recoring with USB mic is best done under ALSA. I am using Archlinux for this expreriment. One of the reasons why am using terminal is for automation. I would like to incorporate bash scripts and python to automate sermon recording at our church.</p>
-
 <h2 id="connection">Connection</h2>
-
 <p>Connect your USB mic and run the following command to check if its detected.</p>
-
 <ul>
 <li>cat /proc/bus/usb/devices</li>
 </ul>
-
 <p>To check that ALSA detects your mic, run</p>
-
 <ul>
 <li>cat /proc/asound/cards</li>
 </ul>
-
 <h2 id="configuring">Configuring</h2>
-
 <p>Adjust the volume levels of the mic. The number 2 represents what the system has assigned my mic. This will varry accross different machines, so take note from the above commands the number of your mic. This command with open a window form where settings can be made.</p>
-
 <ul>
 <li>alsamixer -c 2</li>
 </ul>
-
 <h2 id="recording">Recording</h2>
-
 <p>To record a 20 second clip, run this command. Explanation on what happens re there below:</p>
-
 <ul>
 <li>arecord -f cd -D plughw:2,0 -d 20 /home/wilfred/test.wav</li>
 </ul>

@@ -3,7 +3,7 @@
   <head>
     <title>Install Arch LinuxARM On RaspberryPi // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="Install Arch LinuxARM On RaspberryPi Credit Sized Computer" />
@@ -64,74 +64,41 @@
         </div></div>
     </header>
     <div class="post-content">
-      
-
-<p><img src="/img/2015/Raspberry-Pi.jpg" alt="Example image" /></p>
-
+      <p><img src="/img/2015/Raspberry-Pi.jpg" alt="Example image"></p>
 <p>The Raspberry Pi is an ARM v6 architecture mini computer that gained alot of fame when it was released in 2012.</p>
-
 <h1 id="formating-the-sd-card">Formating the SD Card</h1>
-
 <p>Start fdisk to partition the SD Card. Then type the following:</p>
-
-<pre><code class="language-python">o - Delete any partitions on the SD Card.
-p - List all partitions, at this point there should be none left.
-n then p for primary, 1 for the first partition, press ENTER to accept the default first sector, then type +100M for the last sector.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">o <span style="color:#f92672">-</span> Delete any partitions on the SD Card<span style="color:#f92672">.</span>
+p <span style="color:#f92672">-</span> List all partitions, at this point there should be none left<span style="color:#f92672">.</span>
+n then p <span style="color:#66d9ef">for</span> primary, <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> the first partition, press ENTER to accept the default first sector, then type <span style="color:#f92672">+</span><span style="color:#ae81ff">100</span>M <span style="color:#66d9ef">for</span> the last sector<span style="color:#f92672">.</span>
 t, then c to set the first partition to type W95 FAT32(LBA)
-n, then p for primary, 2 for the second partition on the drive, and then press ENTER twice to accept the default first and last sector.
-w, to write to the partition table.
-</code></pre>
-
-<h1 id="mounting-creating-the-file-system">Mounting &amp; Creating the File System</h1>
-
+n, then p <span style="color:#66d9ef">for</span> primary, <span style="color:#ae81ff">2</span> <span style="color:#66d9ef">for</span> the second partition on the drive, <span style="color:#f92672">and</span> then press ENTER twice to accept the default first <span style="color:#f92672">and</span> last sector<span style="color:#f92672">.</span>
+w, to write to the partition table<span style="color:#f92672">.</span>
+</code></pre></div><h1 id="mounting--creating-the-file-system">Mounting &amp; Creating the File System</h1>
 <p>When you run lsblk it should print out the disk map on your pc. The memory card should be sdb1 and sdb2 for the 2 partitions.</p>
-
-<pre><code class="language-python">mkfs.vfat /dev/sdb1
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mkfs<span style="color:#f92672">.</span>vfat <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>sdb1
 mkdir boot
-mount /dev/sdb1 boot
-</code></pre>
-
-<pre><code class="language-python">mkfs.ext4 /dev/sdb2
+mount <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>sdb1 boot
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mkfs<span style="color:#f92672">.</span>ext4 <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>sdb2
 mkdir root
-mount /dev/sdb2 root
-</code></pre>
-
-<h1 id="downloading-extracting-the-file-system">Downloading &amp; Extracting The File System</h1>
-
+mount <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>sdb2 root
+</code></pre></div><h1 id="downloading--extracting-the-file-system">Downloading &amp; Extracting The File System</h1>
 <p>Warning: This has to be done as root and not sudo. So log-off the current user and log-in as root.</p>
-
-<pre><code class="language-python">#su root
-</code></pre>
-
-<p>Now as root, lets continue to download the packages. If you don&rsquo;t have wget installed, install it first.</p>
-
-<pre><code class="language-python">wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.tar.gz
-bsdtar -xpf ArchLinuxARM-rpi-latest.tar.gz -C root
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#su root</span>
+</code></pre></div><p>Now as root, lets continue to download the packages. If you don't have wget installed, install it first.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">wget http:<span style="color:#f92672">/</span><span style="color:#f92672">/</span>archlinuxarm<span style="color:#f92672">.</span>org<span style="color:#f92672">/</span>os<span style="color:#f92672">/</span>ArchLinuxARM<span style="color:#f92672">-</span>rpi<span style="color:#f92672">-</span>latest<span style="color:#f92672">.</span>tar<span style="color:#f92672">.</span>gz
+bsdtar <span style="color:#f92672">-</span>xpf ArchLinuxARM<span style="color:#f92672">-</span>rpi<span style="color:#f92672">-</span>latest<span style="color:#f92672">.</span>tar<span style="color:#f92672">.</span>gz <span style="color:#f92672">-</span>C root
 sync
-</code></pre>
-
-<h1 id="moving-files-to-boot-partition">Moving Files to boot Partition</h1>
-
+</code></pre></div><h1 id="moving-files-to-boot-partition">Moving Files to boot Partition</h1>
 <p>The following bash statement will move the files, may take some few minutes.</p>
-
-<pre><code class="language-python">mv root/boot/* /boot
-</code></pre>
-
-<p>Un-mount the 2 partitions.</p>
-
-<pre><code class="language-python">umount boot root
-</code></pre>
-
-<h1 id="housekeeping">Housekeeping</h1>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mv root<span style="color:#f92672">/</span>boot<span style="color:#f92672">/</span><span style="color:#f92672">*</span> <span style="color:#f92672">/</span>boot
+</code></pre></div><p>Un-mount the 2 partitions.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">umount boot root
+</code></pre></div><h1 id="housekeeping">Housekeeping</h1>
 <p>Use terminal or SSH to login via the IP Address given by your router.</p>
-
 <p>User-name is: alarm</p>
-
 <p>Password: alarm</p>
-
 <p>Root account is: root</p>
-
 <p>Password: root</p>
 
     </div>

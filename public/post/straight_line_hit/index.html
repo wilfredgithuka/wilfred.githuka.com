@@ -3,7 +3,7 @@
   <head>
     <title>Path Planning in C&#43;&#43; Part 2 // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="In part 1 I managed to move the car but in just straight line. In this second part I try to make the vehicle stick to the lane." />
@@ -71,16 +71,12 @@
     <div class="post-content">
       <p>I managed to solve the driving-in-a straight line by calculating the trajectory of the vehicle instead of directly
 feeding the trajectory as I had done earler. This can be seen in the image below.</p>
-
-<p><img src="/img/Car_Move_But_Hits_Other_Vehicles.png" alt="image02" /></p>
-
+<p><img src="/img/Car_Move_But_Hits_Other_Vehicles.png" alt="image02"></p>
 <p>But now I have developed another problem such that my vehicle is hitting other cars on the same lane.
 I thought I would be able to solve this by reducing the value of dist_inc down to 0.3 from 0.5.
 This worked only on a conditon that the vehicle infront of me was not slowing down. Also my car is
 violating jerk and acceleration laws.</p>
-
 <p>Now how can I slow down once my vehicle sensors tell it that there is another vehicle infront?</p>
-
 <p>Let me see&hellip;</p>
 
     </div>

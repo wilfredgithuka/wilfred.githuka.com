@@ -3,7 +3,7 @@
   <head>
     <title>Connect To Eduroam On Archlinux // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="A worldwide internet service for research that is used in universities globally" />
@@ -64,61 +64,36 @@
         </div></div>
     </header>
     <div class="post-content">
-      <p><img src="/img/2016/eduroam.png" alt="Example image" /></p>
-
+      <p><img src="/img/2016/eduroam.png" alt="Example image"></p>
 <p><a href="https://www.eduroam.org/">Eduroam</a> is a worldwide internet service for research that is used in universities globally. Eduroam uses a secure protocol when connecting to the users. Windows and other OSs have different configurations. On Archlinux start by running the following commands.</p>
-
 <p>Note: The following steps are for <a href="https://wiki.archlinux.org/index.php/Connman">Connman</a> (A Daemon for managing internet connections within embedded devices running the Linux operating system. Comes with a command-line client, plus Enlightenment, ncurses, GTK and Dmenu clients are available).</p>
-
 <p>Create a conman directory like below. Case sensitive.</p>
-
 <p>/var/lib/connman</p>
-
 <p>Using your favorite editor, create the following config file</p>
-
-<pre><code class="language-python">sudo nano /var/lib/connman/wifi_eduroam.config
-</code></pre>
-
-<p>Edit as per your credentials.</p>
-
-<pre><code class="language-python">[service_eduroam]
-Type=wifi
-Name=eduroam
-EAP=ttls
-CACertFile=/etc/ssl/certs/ca-certificates.crt
-Phase2=PAP
-Identity=username@domain.edu
-Passphrase=password
-</code></pre>
-
-<p>I deleted the line CACertFile=/etc/ssl/certs/ca-certificates.crt line so that I could use eduroam in diffrent departments across the university.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sudo nano <span style="color:#f92672">/</span>var<span style="color:#f92672">/</span>lib<span style="color:#f92672">/</span>connman<span style="color:#f92672">/</span>wifi_eduroam<span style="color:#f92672">.</span>config
+</code></pre></div><p>Edit as per your credentials.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[service_eduroam]
+Type<span style="color:#f92672">=</span>wifi
+Name<span style="color:#f92672">=</span>eduroam
+EAP<span style="color:#f92672">=</span>ttls
+CACertFile<span style="color:#f92672">=</span><span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>ssl<span style="color:#f92672">/</span>certs<span style="color:#f92672">/</span>ca<span style="color:#f92672">-</span>certificates<span style="color:#f92672">.</span>crt
+Phase2<span style="color:#f92672">=</span>PAP
+Identity<span style="color:#f92672">=</span>username<span style="color:#a6e22e">@domain.edu</span>
+Passphrase<span style="color:#f92672">=</span>password
+</code></pre></div><p>I deleted the line CACertFile=/etc/ssl/certs/ca-certificates.crt line so that I could use eduroam in diffrent departments across the university.</p>
 <p>Restart the wpa_supplicant.service and connman.service to connect to the new network.</p>
-
-<pre><code class="language-python">systemctl restart wpa_supplicant
-systemctl restart connman.service
-</code></pre>
-
-<p>Your should now be able to connect to eduroam. You can ping my website and update your system to check your connection</p>
-
-<pre><code class="language-python">sudo ping www.githuka.com
-sudo pacman -Syu
-</code></pre>
-
-<p>Using NetworkManager</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">systemctl restart wpa_supplicant
+systemctl restart connman<span style="color:#f92672">.</span>service
+</code></pre></div><p>Your should now be able to connect to eduroam. You can ping my website and update your system to check your connection</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sudo ping www<span style="color:#f92672">.</span>githuka<span style="color:#f92672">.</span>com
+sudo pacman <span style="color:#f92672">-</span>Syu
+</code></pre></div><p>Using NetworkManager</p>
 <p>Click on the Network Manager Applet on the top right hand corner of your screen</p>
-
 <p>Select Eduroam from the list of Wireless Networks</p>
-
-<p>Identity: yourusername@students.ku.ac.ke</p>
-
+<p>Identity: <a href="mailto:yourusername@students.ku.ac.ke">yourusername@students.ku.ac.ke</a></p>
 <p>Password: yourpassword</p>
-
 <p>Phase 2 Type: MSCHAPv2</p>
-
 <p>Authentication: Protected EAP (PEAP)</p>
-
 <p>Click Connect&ndash;Enjoy</p>
 
     </div>

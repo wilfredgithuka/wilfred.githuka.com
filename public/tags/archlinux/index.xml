@@ -17,8 +17,8 @@
       
       <guid>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</guid>
       <description>Google Drive is a good way to backup your data. In Windows this can be accomplished simply by having a Google account and drag-dropping stuff into it. From a CLI - Command Line Interface a different approach is used which I will explain in this article.
-My distro is [Archlinux]() so this tutorial is based on the same.
-Tools  rclone gdrive  rclone rclone is written in Google&amp;rsquo;s Go Language and it a powerful tool that can be used to access your Google Drive neatly from the terminal.</description>
+My distro is Archlinux so this tutorial is based on the same.
+Tools  rclone gdrive  rclone rclone is written in Google&#39;s Go Language and it a powerful tool that can be used to access your Google Drive neatly from the terminal.</description>
     </item>
     
     <item>

@@ -3,7 +3,7 @@
   <head>
     <title>Zesta2 Switched Mode Power Supply Project // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -66,48 +66,34 @@ The result is just to make my own power supply/laptop charger from scratch. I wi
         </div></div>
     </header>
     <div class="post-content">
-      
-
-<h2 id="introduction">Introduction</h2>
-
+      <h2 id="introduction">Introduction</h2>
 <p>zesta2 is improvement of the first zesta project. This will be a complete
 make-from-scratch laptop power supply module. The zesta project which I currently use works
 well but due to the parts not made by me, there is so much constraints that I am facing.</p>
-
 <p>The result is just to make my own power supply/laptop charger from scratch. I will be in
 control of the specs and most important, the design. Also I will add some culture to the
 charger to make it more Kenyan. The charger shall still be housed in a zesta jam can.</p>
-
 <h2 id="main-objective">Main Objective</h2>
-
 <p>Learn and understand how Switched Mode Power Supplies (SMPS) work.</p>
-
 <h2 id="what-is-a-switched-mode-power-supply">What is a Switched Mode Power Supply?</h2>
-
 <p>Preety much all latops come with an extra device called a charger. Its main function is to
-supply power to charge the laptop&rsquo;s battery.</p>
-
+supply power to charge the laptop's battery.</p>
 <p>To do this it converts the mains 240V AC to 19V DC which the laptop requires. This conversion
 is a combination of the following steps:</p>
-
 <ul>
 <li>Input - 240V(AC)</li>
 <li>Rectification and Filtering - High Voltage DC</li>
 <li>Transformation - AC</li>
 <li>Rectification and Filtering - 19V DC</li>
 </ul>
-
 <h2 id="specs">Specs</h2>
-
 <ul>
 <li>Input: AC 240V</li>
 <li>Output: DC 19.5V</li>
 <li>Power: 120W</li>
 <li>Frequency: 60Hz</li>
 </ul>
-
 <h2 id="proposed-features">Proposed Features</h2>
-
 <ul>
 <li>I2C Interface</li>
 <li>USB 3.0 Interface</li>
@@ -116,21 +102,15 @@ is a combination of the following steps:</p>
 <li>Microcontroller controlled power supply</li>
 <li>Dashboard for online/offline monitoring</li>
 </ul>
-
 <h2 id="safety-first">Safety First</h2>
-
 <ul>
 <li>High voltage AC it is lethal.</li>
 <li>All stages in SMPS circuit have High voltage AC/DC, Handle with extreme care.</li>
 <li>Do not attemp to remake this project if you are not qualified to do so.</li>
 </ul>
-
 <h2 id="circuit-diagram">Circuit Diagram</h2>
-
-<p><img src="http://www.theorycircuit.com/wp-content/uploads/2017/08/smps-circuit-diagram-12v-1a-tny267.png" alt="circuit-diagram" /></p>
-
+<p><img src="http://www.theorycircuit.com/wp-content/uploads/2017/08/smps-circuit-diagram-12v-1a-tny267.png" alt="circuit-diagram"></p>
 <h2 id="references">References</h2>
-
 <ul>
 <li><a href="http://www.learnabout-electronics.org/PSU/psu30.php">LearnAboutElectronics</a></li>
 <li><a href="https://www.electronics-tutorials.ws/power/switch-mode-power-supply.html">ElectronicsTutorials</a></li>
