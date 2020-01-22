@@ -15,6 +15,8 @@ draft = false
 As I read more about Armateur Radio, am beginning to be more aware of major wireless
 transmission sites around me. One of such is the Ngong GV 115.9 VOR DME.
 
+![vor](/img/ham/2.JPG)
+
 This is a huge circular beacon located on your way up to Ngong Hills just as you descend 
 the second hill past the wind turbines. This equipment is is fenced and its very
 important for pilots as they navigate towards JKIA Airport. Its also a Distance Measuring Equipment (DME)

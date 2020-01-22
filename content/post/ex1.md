@@ -4,6 +4,8 @@ date: 2019-08-25T14:16:09Z
 draft: false
 ---
 In this second exercise, its all about writing code and seeing what happens.
+Click here for the tutorial's index page.
+
 This is the code snippet for this exercise.
 
 ```
@@ -69,3 +71,8 @@ nothing so returns whatever memory is available at the expected point. That is h
 
 I then check with lldb on whats happening inside.
 
+## Index
+
+* [Exercise 2](https://www.wilfred.githuka.com/posts/ex2/)
+* [Exercise 0](https://www.wilfred.githuka.com/posts/ex0/)
+* [Index Page](https://www.wilfred.githuka.com/posts/lcthw-index/)

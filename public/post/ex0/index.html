@@ -13,11 +13,11 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Exercise 0: The Setup"/>
 <meta name="twitter:description" content="This is ground zero for the tutorial. But before starting any developent using C, you need to prepare your computer to make sure you have the necessary tools. This tutorial is for an Archlinux machine, which am using.
-Installation  To start with ensure that your system is up to date  pacman -Syu  Install the base-devel package. Base-devel has 26 items which are necessary for C-type development.  paman -S base-devel  Now check that you have the GNU C compiler."/>
+The Linux kernel and the GNU userland are written primarily in C. Arch Linux uses the GNU C Library (glibc) as the C standard library; it is a dependency of the base meta package."/>
 
     <meta property="og:title" content="Exercise 0: The Setup" />
 <meta property="og:description" content="This is ground zero for the tutorial. But before starting any developent using C, you need to prepare your computer to make sure you have the necessary tools. This tutorial is for an Archlinux machine, which am using.
-Installation  To start with ensure that your system is up to date  pacman -Syu  Install the base-devel package. Base-devel has 26 items which are necessary for C-type development.  paman -S base-devel  Now check that you have the GNU C compiler." />
+The Linux kernel and the GNU userland are written primarily in C. Arch Linux uses the GNU C Library (glibc) as the C standard library; it is a dependency of the base meta package." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wilfred.githuka.com/post/ex0/" />
 <meta property="article:published_time" content="2019-08-25T13:56:08+00:00" />
@@ -62,12 +62,16 @@ Installation  To start with ensure that your system is up to date  pacman -Syu  
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          1 min read
+          2 min read
         </div></div>
     </header>
     <div class="post-content">
       <p>This is ground zero for the tutorial. But before starting any developent using C, you need to prepare your computer
 to make sure you have the necessary tools. This tutorial is for an Archlinux machine, which am using.</p>
+<p>The Linux kernel and the GNU userland are written primarily in C. Arch Linux uses the GNU C Library (glibc) as the
+C standard library; it is a dependency of the base meta package. You can use the GNU toolchain or the LLVM toolchain
+to develop software in C, C++ or Objective-C.</p>
+<p>On Linux, preferably Archlinux, there is a <a href="https://wiki.archlinux.org/index.php/C">good documentation</a> on required tools.</p>
 <h3 id="installation">Installation</h3>
 <ul>
 <li>To start with ensure that your system is up to date</li>
@@ -82,8 +86,13 @@ C-type development.</li>
 <li>Now check that you have the GNU C compiler. The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,&hellip;). GCC was originally written as the compiler for the GNU operating system. The most updated version is GCC 9.2 released [2019-08-12].</li>
 </ul>
 <pre><code>cc --version
+</code></pre><ul>
+<li>I also recommend installing <a href="https://wiki.archlinux.org/index.php/Man_page">man pages</a>. They come in-handy when you want to understand what certain terms mean.</li>
+</ul>
+<pre><code>sudo pacman -S man man-page man-db
 </code></pre><p>Now all is ready for writing programs in C.</p>
-<p>Lets go to Exercise 1: Dust off that compiler.</p>
+<p>Next &raquo; <a href="https://wilfred.githuka.com/post/ex1/">Exercise 1: Dust off that compiler</a>.
+Index &raquo; <a href="https://wilfred.githuka.com/post/index/">Index</a></p>
 
     </div>
     <div class="post-footer">
