@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>8Bit Computer - 555 Clock Signal Basics // Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wilfred Githuka" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://wilfred.githuka.com/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="8Bit Computer - 555 Clock Signal Basics"/>
+<meta name="twitter:description" content="In this first project I build the basics of a computer clock. A clock is a signal that oscilates between a high and a low states and its used to keep everything in sync depending on how fast the clock speed it. This is part of a project to build an 8 bit computer from scratch, click here to learn more.
+Components  1X NE555 Timer 1X 1microfarad Capacitor 1x 0."/>
+
+    <meta property="og:title" content="8Bit Computer - 555 Clock Signal Basics" />
+<meta property="og:description" content="In this first project I build the basics of a computer clock. A clock is a signal that oscilates between a high and a low states and its used to keep everything in sync depending on how fast the clock speed it. This is part of a project to build an 8 bit computer from scratch, click here to learn more.
+Components  1X NE555 Timer 1X 1microfarad Capacitor 1x 0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wilfred.githuka.com/post/555/" />
+<meta property="article:published_time" content="2020-01-23T21:17:47+03:00" />
+<meta property="article:modified_time" content="2020-01-23T21:17:47+03:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://wilfred.githuka.com"><img class="app-header-avatar" src="/avatar.jpg" alt="Wilfred Githuka" /></a>
+      <h1>Fundi Willy&#39;s Low-Level Electronics Lab</h1>
+      <p>Right To Repair. You dont have to replace a broken electronic device. Try Repair It</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/wilfredgithuka"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">8Bit Computer - 555 Clock Signal Basics</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jan 23, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          5 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <p>In this first project I build the basics of a computer clock. A clock is a signal that oscilates
+between a high and a low states and its used to keep everything in sync depending on how
+fast the clock speed it. This is part of a project to build an 8 bit computer from scratch, click
+here to <a href="https://wilfred.githuka.com/post/8bit">learn more</a>.</p>
+<p><img src="/img/8/entire_circuit.JPG" alt="entire-circuit"></p>
+<h2 id="components">Components</h2>
+<ul>
+<li>1X NE555 Timer</li>
+<li>1X 1microfarad Capacitor</li>
+<li>1x 0.1microfarad Capacitor (104)</li>
+<li>1X 0.01microfarad Capacitor (103)</li>
+<li>3X 22Ohm Resistor (Red-Red-Brown)</li>
+<li>1x 1MOhm Potentiometer</li>
+<li>1x Yellow LED</li>
+<li>1x Breadboard</li>
+<li>1x Wireset</li>
+<li>1x Power Supply 5V</li>
+</ul>
+<h2 id="connection">Connection</h2>
+<p>The NE 555 Timer is an integral part of thus project so I shall cover the connection bit part.</p>
+<p>This classic 555 timer has 8 pins. PIN 1 is top left.</p>
+<p><img src="/img/8/555_focus_2.JPG" alt="555"></p>
+<ul>
+<li>PIN 1: Negative</li>
+<li>PIN 2: Negative of capacior, PIN 6</li>
+<li>PIN 3: Diode</li>
+<li>PIN 4: Positive</li>
+<li>PIN 5: PIN 2</li>
+<li>PIN 6: Resistor</li>
+<li>PIN 7:</li>
+<li>PIN 8: Positive</li>
+</ul>
+<h2 id="principle-of-operation">Principle of Operation</h2>
+<p>The objective for this circuit is to be able to produce a pulsating signal that
+is going to be our clock signal. Thats where the 555 timer comes in. Before you go
+further please remember to consoult the datasheet(555) which can be found <a href="http://www.ti.com/lit/ds/symlink/lm555.pdf">here</a>.</p>
+<p><a href="/img/8/555_circuit.jpg">circuit</a></p>
+<p>When the circuit above is turned ON, there exists a voltage divider starting from +5V
+to 0V accross the 3 resistors. When you go through the first resistor, the voltage
+drop is 1/3 of 5V which is 3.33V. Going through the second resistor, the drop is also
+by 1/3 and it becomes 1.667V. Finally the last resistor drops the voltage further
+to 0V.</p>
+<p>Now we have 2 comparators which are connected as per the diagram above. In the top comparator
+if the +ve input is above the -ve input, the comparator turns ON. The output becomes 5V.
+If the +ve input is below the -ve input the comparator turns OFF and the output is 0V.</p>
+<p>What will happen is that the bottom comparator will turn ON since 1.33V is higher than 0V. When
+it turns ON, it shall pass a signal to the S(Set) pin of the SR Latch which is going to
+turn ON Q which in turn turns on the LED. Remember all this time the top comparator since the voltage
+going at its -ve terminal is 3.33V while the positive is 0V. So it cannot turn ON.</p>
+<p>Since the output Q is ON, therefore Q(Not) is OFF so the transistor cannot turn ON. Therefore nothing
+will happen at PIN 7.</p>
+<p>Wile this is happening, there is going to be a current flowing through the 1kOhm resistor, then 100kOhm,
+resistor and finally to the capacitor. At this point the voltage on the line (esp. at point 2)is minimal.
+The capacitor starts to charge. The charge at the capacitor is equal to the voltage at PIN 2. As the capacitor
+starts to charge so does the voltage. This rise in voltage continues until it crosses the 1.67V which was at the
++ve PIN of the bottom comparator. This change in potential difference turns the comparator OFF, this means
+we are not asserting the Set signal anymore. However the SR Latch is still latches and remains ON.</p>
+<p>So the voltage continues to rise and soon arrives at 3.33V and crosses it which causes the upper comparator
+to turn ON since the +ve is higher that the -ve terminal. When this comparator turns ON, it then has an output
+which now turns the SR Latch OFF. When the latch is OFF the Inverted Q turns ON and has an output which causes
+the Discharge transistor to come ON. At this point curret now has a different flow path, it now flows through
+the 1K Ohm reiststor through the transistor via terminal 7 to the ground. Also the discharging capacitor now discharges
+through this same path to the transistor until ground. The capacitor continues to discharge until below 3.33 which
+causes the comparator to turn OFF. This will not affect anything since its the Reset pin.</p>
+<p>Onnce the voltage falls below 1.66V, the second comparator is now turned ON. At this point the latch is set again and
+there is a output at the LED. Also the Inverted Q is turned OFF, turning OFF the transistor. The capacitor stops
+discharging and starts charging again.</p>
+<p>The capacitor is charging and discharging using curve waves but output is a square wave. This output is what is
+displayed the the LED and it happens very very fast. The ON/OFF is Charging/Discharging. To control the rate of charging
+and discharging, we need to understand what components are used in both states. In charging state, the current flows
+through the 1k Ohm, 100K Ohm resistors. If the resistance is large, the capacitor will take a longer time to charge and vice
+versa. Also the size of the capacitor affects the charging time. If the capacitor is large, it shall charge slower,
+and if its small it shall charge faster. So by varying the two resistors &amp; capacitor sizes we can control the charging
+time. When it comes to discharging, the capacitor discharges via the 100KOhm resistor. Again, if its large, the capacitor
+discharge time will be longer.</p>
+<p>The charging and discharging stages have a common resistor (100 KOhm). The 1KOhm is about 1% of the 100 KOhm resistor. Reason
+being that this will ensure a uniform duty cyle square wave.</p>
+<p>The circuit now has a constant pulsating signal which shall be our clock cycle for our computer. In the next step I will
+find a way to control this pulse. If I ever need to pulsate the clock at will(manually).</p>
+<h2 id="readmore">ReadMore</h2>
+<ul>
+<li><a href="https://wilfred.githuka.com/post/8bit-home/">8bit Project Home</a></li>
+<li><a href="https://wilfred.githuka.com/post/555/">Astable Mode</a></li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

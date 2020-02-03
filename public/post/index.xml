@@ -5,10 +5,20 @@
     <link>https://wilfred.githuka.com/post/</link>
     <description>Recent content in Posts on Fundi Willy&#39;s Low-Level Electronics Lab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Jan 2020 09:51:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 21:17:47 +0300</lastBuildDate>
     
 	<atom:link href="https://wilfred.githuka.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>8Bit Computer - 555 Clock Signal Basics</title>
+      <link>https://wilfred.githuka.com/post/555/</link>
+      <pubDate>Thu, 23 Jan 2020 21:17:47 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/555/</guid>
+      <description>In this first project I build the basics of a computer clock. A clock is a signal that oscilates between a high and a low states and its used to keep everything in sync depending on how fast the clock speed it. This is part of a project to build an 8 bit computer from scratch, click here to learn more.
+Components  1X NE555 Timer 1X 1microfarad Capacitor 1x 0.</description>
+    </item>
     
     <item>
       <title>The Ngong GV 115.9 VOR DME &amp; Geocaching</title>
@@ -18,6 +28,18 @@
       <guid>https://wilfred.githuka.com/post/ngong-gv-115.9-geocache/</guid>
       <description>As I read more about Armateur Radio, am beginning to be more aware of major wireless transmission sites around me. One of such is the Ngong GV 115.9 VOR DME.
 This is a huge circular beacon located on your way up to Ngong Hills just as you descend the second hill past the wind turbines. This equipment is is fenced and its very important for pilots as they navigate towards JKIA Airport.</description>
+    </item>
+    
+    <item>
+      <title>8bit Home - Building an 8-bit computer from scratch</title>
+      <link>https://wilfred.githuka.com/post/8bit-home/</link>
+      <pubDate>Thu, 16 Jan 2020 08:47:51 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/8bit-home/</guid>
+      <description>Building a computer from scratch is a crazy idea, given the small details one has to be careful with. Also the time investment for debugging is immense.
+But the learning content is incredible.
+This is the reason why am starting this long journey of building an 8bit computer from scratch. Am building mine from TTL chips using the kits provided by Ben Easter
+The Kit The Complete Kit bundle retails at USD 269(Ksh.</description>
     </item>
     
     <item>
@@ -86,6 +108,17 @@ SMPS Specs  Input Voltage: 240V AC Output Voltage: +12VDC, -12VDC, +5VDC(Regulat
       <description>The Epson L850 is a versatile printer that I came accross recently. Its the kind of printers that carry along an ink tank which is good but abit messy when it comes to refilling it.
 Driver Installation This Driver installation tutorial is for Linux users specifically Archlinux. Am assuming that the connection media to the printer is via a USB 2.0 cable.
  Update your machine.  pacman -Syu  Install Epson Inkjet Printer Driver (ESC/P-R) for Linux.</description>
+    </item>
+    
+    <item>
+      <title>Exercise3: Formatted Printing</title>
+      <link>https://wilfred.githuka.com/post/ex3/</link>
+      <pubDate>Wed, 28 Aug 2019 09:59:45 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/ex3/</guid>
+      <description>In the previous exercise It was all about using Makefiles to build. Now its all about printing stuff.
+The code for this exercise is preety straightforward but contains an important function. Have a look:
+#include &amp;lt;stdio.h&amp;gt; int main() { int age = 10; int height = 72; printf(&amp;quot;I am %d years old \n&amp;quot;, age); printf(&amp;quot;I am %d inches tall \n&amp;quot;, height); return 0; } This code base uses some basic implementations.</description>
     </item>
     
     <item>
