@@ -3,7 +3,7 @@
   <head>
     <title>IOU in Tensor Flow vs Manual Calculation // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.67.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -68,7 +68,7 @@ Wikipedia defines IOU as: The Jaccard index, also known as Intersection over Uni
   <title>tag</title>
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
 </svg>
-          <a class="tag" href="https://wilfred.githuka.com/tags/self-driving/">Self-driving</a></div></div>
+          <a class="tag" href="https://wilfred.githuka.com/tags/self-driving/">self-driving</a></div></div>
     </header>
     <div class="post-content">
       <p>IoU is an acronym for <em><strong>Interestion over Union</strong></em>, a type of semantic segemtation used in the
@@ -81,7 +81,7 @@ is a statistic used for comparing the similarity and diversity of sample sets.</
 size of the intersection divided by the size of the union of the sample sets.</p>
 <p>The key point here is the IOU simply divides the Intserection Set (AND) with the Union Set(OR) and
 the result which is less that 1 gives the IoU value. In todays example I will compare the results
-of a manual calculation vs tensorflow's calculation to see (if any) differences in the output.</p>
+of a manual calculation vs tensorflow&rsquo;s calculation to see (if any) differences in the output.</p>
 <p>The data set is as below:</p>
 <p>ground truth</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>]
@@ -179,7 +179,7 @@ iou, iou_op <span style="color:#f92672">=</span> mean_iou(ground_truth, predicti
         
         sess<span style="color:#f92672">.</span>run(iou_op)
         <span style="color:#75715e"># should be 0.53869</span>
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Mean IoU =</span><span style="color:#e6db74">&#34;</span>, sess<span style="color:#f92672">.</span>run(iou))
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Mean IoU =&#34;</span>, sess<span style="color:#f92672">.</span>run(iou))
 </code></pre></div><p>When you run the above code, you should get:</p>
 <p>Mean IoU = 0.53869045 (tensorflow)
 Mean IoU = 0.538690476 (manual)</p>

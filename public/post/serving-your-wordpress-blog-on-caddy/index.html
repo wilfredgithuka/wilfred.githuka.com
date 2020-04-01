@@ -3,7 +3,7 @@
   <head>
     <title>Serving Your Wordpress Blog on Caddy on Linode Server // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.67.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -87,7 +87,7 @@ issues which you need to take care as you go forth:</p>
 <li>Sytemctl - starting and stopping services</li>
 <li>Check /var/log/php5-fpm.log for any errors.</li>
 <li>Add errors visible to your Caddyfile</li>
-<li>Often times, php-fpm doesn't work because of wrong permissions. Check the
+<li>Often times, php-fpm doesn&rsquo;t work because of wrong permissions. Check the
 error logs and change the user in /etc/php5/fpm/pool.d/www.conf</li>
 <li>Switching to a Unix socket might help. Change the listen directive in /etc/
 php5/fpm/pool.d/www.conf to listen = unix:/var/run/php5-fpm.sock and adjust
@@ -127,7 +127,7 @@ following command:</p>
 <p>The following examples are for Wordpress and Hugo. You can adapt them to
 the site you are working on:</p>
 <h4 id="wordpress">Wordpress</h4>
-<p><a href="http://www.ruarakabaptist.org,">www.ruarakabaptist.org,</a> ruarakabaptist.org
+<p><a href="http://www.ruarakabaptist.org">www.ruarakabaptist.org</a>, ruarakabaptist.org
 {
 root /srv/http/rbc/public
 #fastcgi / /run/php-fpm/php-fpm.sock php
@@ -135,7 +135,7 @@ index index.html
 #errors /tmp/error.log
 }</p>
 <h4 id="hugo">Hugo</h4>
-<p><a href="http://www.conac.co.ke,">www.conac.co.ke,</a> conac.co.ke {
+<p><a href="http://www.conac.co.ke">www.conac.co.ke</a>, conac.co.ke {
 gzip
 root /srv/http/conac/wordpress
 fastcgi / /run/php-fpm/php-fpm.sock php

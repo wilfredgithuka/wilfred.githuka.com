@@ -3,17 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wilfred.githuka.com/post/555/</loc>
-    <lastmod>2020-01-23T21:17:47+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/</loc>
-    <lastmod>2020-01-23T21:17:47+03:00</lastmod>
+    <lastmod>2020-03-08T21:59:03+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://wilfred.githuka.com/post/</loc>
+    <lastmod>2020-03-08T21:59:03+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/kisii_night_stations/</loc>
+    <lastmod>2020-03-08T21:59:03+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/fm_radio_stations/</loc>
+    <lastmod>2020-03-06T10:16:18+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/mdzhb/</loc>
+    <lastmod>2020-03-06T01:05:23+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/post/555/</loc>
     <lastmod>2020-01-23T21:17:47+03:00</lastmod>
   </url>
   
@@ -99,11 +114,6 @@
   
   <url>
     <loc>https://wilfred.githuka.com/post/exgnu_radio/</loc>
-    <lastmod>2019-07-08T20:07:26+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wilfred.githuka.com/tags/fm/am/</loc>
     <lastmod>2019-07-08T20:07:26+00:00</lastmod>
   </url>
   
@@ -203,12 +213,12 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/categories/autonomous-vehicle/</loc>
+    <loc>https://wilfred.githuka.com/tags/autonomous-vehicle/</loc>
     <lastmod>2019-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/autonomous-vehicle/</loc>
+    <loc>https://wilfred.githuka.com/categories/autonomous-vehicle/</loc>
     <lastmod>2019-01-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -405,6 +415,11 @@
   <url>
     <loc>https://wilfred.githuka.com/tags/ona/</loc>
     <lastmod>2017-12-02T22:27:08+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/jupyter/</loc>
+    <lastmod>2017-12-01T14:13:54+03:00</lastmod>
   </url>
   
   <url>
@@ -623,11 +638,6 @@
   </url>
   
   <url>
-    <loc>https://wilfred.githuka.com/tags/jupyter/</loc>
-    <lastmod>2017-07-04T07:51:33+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wilfred.githuka.com/tags/miniconda/</loc>
     <lastmod>2017-07-04T07:51:33+03:00</lastmod>
   </url>
@@ -770,6 +780,10 @@
   <url>
     <loc>https://wilfred.githuka.com/post/install-arch-linuxarm-on-raspberrypi/</loc>
     <lastmod>2015-12-21T05:45:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wilfred.githuka.com/tags/fm/am/</loc>
   </url>
   
 </urlset>

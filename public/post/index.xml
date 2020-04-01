@@ -5,10 +5,41 @@
     <link>https://wilfred.githuka.com/post/</link>
     <description>Recent content in Posts on Fundi Willy&#39;s Low-Level Electronics Lab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jan 2020 21:17:47 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 21:59:03 +0300</lastBuildDate>
     
 	<atom:link href="https://wilfred.githuka.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What Kisii Is Listening To At Night</title>
+      <link>https://wilfred.githuka.com/post/kisii_night_stations/</link>
+      <pubDate>Sun, 08 Mar 2020 21:59:03 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/kisii_night_stations/</guid>
+      <description>The title of this post might not reflect the concept behind this project but nevertheless just read along.
+The Electromagnetic spectrum (Spectrum of Electromagnetic Radiation) is one massive real eastate that is hardly seen by the naked eye. Only a small part of it is visible light while the rest is out of our eyes reach.
+Tonight I sought to see what FM frequencies are in use in Kisii County on this cold Sunday night.</description>
+    </item>
+    
+    <item>
+      <title>List of FM Radio Stations In Kenya</title>
+      <link>https://wilfred.githuka.com/post/fm_radio_stations/</link>
+      <pubDate>Fri, 06 Mar 2020 10:16:18 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/fm_radio_stations/</guid>
+      <description>Here is an unrodered list of FM Radio Stations and their respective frequencies. I am yet to verify their true frequencies and locations, plus broadcasting locations.
+ Abiengo FM Kakamega 89.5 Radio Injili FM Kericho 103.7 Bibilia Husema Nairobi 96.7 Radio Maendeleo Bondo 98.6 Radio Amani Nakuru 88.3 Homeboyz Radio Nairobi 103.5 NRG Radio Nairobi 91.3 BBC World Service Nairobi 93.9 Capital FM Nairobi 98.4 China Radio International Nairobi 91.9 ATG Radio Nairobi 91.</description>
+    </item>
+    
+    <item>
+      <title>MDZhB - The Ghostly Radio Station That No One Claims To Run</title>
+      <link>https://wilfred.githuka.com/post/mdzhb/</link>
+      <pubDate>Fri, 06 Mar 2020 01:05:23 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/mdzhb/</guid>
+      <description>In the middle of a Russian swampland, not far from the city of St Petersburg, is a rectangular iron gate. Beyond its rusted bars is a collection of radio towers, abandoned buildings and power lines bordered by a dry-stone wall. This sinister location is the focus of a mystery which stretches back to the height of the Cold War.
+It is thought to be the headquarters of a radio station, “MDZhB”, that no-one has ever claimed to run.</description>
+    </item>
     
     <item>
       <title>8Bit Computer - 555 Clock Signal Basics</title>
@@ -62,7 +93,7 @@ A chunk of RAM can be on heap or stack.</description>
       
       <guid>https://wilfred.githuka.com/post/power-bank/</guid>
       <description>11.1V 12.6V Lithium Battery Manager System 3S 10A  Main Chip 8254AA (VCJ90) W1751 Smaller Chips 44071 and CK7F37 Charging Voltage: 12.6V - 13V Max opertating current:6-8A  Connection Details The BMS board has 6 terminal Connections:
- B+: Connect to Battery 3&#39;s Positive terminal B-: Connect to Battery 1&#39;s Negative terminal B1: Connect to Battery 1&#39;s Positive and Battery 2&#39;s Negative terminal B2: Connect to Battery 2&#39;s Positive and Battery 3&#39;s Negative terminal D+: Positive Charging/Discharging Connection D-: Negative Charging/Discharging Connection  </description>
+ B+: Connect to Battery 3&amp;rsquo;s Positive terminal B-: Connect to Battery 1&amp;rsquo;s Negative terminal B1: Connect to Battery 1&amp;rsquo;s Positive and Battery 2&amp;rsquo;s Negative terminal B2: Connect to Battery 2&amp;rsquo;s Positive and Battery 3&amp;rsquo;s Negative terminal D+: Positive Charging/Discharging Connection D-: Negative Charging/Discharging Connection  </description>
     </item>
     
     <item>
@@ -137,9 +168,9 @@ Read: man make for more information.</description>
       <pubDate>Sun, 25 Aug 2019 14:16:09 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/ex1/</guid>
-      <description>In this second exercise, its all about writing code and seeing what happens. Click here for the tutorial&#39;s index page.
+      <description>In this second exercise, its all about writing code and seeing what happens. Click here for the tutorial&amp;rsquo;s index page.
 This is the code snippet for this exercise.
-#include &amp;lt;stdio.h&amp;gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&amp;quot;You are %d miles away \n&amp;quot;, distance); return 0; } Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&#39;s source files.</description>
+#include &amp;lt;stdio.h&amp;gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&amp;quot;You are %d miles away \n&amp;quot;, distance); return 0; } Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&amp;rsquo;s source files.</description>
     </item>
     
     <item>
@@ -181,7 +212,7 @@ For sometime I have had these cheap Chinese-made FM &amp;amp; Tape deck receiver
       
       <guid>https://wilfred.githuka.com/post/smps_resources/</guid>
       <description>This is a curated list of internet resorces that I think are really useful when it comes to matters relating Switch Mode Power Supplies and low level electronics.
-Websites  DiodeGoneWild - Youtube Channel TroubleShooting and Reparing SMPS Ken Shirrif&#39;s Blog TubeTimeUS EvilMadScientist  Books &amp;amp; Manuals  TroubleShooting and Reparing SMPS Switchmode Power Supply Handbook  Back to work :-)</description>
+Websites  DiodeGoneWild - Youtube Channel TroubleShooting and Reparing SMPS Ken Shirrif&amp;rsquo;s Blog TubeTimeUS EvilMadScientist  Books &amp;amp; Manuals  TroubleShooting and Reparing SMPS Switchmode Power Supply Handbook  Back to work :-)</description>
     </item>
     
     <item>
@@ -221,7 +252,7 @@ The result is just to make my own power supply/laptop charger from scratch. I wi
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/local_gpu_setup/</guid>
-      <description>Dont get me wrong, am not against cloud based GPU&#39;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
+      <description>Dont get me wrong, am not against cloud based GPU&amp;rsquo;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
 Machine Specs First let me list my hardware specs so that we can have a benchark as we go forth.</description>
     </item>
     
@@ -241,7 +272,7 @@ Wikipedia defines IOU as: The Jaccard index, also known as Intersection over Uni
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/ets2_nerdy_stats/</guid>
-      <description>The developer console is not just a powerful tool to gain immediate access to certain game variables and commands for power users, mappers, modders and so on. It&#39;s also something your average user might want to have enabled for reporting bugs, taking screenshots (though the new photo edit mode is good for that as well) and for mod users who want to see if that new mod he installed has any issues.</description>
+      <description>The developer console is not just a powerful tool to gain immediate access to certain game variables and commands for power users, mappers, modders and so on. It&amp;rsquo;s also something your average user might want to have enabled for reporting bugs, taking screenshots (though the new photo edit mode is good for that as well) and for mod users who want to see if that new mod he installed has any issues.</description>
     </item>
     
     <item>
@@ -293,7 +324,7 @@ Student1: What is the RaspberryPi and Arduino? The RaspberryPi is a single board
       <guid>https://wilfred.githuka.com/post/accessing-google-drive-from-terminal/</guid>
       <description>Google Drive is a good way to backup your data. In Windows this can be accomplished simply by having a Google account and drag-dropping stuff into it. From a CLI - Command Line Interface a different approach is used which I will explain in this article.
 My distro is Archlinux so this tutorial is based on the same.
-Tools  rclone gdrive  rclone rclone is written in Google&#39;s Go Language and it a powerful tool that can be used to access your Google Drive neatly from the terminal.</description>
+Tools  rclone gdrive  rclone rclone is written in Google&amp;rsquo;s Go Language and it a powerful tool that can be used to access your Google Drive neatly from the terminal.</description>
     </item>
     
     <item>
@@ -320,7 +351,7 @@ Tools  rclone gdrive  rclone rclone is written in Google&#39;s Go Language and i
       <pubDate>Fri, 26 Jan 2018 18:18:35 +0300</pubDate>
       
       <guid>https://wilfred.githuka.com/post/stc-microcontrollers/</guid>
-      <description>The first time I held an STC microcontroller was today morning when we were preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&#39;s lecturers students back in China.</description>
+      <description>The first time I held an STC microcontroller was today morning when we were preparing the lab ahead of the class experiment for tomorrow. I decided to assemble my own board from the components given. The boards were packed tightly in bulk so it was quite a task to set them up. The boards which I later came to learn were designed by one of the Chinese&amp;rsquo;s lecturers students back in China.</description>
     </item>
     
     <item>
@@ -339,7 +370,7 @@ While thats good, I wanted to try out recording on termial and this is how far I
       <pubDate>Sat, 02 Dec 2017 22:27:08 +0300</pubDate>
       
       <guid>https://wilfred.githuka.com/post/nailug-december-2nd-meetup/</guid>
-      <description>Today was the last meetup of Nailug - Nairobi Linux User Group. As usual for the past few months, the meetup was held at Ona who have continued to support us bu giving us a space to hold our meetups. Today&#39;s talk was about HTTP/2 which was presented by Kenneth Gitere from Ona. The topic was - HTTP/2 to be or not to be.
+      <description>Today was the last meetup of Nailug - Nairobi Linux User Group. As usual for the past few months, the meetup was held at Ona who have continued to support us bu giving us a space to hold our meetups. Today&amp;rsquo;s talk was about HTTP/2 which was presented by Kenneth Gitere from Ona. The topic was - HTTP/2 to be or not to be.
 Nailug, also written as NaiLug is a not-for-profit community dedicated to GNU/Linux, Free Software, Open Source and related topics.</description>
     </item>
     
@@ -423,7 +454,7 @@ Take Note To make this tutorial easier to follow, I will first point out my bigg
       
       <guid>https://wilfred.githuka.com/post/data-collection-monday/</guid>
       <description>I go to BSF on Monday evenings to Westlands St Marks Church and the drive there with my friends provides a good chance to collect some data for my self driving car programme. My data collection device is still my mobile phone mounted on the dashboard. I have explained how to do this in my previous post.
-Yesterday&#39;s run was like normal but over the last 3 weeks, my videos have been appearing with some darkness which is as a result from the mounting angle facing the road.</description>
+Yesterday&amp;rsquo;s run was like normal but over the last 3 weeks, my videos have been appearing with some darkness which is as a result from the mounting angle facing the road.</description>
     </item>
     
     <item>
@@ -510,7 +541,7 @@ Tesla Model 3 Launch. Need I say more? I love this car Standard Battery  Startin
       
       <guid>https://wilfred.githuka.com/post/twimec/</guid>
       <description>▲ We use oscillators in most of our experiments, perfect tool for ciruit analysis.
-EEE 309 Analogue Electronics 2 Labwork This week&#39;s labwork was about an introduction to Op-Amps. We worked with the UA741CN Chip Op-Amp. The experiment was good but I still think I need to get myself a chip and see how it really works.On a better note the Digital Electronics practical on &amp;ldquo;Digital Counter With 7 Segment Display&amp;rdquo; was a success.</description>
+EEE 309 Analogue Electronics 2 Labwork This week&amp;rsquo;s labwork was about an introduction to Op-Amps. We worked with the UA741CN Chip Op-Amp. The experiment was good but I still think I need to get myself a chip and see how it really works.On a better note the Digital Electronics practical on &amp;ldquo;Digital Counter With 7 Segment Display&amp;rdquo; was a success.</description>
     </item>
     
     <item>
@@ -559,7 +590,7 @@ Minutes of the last meeting  The Minutes of the meetings held on 3rd December, 2
       <pubDate>Sat, 01 Oct 2016 19:01:20 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/1st-october-shack-meeting-shack-vandalised/</guid>
-      <description>Today&#39;s Shack meeting was best attended than another since I joined ARSK. This was mainly due to the recent developments at the shack. The home-less guy that we chased from living behind the shack wrecked havoc on the shack. He smashed the windows, destroyed the supports that hold the veranda&#39;s roofing which eventually came crashing down. There were signs of attempted forced entry from the rear door but once again the bees deterred him.</description>
+      <description>Today&amp;rsquo;s Shack meeting was best attended than another since I joined ARSK. This was mainly due to the recent developments at the shack. The home-less guy that we chased from living behind the shack wrecked havoc on the shack. He smashed the windows, destroyed the supports that hold the veranda&amp;rsquo;s roofing which eventually came crashing down. There were signs of attempted forced entry from the rear door but once again the bees deterred him.</description>
     </item>
     
     <item>
@@ -568,7 +599,7 @@ Minutes of the last meeting  The Minutes of the meetings held on 3rd December, 2
       <pubDate>Sat, 03 Sep 2016 19:13:15 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/3rd-september-shack-meeting/</guid>
-      <description>Today&#39;s Shack meeting was well attended. We had 4 members present including our Chairman, Mr Ted Alleyne. Other members present were Mr. Joseph Ngungu and Mr. Kagotho. We arrived to find that somebody had stolen the water meter and left the water flooding the entire place. I plugged the pipe with a stick and I hope it holds till its repaired. Also the guy who lives behind the shack has made the hole in the fence bigger since thats his passage, we took down his makeshift dwelling because he had littered the place with plastic bottles.</description>
+      <description>Today&amp;rsquo;s Shack meeting was well attended. We had 4 members present including our Chairman, Mr Ted Alleyne. Other members present were Mr. Joseph Ngungu and Mr. Kagotho. We arrived to find that somebody had stolen the water meter and left the water flooding the entire place. I plugged the pipe with a stick and I hope it holds till its repaired. Also the guy who lives behind the shack has made the hole in the fence bigger since thats his passage, we took down his makeshift dwelling because he had littered the place with plastic bottles.</description>
     </item>
     
     <item>
@@ -577,7 +608,7 @@ Minutes of the last meeting  The Minutes of the meetings held on 3rd December, 2
       <pubDate>Thu, 25 Aug 2016 08:32:22 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/growing-plants-with-articial-light/</guid>
-      <description>Introduction The intensity of light radiating from a point source that reaches a surface is inversely proportional to the square of the surface&#39;s distance from the source - Inverse square law. This simply means that if an object is twice as far away it receives only a quarter of the light.
+      <description>Introduction The intensity of light radiating from a point source that reaches a surface is inversely proportional to the square of the surface&amp;rsquo;s distance from the source - Inverse square law. This simply means that if an object is twice as far away it receives only a quarter of the light.
 This is the basis of this experiment. For a long time we have relied on the sun as the source of food, but with recent scientific studies, man has stared to grow plants indoors with the help of artificial light from bulbs.</description>
     </item>
     
@@ -629,7 +660,7 @@ Go down to Misc Options and add the word ILoveCandy to the end of the list.</des
       <pubDate>Sat, 07 May 2016 19:36:43 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/preparing-for-novice-exam/</guid>
-      <description>Today&#39;s Shack meeting went well and was well attended. The hole on the fence is even bigger.The station is overgrown with grass due to the heavy rains that have been pounding Nairobi lately. As usual Ted kicked off the meeting and went through the meeting. At some point we were discussing how one can call the ISS (International Space Station). I later did some research and this is what I have learn&#39;t.</description>
+      <description>Today&amp;rsquo;s Shack meeting went well and was well attended. The hole on the fence is even bigger.The station is overgrown with grass due to the heavy rains that have been pounding Nairobi lately. As usual Ted kicked off the meeting and went through the meeting. At some point we were discussing how one can call the ISS (International Space Station). I later did some research and this is what I have learn&amp;rsquo;t.</description>
     </item>
     
     <item>
@@ -656,7 +687,7 @@ Go down to Misc Options and add the word ILoveCandy to the end of the list.</des
       <pubDate>Tue, 26 Jan 2016 08:22:59 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/hiking-at-ngong-hills/</guid>
-      <description>Located SW of Nairobi is Kenya&#39;s largest Wind Farm, Ngong Hills. The word &amp;ldquo;Ngong&amp;quot;as I was told by the locals is an Anglicization of a Maasai phrase &amp;ldquo;enkong&#39;u emuny&amp;rdquo; meaning rhinoceros spring, and this name derives from a spring located near Ngong Town. Overlooking the Great Rift Valey on the Western Slopes, the Nong Hills rise to 2,460 meters above sea level.During the years of British colonial rule, the area around the Ngong Hills was a major settler farming region, and many traditional colonial houses are still seen in the area.</description>
+      <description>Located SW of Nairobi is Kenya&amp;rsquo;s largest Wind Farm, Ngong Hills. The word &amp;ldquo;Ngong&amp;quot;as I was told by the locals is an Anglicization of a Maasai phrase &amp;ldquo;enkong&amp;rsquo;u emuny&amp;rdquo; meaning rhinoceros spring, and this name derives from a spring located near Ngong Town. Overlooking the Great Rift Valey on the Western Slopes, the Nong Hills rise to 2,460 meters above sea level.During the years of British colonial rule, the area around the Ngong Hills was a major settler farming region, and many traditional colonial houses are still seen in the area.</description>
     </item>
     
     <item>

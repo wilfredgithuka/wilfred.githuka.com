@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Self-driving on Fundi Willy&#39;s Low-Level Electronics Lab</title>
+    <title>self-driving on Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <link>https://wilfred.githuka.com/tags/self-driving/</link>
-    <description>Recent content in Self-driving on Fundi Willy&#39;s Low-Level Electronics Lab</description>
+    <description>Recent content in self-driving on Fundi Willy&#39;s Low-Level Electronics Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate>
     
@@ -16,7 +16,7 @@
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://wilfred.githuka.com/post/local_gpu_setup/</guid>
-      <description>Dont get me wrong, am not against cloud based GPU&#39;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
+      <description>Dont get me wrong, am not against cloud based GPU&amp;rsquo;s designed to simplyfy the process of training your neural networks but sometimes having a local less powerful setup is great. An AWS GPU is awesome and is less tiring when it comes to setup, so this manual is for those who want to get to low level and understand what happens there.
 Machine Specs First let me list my hardware specs so that we can have a benchark as we go forth.</description>
     </item>
     

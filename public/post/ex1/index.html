@@ -3,7 +3,7 @@
   <head>
     <title>Exercise 1: Dust off that Compiler // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.67.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -12,14 +12,14 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Exercise 1: Dust off that Compiler"/>
-<meta name="twitter:description" content="In this second exercise, its all about writing code and seeing what happens. Click here for the tutorial&#39;s index page.
+<meta name="twitter:description" content="In this second exercise, its all about writing code and seeing what happens. Click here for the tutorial&rsquo;s index page.
 This is the code snippet for this exercise.
-#include &lt;stdio.h&gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&quot;You are %d miles away \n&quot;, distance); return 0; } Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&#39;s source files."/>
+#include &lt;stdio.h&gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&quot;You are %d miles away \n&quot;, distance); return 0; } Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&rsquo;s source files."/>
 
     <meta property="og:title" content="Exercise 1: Dust off that Compiler" />
-<meta property="og:description" content="In this second exercise, its all about writing code and seeing what happens. Click here for the tutorial&#39;s index page.
+<meta property="og:description" content="In this second exercise, its all about writing code and seeing what happens. Click here for the tutorial&rsquo;s index page.
 This is the code snippet for this exercise.
-#include &lt;stdio.h&gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&quot;You are %d miles away \n&quot;, distance); return 0; } Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&#39;s source files." />
+#include &lt;stdio.h&gt; /*This is a comment*/ int main(int argc, char *argv[]) { int distance = 100; //This is another comment printf(&quot;You are %d miles away \n&quot;, distance); return 0; } Compiling To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&rsquo;s source files." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wilfred.githuka.com/post/ex1/" />
 <meta property="article:published_time" content="2019-08-25T14:16:09+00:00" />
@@ -69,7 +69,7 @@ This is the code snippet for this exercise.
     </header>
     <div class="post-content">
       <p>In this second exercise, its all about writing code and seeing what happens.
-Click here for the tutorial's index page.</p>
+Click here for the tutorial&rsquo;s index page.</p>
 <p>This is the code snippet for this exercise.</p>
 <pre><code>#include &lt;stdio.h&gt;
 
@@ -86,7 +86,7 @@ return 0;
 }
 
 </code></pre><h2 id="compiling">Compiling</h2>
-<p>To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build a program from a file called the makefile, which lists each of the non-source files and how to compute it from other files. When you write a program, you should write a makefile for it, so that it is possible to use Make to build and install the program.</p>
+<p>To compile it you have to use make. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program&rsquo;s source files. Make gets its knowledge of how to build a program from a file called the makefile, which lists each of the non-source files and how to compute it from other files. When you write a program, you should write a makefile for it, so that it is possible to use Make to build and install the program.</p>
 <p>But for now we shall not create/modify our make file.</p>
 <pre><code>make ex1
 </code></pre><p>Before we execute our program we need to check for errors(debug) using a special tool called lldb. The LLDB Debugger (LLDB) is the debugger component of the LLVM project. It is built as a set of reusable components which extensively use existing libraries from LLVM, such as the Clang expression parser and LLVM disassembler. LLDB is free and open-source software.</p>
@@ -95,7 +95,7 @@ return 0;
 <pre><code>./ex1
 
 You are 100 miles away
-</code></pre><h2 id="what-ive-learnt">What I've Learnt</h2>
+</code></pre><h2 id="what-ive-learnt">What I&rsquo;ve Learnt</h2>
 <p>First of all by running:</p>
 <pre><code>man printf
 </code></pre><p>I got to realise that it was developed by MacKenzie and it takes a variety of parameters. To check how printf works, I shall run the above

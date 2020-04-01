@@ -20,15 +20,6 @@
     </item>
     
     <item>
-      <title>FM/AM</title>
-      <link>https://wilfred.githuka.com/tags/fm/am/</link>
-      <pubDate>Mon, 08 Jul 2019 20:07:26 +0000</pubDate>
-      
-      <guid>https://wilfred.githuka.com/tags/fm/am/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>radio</title>
       <link>https://wilfred.githuka.com/tags/radio/</link>
       <pubDate>Mon, 08 Jul 2019 20:07:26 +0000</pubDate>
@@ -83,7 +74,7 @@
     </item>
     
     <item>
-      <title>Self-driving</title>
+      <title>self-driving</title>
       <link>https://wilfred.githuka.com/tags/self-driving/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -326,7 +317,7 @@
     </item>
     
     <item>
-      <title>Audacity</title>
+      <title>audacity</title>
       <link>https://wilfred.githuka.com/tags/audacity/</link>
       <pubDate>Tue, 12 Dec 2017 10:52:04 +0300</pubDate>
       
@@ -380,6 +371,15 @@
     </item>
     
     <item>
+      <title>jupyter</title>
+      <link>https://wilfred.githuka.com/tags/jupyter/</link>
+      <pubDate>Fri, 01 Dec 2017 14:13:54 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/tags/jupyter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>jupyter notebooks</title>
       <link>https://wilfred.githuka.com/tags/jupyter-notebooks/</link>
       <pubDate>Fri, 01 Dec 2017 14:13:54 +0300</pubDate>
@@ -398,7 +398,7 @@
     </item>
     
     <item>
-      <title>Python</title>
+      <title>python</title>
       <link>https://wilfred.githuka.com/tags/python/</link>
       <pubDate>Fri, 01 Dec 2017 14:13:54 +0300</pubDate>
       
@@ -650,15 +650,6 @@
     </item>
     
     <item>
-      <title>jupyter</title>
-      <link>https://wilfred.githuka.com/tags/jupyter/</link>
-      <pubDate>Tue, 04 Jul 2017 07:51:33 +0300</pubDate>
-      
-      <guid>https://wilfred.githuka.com/tags/jupyter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>miniconda</title>
       <link>https://wilfred.githuka.com/tags/miniconda/</link>
       <pubDate>Tue, 04 Jul 2017 07:51:33 +0300</pubDate>
@@ -709,6 +700,15 @@
       <pubDate>Fri, 30 Jun 2017 21:21:48 +0300</pubDate>
       
       <guid>https://wilfred.githuka.com/tags/sony/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FM/AM</title>
+      <link>https://wilfred.githuka.com/tags/fm/am/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wilfred.githuka.com/tags/fm/am/</guid>
       <description></description>
     </item>
     
