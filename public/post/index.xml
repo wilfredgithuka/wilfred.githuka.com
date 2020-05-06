@@ -5,10 +5,42 @@
     <link>https://wilfred.githuka.com/post/</link>
     <description>Recent content in Posts on Fundi Willy&#39;s Low-Level Electronics Lab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 08 Mar 2020 21:59:03 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 08:37:41 +0300</lastBuildDate>
     
 	<atom:link href="https://wilfred.githuka.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Serving Posts/Articles as PDFs</title>
+      <link>https://wilfred.githuka.com/post/minimalist_pdf/</link>
+      <pubDate>Tue, 05 May 2020 08:37:41 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/minimalist_pdf/</guid>
+      <description>There is nothing good -and awesome- like a well written manual or post to a problem which is well explained and above all is available to read offline.
+Am an offline advocate and as much as I write on this website, I like to read stuff offline. Go to the website, download the post, article etc and read it when am not busy. Normally, to do this I have to save the website, link or snapshot the site which is to the very least, tedious.</description>
+    </item>
+    
+    <item>
+      <title>Wilfred Learns Morse Code</title>
+      <link>https://wilfred.githuka.com/post/morse/</link>
+      <pubDate>Tue, 21 Apr 2020 13:03:20 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/morse/</guid>
+      <description>I think finally I have the time to learn some Morse Code.
+Morse Code is a an early rudimentary communication system developed by Samuel Morse, who also invented the Telegraph
+Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes or dits and dahs.
+The International Morse Code encodes the 26 English letters A through Z, some non-English letters, the Arabic numerals and a small set of punctuation and procedural signals (prosigns).</description>
+    </item>
+    
+    <item>
+      <title>Monostable Mode</title>
+      <link>https://wilfred.githuka.com/post/monostable/</link>
+      <pubDate>Fri, 03 Apr 2020 14:20:31 +0300</pubDate>
+      
+      <guid>https://wilfred.githuka.com/post/monostable/</guid>
+      <description>In the previous post I talked about the simple introduction on how you can build a computer clock. If you have not read it, click here.
+Required Components  R1 - 1kOhm Pull Up Resistor - Control the state of Trigger(PIN2) between 5V and OV. R2 - 220Ohm Resistor in series with D1 for overcurrent protection. R3 - 1MOhm Resistor for the Discharging/Charging circuit. D1 - Yellow LED. C1 - 0.</description>
+    </item>
     
     <item>
       <title>What Kisii Is Listening To At Night</title>
@@ -70,7 +102,7 @@ This is a huge circular beacon located on your way up to Ngong Hills just as you
       <description>Building a computer from scratch is a crazy idea, given the small details one has to be careful with. Also the time investment for debugging is immense.
 But the learning content is incredible.
 This is the reason why am starting this long journey of building an 8bit computer from scratch. Am building mine from TTL chips using the kits provided by Ben Easter
-The Kit The Complete Kit bundle retails at USD 269(Ksh.</description>
+What is an 8bit Computer? In computing a bit is 0 and 1, therefore the following occurs:</description>
     </item>
     
     <item>

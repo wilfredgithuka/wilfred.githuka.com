@@ -3,7 +3,7 @@
   <head>
     <title>8bit Home - Building an 8-bit computer from scratch // Fundi Willy&#39;s Low-Level Electronics Lab</title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.67.1" />
+    <meta name="generator" content="Hugo 0.69.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wilfred Githuka" />
     <meta name="description" content="" />
@@ -15,13 +15,13 @@
 <meta name="twitter:description" content="Building a computer from scratch is a crazy idea, given the small details one has to be careful with. Also the time investment for debugging is immense.
 But the learning content is incredible.
 This is the reason why am starting this long journey of building an 8bit computer from scratch. Am building mine from TTL chips using the kits provided by Ben Easter
-The Kit The Complete Kit bundle retails at USD 269(Ksh."/>
+What is an 8bit Computer? In computing a bit is 0 and 1, therefore the following occurs:"/>
 
     <meta property="og:title" content="8bit Home - Building an 8-bit computer from scratch" />
 <meta property="og:description" content="Building a computer from scratch is a crazy idea, given the small details one has to be careful with. Also the time investment for debugging is immense.
 But the learning content is incredible.
 This is the reason why am starting this long journey of building an 8bit computer from scratch. Am building mine from TTL chips using the kits provided by Ben Easter
-The Kit The Complete Kit bundle retails at USD 269(Ksh." />
+What is an 8bit Computer? In computing a bit is 0 and 1, therefore the following occurs:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wilfred.githuka.com/post/8bit-home/" />
 <meta property="article:published_time" content="2020-01-16T08:47:51+03:00" />
@@ -66,7 +66,7 @@ The Kit The Complete Kit bundle retails at USD 269(Ksh." />
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          2 min read
+          3 min read
         </div></div>
     </header>
     <div class="post-content">
@@ -76,6 +76,17 @@ one has to be careful with. Also the time investment for debugging is immense.</
 <p>This is the reason why am starting this long journey of building an 8bit computer
 from scratch. Am building mine from TTL chips using the kits provided by
 <a href="https://eater.net/8bit">Ben Easter</a></p>
+<h2 id="what-is-an-8bit-computer">What is an 8bit Computer?</h2>
+<p>In computing a bit is 0 and 1, therefore the following occurs:</p>
+<ul>
+<li>1 bit is 0 and 1.</li>
+<li>2 bits = 4 0s and 1s</li>
+<li>4 bits = 8 possible states of 0s and 1s</li>
+<li>8 bits = 256 possible states of 0s and 1s</li>
+</ul>
+<p>There are 28 (256) different possible values for 8 bits. When unsigned, it has possible values ranging from 0 to 255; when signed, it has -128 to 127.</p>
+<p>8-bit integers, memory addresses, or other data units are those that are 8 bits (1 octet) wide. Also, 8-bit CPU and ALU architectures are those that are based on registers, address buses, or data buses of that size. 8-bit is also a generation of microcomputers in which 8-bit microprocessors were the norm.</p>
+<p>Someting to note: Most 8-bit operations can only be performed on the 8-bit accumulator (the A register). For 8-bit operations with two operands, the other operand can be either an immediate value, another 8-bit register, or a memory byte addressed by the 16-bit register pair HL. Direct copying is supported between any two 8-bit registers and between any 8-bit register and an HL-addressed memory byte. Due to the regular encoding of the MOV instruction (using a quarter of available opcode space), there are redundant codes to copy a register into itself (MOV B,B, for instance), which are of little use, except for delays. However, what would have been a copy from the HL-addressed cell into itself (i.e., MOV M,M) is instead used to encode the halt (HLT) instruction, halting execution until an external reset or interrupt occurs.</p>
 <h2 id="the-kit">The Kit</h2>
 <p><img src="https://cdn.shopify.com/s/files/1/0089/0647/3536/products/computer-hero-42_550x825.png?v=1544158524" alt="kit"></p>
 <p>The Complete Kit bundle retails at USD 269(Ksh.30,000).</p>
@@ -96,9 +107,8 @@ this method, it waaaay too expensive.</p>
 <li>Clock Module
 <ul>
 <li><a href="https://wilfred.githuka.com/post/555/">555 Clock Signal Basics</a></li>
-<li>Astable</li>
-<li>Monostable</li>
-<li>Bistable</li>
+<li><a href="https://wilfred.githuka.com/post/monostable/">Monostable</a></li>
+<li><a href="https://wilfred.githuka.com/post/bistable">Bistable</a></li>
 </ul>
 </li>
 <li>Arithmetic Logic Unit</li>
